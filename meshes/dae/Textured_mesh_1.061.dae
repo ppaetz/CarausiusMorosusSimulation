@@ -5,8 +5,8 @@
       <author>Blender User</author>
       <authoring_tool>Blender 2.79.0 commit date:2018-03-22, commit time:14:10, hash:f4dc9f9d68b</authoring_tool>
     </contributor>
-    <created>2022-01-17T12:10:38</created>
-    <modified>2022-01-17T12:10:38</modified>
+    <created>2022-01-24T16:26:12</created>
+    <modified>2022-01-24T16:26:12</modified>
     <unit name="meter" meter="1"/>
     <up_axis>Z_UP</up_axis>
   </asset>
@@ -96,9 +96,9 @@
   <library_controllers/>
   <library_visual_scenes>
     <visual_scene id="Scene" name="Scene">
-      <node id="_6_Abdomen_2_000" name="_6_Abdomen_2_000" type="NODE">
+      <node id="_6_Abdomen_2_Collision" name="_6_Abdomen_2_Collision" type="NODE">
         <matrix sid="transform">1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1</matrix>
-        <instance_geometry url="#Textured_mesh_1_061-mesh" name="_6_Abdomen_2_000">
+        <instance_geometry url="#Textured_mesh_1_061-mesh" name="_6_Abdomen_2_Collision">
           <bind_material>
             <technique_common>
               <instance_material symbol="Textured_mesh_1-material" target="#Textured_mesh_1-material"/>

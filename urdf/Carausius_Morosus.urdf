@@ -2,104 +2,20 @@
 <!-- created with Phobos 1.0.1 "Capricious Choutengan" -->
   <robot name="Carausius_Morosus">
 
-    <link name="Abdomen_0">
-      <inertial>
-        <origin xyz="-0.04794 0.40528 -0.01267" rpy="0 0 0"/>
-        <mass value="46.23"/>
-        <inertia ixx="2.05257" ixy="0.07623" ixz="0.06869" iyy="0.6677" iyz="0.25277" izz="1.78699"/>
-      </inertial>
-      <visual name="08_Abdomen_0">
-        <origin xyz="-0.04794 0.40528 -0.01267" rpy="1.5708 -1.55593 -1.55593"/>
-        <geometry>
-          <mesh filename="../meshes/dae/Textured_mesh_1.037.dae" scale="1.0 1.0 1.0"/>
-        </geometry>
-        <material name="Textured_mesh_1"/>
-      </visual>
-      <collision name="08_Abdomen_0.000">
-        <origin xyz="-0.02635 0.35668 -0.00925" rpy="1.5708 -1.55593 -1.55593"/>
-        <geometry>
-          <mesh filename="../meshes/dae/Textured_mesh_1.059.dae" scale="1.0 1.0 1.0"/>
-        </geometry>
-      </collision>
-    </link>
-
-    <link name="Abdomen_1">
-      <inertial>
-        <origin xyz="-0.00193 0.38309 -0.01013" rpy="0 0 0"/>
-        <mass value="54.07"/>
-        <inertia ixx="2.73094" ixy="0.10817" ixz="0.0819" iyy="0.67247" iyz="-0.00785" izz="2.6494"/>
-      </inertial>
-      <visual name="07_Abdomen_1">
-        <origin xyz="-0.00193 0.38309 -0.01013" rpy="1.5708 -1.55593 -1.55593"/>
-        <geometry>
-          <mesh filename="../meshes/dae/Textured_mesh_1.036.dae" scale="1.0 1.0 1.0"/>
-        </geometry>
-        <material name="Textured_mesh_1"/>
-      </visual>
-      <collision name="07_Abdomen_1.000">
-        <origin xyz="-0.00809 0.39863 -0.00674" rpy="1.5708 -1.55593 -1.55593"/>
-        <geometry>
-          <mesh filename="../meshes/dae/Textured_mesh_1.060.dae" scale="1.0 1.0 1.0"/>
-        </geometry>
-      </collision>
-    </link>
-
-    <link name="Abdomen_2">
-      <inertial>
-        <origin xyz="0.0132 0.462 0.00721" rpy="0 0 0"/>
-        <mass value="79.52"/>
-        <inertia ixx="5.64524" ixy="0.19915" ixz="0.18241" iyy="1.29091" iyz="-0.17084" izz="5.30662"/>
-      </inertial>
-      <visual name="06_Abdomen_2">
-        <origin xyz="0.0132 0.462 0.00721" rpy="1.5708 -1.55593 -1.55593"/>
-        <geometry>
-          <mesh filename="../meshes/dae/Textured_mesh_1.035.dae" scale="1.0 1.0 1.0"/>
-        </geometry>
-        <material name="Textured_mesh_1"/>
-      </visual>
-      <collision name="06_Abdomen_2.000">
-        <origin xyz="0.00333 0.46033 0.01352" rpy="1.5708 -1.55593 -1.55593"/>
-        <geometry>
-          <mesh filename="../meshes/dae/Textured_mesh_1.061.dae" scale="1.0 1.0 1.0"/>
-        </geometry>
-      </collision>
-    </link>
-
-    <link name="Abdomen_3">
-      <inertial>
-        <origin xyz="0.02684 0.42317 0.00598" rpy="0 0 0"/>
-        <mass value="80.68"/>
-        <inertia ixx="4.67129" ixy="0.1158" ixz="0.01225" iyy="1.42033" iyz="-0.19931" izz="4.35911"/>
-      </inertial>
-      <visual name="05_Abdomen_3">
-        <origin xyz="0.02684 0.42317 0.00598" rpy="1.5708 -1.55593 -1.55593"/>
-        <geometry>
-          <mesh filename="../meshes/dae/Textured_mesh_1.024.dae" scale="1.0 1.0 1.0"/>
-        </geometry>
-        <material name="Textured_mesh_1"/>
-      </visual>
-      <collision name="05_Abdomen_3.000">
-        <origin xyz="0.0458 0.42051 0.01016" rpy="1.5708 -1.55593 -1.55593"/>
-        <geometry>
-          <mesh filename="../meshes/dae/Textured_mesh_1.062.dae" scale="1.0 1.0 1.0"/>
-        </geometry>
-      </collision>
-    </link>
-
-    <link name="Carput">
+    <link name="01_Carput">
       <inertial>
         <origin xyz="0.00299 -0.20745 -0.00121" rpy="0 0 0"/>
         <mass value="17.34"/>
         <inertia ixx="0.29364" ixy="0.00491" ixz="-0.0002" iyy="0.11728" iyz="0.00443" izz="0.3038"/>
       </inertial>
-      <visual name="01_Carput">
+      <visual name="01_Carput_Visual">
         <origin xyz="0.00299 -0.20745 -0.00121" rpy="0 0 0"/>
         <geometry>
           <mesh filename="../meshes/dae/Textured_mesh_1.dae" scale="1.0 1.0 1.0"/>
         </geometry>
         <material name="Textured_mesh_1"/>
       </visual>
-      <collision name="01_Carput.000">
+      <collision name="01_Carput_Collision">
         <origin xyz="0.00144 -0.22508 -0.00708" rpy="0 0 0"/>
         <geometry>
           <mesh filename="../meshes/dae/Textured_mesh_1.075.dae" scale="1.0 1.0 1.0"/>
@@ -107,692 +23,20 @@
       </collision>
     </link>
 
-    <link name="FL_CT_L">
-      <inertial>
-        <origin xyz="0.05825 0.00669 -0.01075" rpy="0 0 0"/>
-        <mass value="1.28"/>
-        <inertia ixx="0.00275" ixy="0.00021" ixz="-2e-05" iyy="0.00299" iyz="0.00011" izz="0.00269"/>
-      </inertial>
-      <visual name="FL_CT_L.001">
-        <origin xyz="0.05825 0.00669 -0.01075" rpy="0 0 0"/>
-        <geometry>
-          <mesh filename="../meshes/dae/Textured_mesh_1.001.dae" scale="1.0 1.0 1.0"/>
-        </geometry>
-        <material name="Textured_mesh_1"/>
-      </visual>
-      <collision name="FL_CT_L.001.000">
-        <origin xyz="0.06109 0.00667 0.00327" rpy="0 0 0"/>
-        <geometry>
-          <mesh filename="../meshes/dae/Textured_mesh_1.069.dae" scale="1.0 1.0 1.0"/>
-        </geometry>
-      </collision>
-    </link>
-
-    <link name="FL_CT_R">
-      <inertial>
-        <origin xyz="-0.04796 -0.00236 -0.00015" rpy="0 0 0"/>
-        <mass value="0.88"/>
-        <inertia ixx="0.00142" ixy="-3e-05" ixz="-7e-05" iyy="0.0015" iyz="-8e-05" izz="0.00123"/>
-      </inertial>
-      <visual name="FL_CT_R.001">
-        <origin xyz="-0.04796 -0.00236 -0.00015" rpy="0 0 0"/>
-        <geometry>
-          <mesh filename="../meshes/dae/Textured_mesh_1.008.dae" scale="1.0 1.0 1.0"/>
-        </geometry>
-        <material name="Textured_mesh_1"/>
-      </visual>
-      <collision name="FL_CT_R.001.000">
-        <origin xyz="-0.05327 0.00237 -0.00253" rpy="0 0 0"/>
-        <geometry>
-          <mesh filename="../meshes/dae/Textured_mesh_1.074.dae" scale="1.0 1.0 1.0"/>
-        </geometry>
-      </collision>
-    </link>
-
-    <link name="FL_Femur_L">
-      <inertial>
-        <origin xyz="0.74981 0.02106 0.00263" rpy="0 0 0"/>
-        <mass value="6.69"/>
-        <inertia ixx="0.00915" ixy="-0.01685" ixz="0.01428" iyy="0.88191" iyz="0.00132" izz="0.88143"/>
-      </inertial>
-      <visual name="FL_Femur_L.001">
-        <origin xyz="0.74981 0.02106 0.00263" rpy="-1.5708 -0.01487 0.01487"/>
-        <geometry>
-          <mesh filename="../meshes/dae/Textured_mesh_1.004.dae" scale="1.0 1.0 1.0"/>
-        </geometry>
-        <material name="Textured_mesh_1"/>
-      </visual>
-      <collision name="FL_Femur_L.001.000">
-        <origin xyz="0.71889 0.02037 0.00664" rpy="-1.5708 -0.01487 0.01487"/>
-        <geometry>
-          <mesh filename="../meshes/dae/Textured_mesh_1.068.dae" scale="1.0 1.0 1.0"/>
-        </geometry>
-      </collision>
-    </link>
-
-    <link name="FL_Femur_R">
-      <inertial>
-        <origin xyz="-0.70545 -0.00442 0.02193" rpy="0 0 0"/>
-        <mass value="6.2"/>
-        <inertia ixx="0.01112" ixy="-0.054" ixz="0.01646" iyy="0.88078" iyz="0.00171" izz="0.88484"/>
-      </inertial>
-      <visual name="FL_Femur_R.001">
-        <origin xyz="-0.70545 -0.00442 0.02193" rpy="-1.5708 -0.01487 0.01487"/>
-        <geometry>
-          <mesh filename="../meshes/dae/Textured_mesh_1.010.dae" scale="1.0 1.0 1.0"/>
-        </geometry>
-        <material name="Textured_mesh_1"/>
-      </visual>
-      <collision name="FL_Femur_R.001.000">
-        <origin xyz="-0.71365 -0.00396 0.0329" rpy="-1.5708 -0.01487 0.01487"/>
-        <geometry>
-          <mesh filename="../meshes/dae/Textured_mesh_1.073.dae" scale="1.0 1.0 1.0"/>
-        </geometry>
-      </collision>
-    </link>
-
-    <link name="FL_Pretarsus_L">
-      <inertial>
-        <origin xyz="0.07423 0.01283 0.00647" rpy="0 0 0"/>
-        <mass value="0.27"/>
-        <inertia ixx="0.0001" ixy="3e-05" ixz="0" iyy="0.00082" iyz="-1e-05" izz="0.00078"/>
-      </inertial>
-      <visual name="FL_Pretarsus_L.001">
-        <origin xyz="0.07423 0.01283 0.00647" rpy="-1.5708 -0.01487 0.01487"/>
-        <geometry>
-          <mesh filename="../meshes/dae/Textured_mesh_1.006.dae" scale="1.0 1.0 1.0"/>
-        </geometry>
-        <material name="Textured_mesh_1"/>
-      </visual>
-      <collision name="FL_Pretarsus_L.001.000">
-        <origin xyz="0.0875 0.02052 0.01066" rpy="-1.5708 -0.01487 0.01487"/>
-        <geometry>
-          <mesh filename="../meshes/dae/Textured_mesh_1.067.dae" scale="1.0 1.0 1.0"/>
-        </geometry>
-      </collision>
-    </link>
-
-    <link name="FL_Pretarsus_R">
-      <inertial>
-        <origin xyz="-0.07406 0.01029 0.00618" rpy="0 0 0"/>
-        <mass value="0.27"/>
-        <inertia ixx="7e-05" ixy="-5e-05" ixz="1e-05" iyy="0.00051" iyz="0" izz="0.00048"/>
-      </inertial>
-      <visual name="FL_Pretarsus_R.001">
-        <origin xyz="-0.07406 0.01029 0.00618" rpy="-1.5708 -0.01487 0.01487"/>
-        <geometry>
-          <mesh filename="../meshes/dae/Textured_mesh_1.012.dae" scale="1.0 1.0 1.0"/>
-        </geometry>
-        <material name="Textured_mesh_1"/>
-      </visual>
-      <collision name="FL_Pretarsus_R.001.000">
-        <origin xyz="-0.08783 0.01742 0.01144" rpy="-1.5708 -0.01487 0.01487"/>
-        <geometry>
-          <mesh filename="../meshes/dae/Textured_mesh_1.072.dae" scale="1.0 1.0 1.0"/>
-        </geometry>
-      </collision>
-    </link>
-
-    <link name="FL_Tarsus_L">
-      <inertial>
-        <origin xyz="0.07146 -0.00243 -0.00319" rpy="0 0 0"/>
-        <mass value="0.18"/>
-        <inertia ixx="4e-05" ixy="-2e-05" ixz="0" iyy="0.00031" iyz="0" izz="0.00031"/>
-      </inertial>
-      <visual name="FL_Tarsus_L.001">
-        <origin xyz="0.07146 -0.00243 -0.00319" rpy="-1.5708 -0.01487 0.01487"/>
-        <geometry>
-          <mesh filename="../meshes/dae/Textured_mesh_1.003.dae" scale="1.0 1.0 1.0"/>
-        </geometry>
-        <material name="Textured_mesh_1"/>
-      </visual>
-      <collision name="FL_Tarsus_L.001.000">
-        <origin xyz="0.07222 -0.0047 -0.00169" rpy="-1.5708 -0.01487 0.01487"/>
-        <geometry>
-          <mesh filename="../meshes/dae/Textured_mesh_1.066.dae" scale="1.0 1.0 1.0"/>
-        </geometry>
-      </collision>
-    </link>
-
-    <link name="FL_Tarsus_R">
-      <inertial>
-        <origin xyz="-0.08245 -0.01025 0.00014" rpy="0 0 0"/>
-        <mass value="0.17"/>
-        <inertia ixx="3e-05" ixy="-1e-05" ixz="2e-05" iyy="0.00038" iyz="0" izz="0.00038"/>
-      </inertial>
-      <visual name="FL_Tarsus_R.001">
-        <origin xyz="-0.08245 -0.01025 0.00014" rpy="-1.5708 -0.01487 0.01487"/>
-        <geometry>
-          <mesh filename="../meshes/dae/Textured_mesh_1.009.dae" scale="1.0 1.0 1.0"/>
-        </geometry>
-        <material name="Textured_mesh_1"/>
-      </visual>
-      <collision name="FL_Tarsus_R.001.000">
-        <origin xyz="-0.07257 -0.0103 0.00297" rpy="-1.5708 -0.01487 0.01487"/>
-        <geometry>
-          <mesh filename="../meshes/dae/Textured_mesh_1.071.dae" scale="1.0 1.0 1.0"/>
-        </geometry>
-      </collision>
-    </link>
-
-    <link name="FL_Tibia_L">
-      <inertial>
-        <origin xyz="0.00926 -0.63695 0.00189" rpy="0 0 0"/>
-        <mass value="2.09"/>
-        <inertia ixx="0.29766" ixy="0.00362" ixz="-0.0004" iyy="0.29885" iyz="0.00261" izz="0.0015"/>
-      </inertial>
-      <visual name="FL_Tibia_L.001">
-        <origin xyz="0.00926 -0.63695 0.00189" rpy="-1.5708 -0.01487 0.01487"/>
-        <geometry>
-          <mesh filename="../meshes/dae/Textured_mesh_1.005.dae" scale="1.0 1.0 1.0"/>
-        </geometry>
-        <material name="Textured_mesh_1"/>
-      </visual>
-      <collision name="FL_Tibia_L.001.000">
-        <origin xyz="0.01075 -0.63378 0.00093" rpy="-1.5708 -0.01487 0.01487"/>
-        <geometry>
-          <mesh filename="../meshes/dae/Textured_mesh_1.065.dae" scale="1.0 1.0 1.0"/>
-        </geometry>
-      </collision>
-    </link>
-
-    <link name="FL_Tibia_R">
-      <inertial>
-        <origin xyz="-0.0006 -0.67299 0.00244" rpy="0 0 0"/>
-        <mass value="2.64"/>
-        <inertia ixx="0.46305" ixy="0.00282" ixz="-0.00045" iyy="0.46342" iyz="0.00939" izz="0.00157"/>
-      </inertial>
-      <visual name="FL_Tibia_R.001">
-        <origin xyz="-0.0006 -0.67299 0.00244" rpy="-1.5708 -0.01487 0.01487"/>
-        <geometry>
-          <mesh filename="../meshes/dae/Textured_mesh_1.011.dae" scale="1.0 1.0 1.0"/>
-        </geometry>
-        <material name="Textured_mesh_1"/>
-      </visual>
-      <collision name="FL_Tibia_R.001.000">
-        <origin xyz="0.00254 -0.69922 -0.00368" rpy="-1.5708 -0.01487 0.01487"/>
-        <geometry>
-          <mesh filename="../meshes/dae/Textured_mesh_1.070.dae" scale="1.0 1.0 1.0"/>
-        </geometry>
-      </collision>
-    </link>
-
-    <link name="HL_CT_L">
-      <inertial>
-        <origin xyz="0.05059 0.00572 0.0055" rpy="0 0 0"/>
-        <mass value="1.05"/>
-        <inertia ixx="0.00199" ixy="5e-05" ixz="-9e-05" iyy="0.00209" iyz="-0.00015" izz="0.00156"/>
-      </inertial>
-      <visual name="HL_CT_L.001">
-        <origin xyz="0.05059 0.00572 0.0055" rpy="0 0 0"/>
-        <geometry>
-          <mesh filename="../meshes/dae/Textured_mesh_1.013.dae" scale="1.0 1.0 1.0"/>
-        </geometry>
-        <material name="Textured_mesh_1"/>
-      </visual>
-      <collision name="HL_CT_L.001.000">
-        <origin xyz="0.05571 0.00357 0.00927" rpy="0 0 0"/>
-        <geometry>
-          <mesh filename="../meshes/dae/Textured_mesh_1.053.dae" scale="1.0 1.0 1.0"/>
-        </geometry>
-      </collision>
-    </link>
-
-    <link name="HL_CT_R">
-      <inertial>
-        <origin xyz="-0.0598 -0.00109 -0.00204" rpy="0 0 0"/>
-        <mass value="1.38"/>
-        <inertia ixx="0.00288" ixy="-0.00026" ixz="6e-05" iyy="0.00362" iyz="3e-05" izz="0.00255"/>
-      </inertial>
-      <visual name="HL_CT_R.001">
-        <origin xyz="-0.0598 -0.00109 -0.00204" rpy="0 0 0"/>
-        <geometry>
-          <mesh filename="../meshes/dae/Textured_mesh_1.026.dae" scale="1.0 1.0 1.0"/>
-        </geometry>
-        <material name="Textured_mesh_1"/>
-      </visual>
-      <collision name="HL_CT_R.001.000">
-        <origin xyz="-0.06929 -0.01053 0.00277" rpy="0 0 0"/>
-        <geometry>
-          <mesh filename="../meshes/dae/Textured_mesh_1.058.dae" scale="1.0 1.0 1.0"/>
-        </geometry>
-      </collision>
-    </link>
-
-    <link name="HL_Femur_L">
-      <inertial>
-        <origin xyz="0.67236 0.01674 -0.00219" rpy="0 0 0"/>
-        <mass value="4.5"/>
-        <inertia ixx="0.00507" ixy="-0.01599" ixz="0.01795" iyy="0.61904" iyz="-0.00051" izz="0.6183"/>
-      </inertial>
-      <visual name="HL_Femur_L.001">
-        <origin xyz="0.67236 0.01674 -0.00219" rpy="-1.5708 -0.01487 0.01487"/>
-        <geometry>
-          <mesh filename="../meshes/dae/Textured_mesh_1.027.dae" scale="1.0 1.0 1.0"/>
-        </geometry>
-        <material name="Textured_mesh_1"/>
-      </visual>
-      <collision name="HL_Femur_L.001.000">
-        <origin xyz="0.62608 0.0165 -0.00451" rpy="-1.5708 -0.01487 0.01487"/>
-        <geometry>
-          <mesh filename="../meshes/dae/Textured_mesh_1.049.dae" scale="1.0 1.0 1.0"/>
-        </geometry>
-      </collision>
-    </link>
-
-    <link name="HL_Femur_R">
-      <inertial>
-        <origin xyz="-0.67541 -0.02913 0.00261" rpy="0 0 0"/>
-        <mass value="4.58"/>
-        <inertia ixx="0.00534" ixy="-0.02581" ixz="0.00749" iyy="0.65793" iyz="0.00014" izz="0.6566"/>
-      </inertial>
-      <visual name="HL_Femur_R.001">
-        <origin xyz="-0.67541 -0.02913 0.00261" rpy="-1.5708 -0.01487 0.01487"/>
-        <geometry>
-          <mesh filename="../meshes/dae/Textured_mesh_1.031.dae" scale="1.0 1.0 1.0"/>
-        </geometry>
-        <material name="Textured_mesh_1"/>
-      </visual>
-      <collision name="HL_Femur_R.001.000">
-        <origin xyz="-0.63769 -0.02852 0.00328" rpy="-1.5708 -0.01487 0.01487"/>
-        <geometry>
-          <mesh filename="../meshes/dae/Textured_mesh_1.054.dae" scale="1.0 1.0 1.0"/>
-        </geometry>
-      </collision>
-    </link>
-
-    <link name="HL_Pretarsus_L">
-      <inertial>
-        <origin xyz="0.08252 0.00663 -0.00613" rpy="0 0 0"/>
-        <mass value="0.3"/>
-        <inertia ixx="0.00013" ixy="1e-05" ixz="2e-05" iyy="0.00097" iyz="2e-05" izz="0.00099"/>
-      </inertial>
-      <visual name="HL_Pretarsus_L.001">
-        <origin xyz="0.08252 0.00663 -0.00613" rpy="-1.5708 -0.01487 0.01487"/>
-        <geometry>
-          <mesh filename="../meshes/dae/Textured_mesh_1.030.dae" scale="1.0 1.0 1.0"/>
-        </geometry>
-        <material name="Textured_mesh_1"/>
-      </visual>
-      <collision name="HL_Pretarsus_L.001.000">
-        <origin xyz="0.09089 0.01534 -0.01421" rpy="-1.5708 -0.01487 0.01487"/>
-        <geometry>
-          <mesh filename="../meshes/dae/Textured_mesh_1.052.dae" scale="1.0 1.0 1.0"/>
-        </geometry>
-      </collision>
-    </link>
-
-    <link name="HL_Pretarsus_R">
-      <inertial>
-        <origin xyz="-0.11251 0.0067 -0.00946" rpy="0 0 0"/>
-        <mass value="0.39"/>
-        <inertia ixx="0.00019" ixy="-0.00026" ixz="-0.00013" iyy="0.00233" iyz="0" izz="0.00239"/>
-      </inertial>
-      <visual name="HL_Pretarsus_R.001">
-        <origin xyz="-0.11251 0.0067 -0.00946" rpy="-1.5708 -0.01487 0.01487"/>
-        <geometry>
-          <mesh filename="../meshes/dae/Textured_mesh_1.034.dae" scale="1.0 1.0 1.0"/>
-        </geometry>
-        <material name="Textured_mesh_1"/>
-      </visual>
-      <collision name="HL_Pretarsus_R.001.000">
-        <origin xyz="-0.12247 0.00686 -0.01808" rpy="-1.5708 -0.01487 0.01487"/>
-        <geometry>
-          <mesh filename="../meshes/dae/Textured_mesh_1.057.dae" scale="1.0 1.0 1.0"/>
-        </geometry>
-      </collision>
-    </link>
-
-    <link name="HL_Tarsus_L">
-      <inertial>
-        <origin xyz="0.08915 -0.00613 0.00065" rpy="0 0 0"/>
-        <mass value="0.23"/>
-        <inertia ixx="7e-05" ixy="-3e-05" ixz="0" iyy="0.00052" iyz="-1e-05" izz="0.0005"/>
-      </inertial>
-      <visual name="HL_Tarsus_L.001">
-        <origin xyz="0.08915 -0.00613 0.00065" rpy="-1.5708 -0.01487 0.01487"/>
-        <geometry>
-          <mesh filename="../meshes/dae/Textured_mesh_1.028.dae" scale="1.0 1.0 1.0"/>
-        </geometry>
-        <material name="Textured_mesh_1"/>
-      </visual>
-      <collision name="HL_Tarsus_L.001.000">
-        <origin xyz="0.08204 -0.00932 0.00517" rpy="-1.5708 -0.01487 0.01487"/>
-        <geometry>
-          <mesh filename="../meshes/dae/Textured_mesh_1.051.dae" scale="1.0 1.0 1.0"/>
-        </geometry>
-      </collision>
-    </link>
-
-    <link name="HL_Tarsus_R">
-      <inertial>
-        <origin xyz="-0.13775 -0.00868 0.00454" rpy="0 0 0"/>
-        <mass value="0.33"/>
-        <inertia ixx="0.0001" ixy="-0.00011" ixz="0.00013" iyy="0.00189" iyz="1e-05" izz="0.00189"/>
-      </inertial>
-      <visual name="HL_Tarsus_R.001">
-        <origin xyz="-0.13775 -0.00868 0.00454" rpy="-1.5708 -0.01487 0.01487"/>
-        <geometry>
-          <mesh filename="../meshes/dae/Textured_mesh_1.032.dae" scale="1.0 1.0 1.0"/>
-        </geometry>
-        <material name="Textured_mesh_1"/>
-      </visual>
-      <collision name="HL_Tarsus_R.001.000">
-        <origin xyz="-0.1195 -0.0037 0.00457" rpy="-1.5708 -0.01487 0.01487"/>
-        <geometry>
-          <mesh filename="../meshes/dae/Textured_mesh_1.056.dae" scale="1.0 1.0 1.0"/>
-        </geometry>
-      </collision>
-    </link>
-
-    <link name="HL_Tibia_L">
-      <inertial>
-        <origin xyz="0.01228 -0.67668 0.00057" rpy="0 0 0"/>
-        <mass value="2.28"/>
-        <inertia ixx="0.46179" ixy="0.0008" ixz="-0.00026" iyy="0.46199" iyz="0.00424" izz="0.00093"/>
-      </inertial>
-      <visual name="HL_Tibia_L.001">
-        <origin xyz="0.01228 -0.67669 0.00057" rpy="-1.5708 -0.01487 0.01487"/>
-        <geometry>
-          <mesh filename="../meshes/dae/Textured_mesh_1.029.dae" scale="1.0 1.0 1.0"/>
-        </geometry>
-        <material name="Textured_mesh_1"/>
-      </visual>
-      <collision name="HL_Tibia_L.001.000">
-        <origin xyz="0.01463 -0.72451 -0.00246" rpy="-1.5708 -0.01487 0.01487"/>
-        <geometry>
-          <mesh filename="../meshes/dae/Textured_mesh_1.050.dae" scale="1.0 1.0 1.0"/>
-        </geometry>
-      </collision>
-    </link>
-
-    <link name="HL_Tibia_R">
-      <inertial>
-        <origin xyz="0.01601 -0.59383 -0.00361" rpy="0 0 0"/>
-        <mass value="1.99"/>
-        <inertia ixx="0.30642" ixy="-0.00353" ixz="-5e-05" iyy="0.3058" iyz="0.00366" izz="0.00083"/>
-      </inertial>
-      <visual name="HL_Tibia_R.001">
-        <origin xyz="0.01601 -0.59383 -0.00361" rpy="-1.5708 -0.01487 0.01487"/>
-        <geometry>
-          <mesh filename="../meshes/dae/Textured_mesh_1.033.dae" scale="1.0 1.0 1.0"/>
-        </geometry>
-        <material name="Textured_mesh_1"/>
-      </visual>
-      <collision name="HL_Tibia_R.001.000">
-        <origin xyz="0.01133 -0.63228 -0.00535" rpy="-1.5708 -0.01487 0.01487"/>
-        <geometry>
-          <mesh filename="../meshes/dae/Textured_mesh_1.055.dae" scale="1.0 1.0 1.0"/>
-        </geometry>
-      </collision>
-    </link>
-
-    <link name="ML_CT_L">
-      <inertial>
-        <origin xyz="0.05976 0.00355 -0.00473" rpy="0 0 0"/>
-        <mass value="0.88"/>
-        <inertia ixx="0.00129" ixy="1e-05" ixz="5e-05" iyy="0.00177" iyz="0.0001" izz="0.00155"/>
-      </inertial>
-      <visual name="ML_CT_L.001">
-        <origin xyz="0.05976 0.00355 -0.00473" rpy="0 0 0"/>
-        <geometry>
-          <mesh filename="../meshes/dae/Textured_mesh_1.007.dae" scale="1.0 1.0 1.0"/>
-        </geometry>
-        <material name="Textured_mesh_1"/>
-      </visual>
-      <collision name="ML_CT_L.001.000">
-        <origin xyz="0.06138 -0.00159 -0.00601" rpy="0 0 0"/>
-        <geometry>
-          <mesh filename="../meshes/dae/Textured_mesh_1.048.dae" scale="1.0 1.0 1.0"/>
-        </geometry>
-      </collision>
-    </link>
-
-    <link name="ML_CT_R">
-      <inertial>
-        <origin xyz="-0.05312 -0.00115 -0.00042" rpy="0 0 0"/>
-        <mass value="0.84"/>
-        <inertia ixx="0.00149" ixy="2e-05" ixz="-1e-05" iyy="0.00185" iyz="-2e-05" izz="0.00147"/>
-      </inertial>
-      <visual name="ML_CT_R.001">
-        <origin xyz="-0.05312 -0.00115 -0.00042" rpy="0 0 0"/>
-        <geometry>
-          <mesh filename="../meshes/dae/Textured_mesh_1.014.dae" scale="1.0 1.0 1.0"/>
-        </geometry>
-        <material name="Textured_mesh_1"/>
-      </visual>
-      <collision name="ML_CT_R.001.000">
-        <origin xyz="-0.05985 -0.00207 -0.00148" rpy="0 0 0"/>
-        <geometry>
-          <mesh filename="../meshes/dae/Textured_mesh_1.043.dae" scale="1.0 1.0 1.0"/>
-        </geometry>
-      </collision>
-    </link>
-
-    <link name="ML_Femur_L">
-      <inertial>
-        <origin xyz="0.5259 -0.00662 0.01525" rpy="0 0 0"/>
-        <mass value="4.57"/>
-        <inertia ixx="0.00454" ixy="-0.01513" ixz="-0.00475" iyy="0.31232" iyz="0.00068" izz="0.31323"/>
-      </inertial>
-      <visual name="ML_Femur_L.001">
-        <origin xyz="0.5259 -0.00662 0.01525" rpy="-1.5708 -0.01487 0.01487"/>
-        <geometry>
-          <mesh filename="../meshes/dae/Textured_mesh_1.021.dae" scale="1.0 1.0 1.0"/>
-        </geometry>
-        <material name="Textured_mesh_1"/>
-      </visual>
-      <collision name="ML_Femur_L.001.000">
-        <origin xyz="0.52321 -0.00657 0.01803" rpy="-1.5708 -0.01487 0.01487"/>
-        <geometry>
-          <mesh filename="../meshes/dae/Textured_mesh_1.044.dae" scale="1.0 1.0 1.0"/>
-        </geometry>
-      </collision>
-    </link>
-
-    <link name="ML_Femur_R">
-      <inertial>
-        <origin xyz="-0.5338 -0.00281 0.00804" rpy="0 0 0"/>
-        <mass value="3.83"/>
-        <inertia ixx="0.00685" ixy="-0.02995" ixz="0.00967" iyy="0.36425" iyz="0.00089" izz="0.36355"/>
-      </inertial>
-      <visual name="ML_Femur_R.001">
-        <origin xyz="-0.5338 -0.00281 0.00804" rpy="-1.5708 -0.01487 0.01487"/>
-        <geometry>
-          <mesh filename="../meshes/dae/Textured_mesh_1.016.dae" scale="1.0 1.0 1.0"/>
-        </geometry>
-        <material name="Textured_mesh_1"/>
-      </visual>
-      <collision name="ML_Femur_R.001.000">
-        <origin xyz="-0.51651 -0.00177 0.00798" rpy="-1.5708 -0.01487 0.01487"/>
-        <geometry>
-          <mesh filename="../meshes/dae/Textured_mesh_1.039.dae" scale="1.0 1.0 1.0"/>
-        </geometry>
-      </collision>
-    </link>
-
-    <link name="ML_Pretarsus_L">
-      <inertial>
-        <origin xyz="0.05906 0.00292 0.00266" rpy="0 0 0"/>
-        <mass value="0.18"/>
-        <inertia ixx="9e-05" ixy="0" ixz="2e-05" iyy="0.00052" iyz="0" izz="0.00055"/>
-      </inertial>
-      <visual name="ML_Pretarsus_L.001">
-        <origin xyz="0.05906 0.00292 0.00266" rpy="-1.5708 -0.01487 0.01487"/>
-        <geometry>
-          <mesh filename="../meshes/dae/Textured_mesh_1.020.dae" scale="1.0 1.0 1.0"/>
-        </geometry>
-        <material name="Textured_mesh_1"/>
-      </visual>
-      <collision name="ML_Pretarsus_L.001.000">
-        <origin xyz="0.06823 0.00318 -0.00152" rpy="-1.5708 -0.01487 0.01487"/>
-        <geometry>
-          <mesh filename="../meshes/dae/Textured_mesh_1.047.dae" scale="1.0 1.0 1.0"/>
-        </geometry>
-      </collision>
-    </link>
-
-    <link name="ML_Pretarsus_R">
-      <inertial>
-        <origin xyz="-0.08426 -0.00367 0.00286" rpy="0 0 0"/>
-        <mass value="0.26"/>
-        <inertia ixx="0.0001" ixy="-4e-05" ixz="9e-05" iyy="0.0012" iyz="0" izz="0.00124"/>
-      </inertial>
-      <visual name="ML_Pretarsus_R.001">
-        <origin xyz="-0.08426 -0.00367 0.00286" rpy="-1.5708 -0.01487 0.01487"/>
-        <geometry>
-          <mesh filename="../meshes/dae/Textured_mesh_1.019.dae" scale="1.0 1.0 1.0"/>
-        </geometry>
-        <material name="Textured_mesh_1"/>
-      </visual>
-      <collision name="ML_Pretarsus_R.001.000">
-        <origin xyz="-0.10475 -0.00246 0.015" rpy="-1.5708 -0.01487 0.01487"/>
-        <geometry>
-          <mesh filename="../meshes/dae/Textured_mesh_1.042.dae" scale="1.0 1.0 1.0"/>
-        </geometry>
-      </collision>
-    </link>
-
-    <link name="ML_Tarsus_L">
-      <inertial>
-        <origin xyz="0.07939 -0.00547 -0.00223" rpy="0 0 0"/>
-        <mass value="0.15"/>
-        <inertia ixx="5e-05" ixy="-1e-05" ixz="0" iyy="0.00043" iyz="0" izz="0.00042"/>
-      </inertial>
-      <visual name="ML_Tarsus_L.001">
-        <origin xyz="0.07939 -0.00547 -0.00223" rpy="-1.5708 -0.01487 0.01487"/>
-        <geometry>
-          <mesh filename="../meshes/dae/Textured_mesh_1.023.dae" scale="1.0 1.0 1.0"/>
-        </geometry>
-        <material name="Textured_mesh_1"/>
-      </visual>
-      <collision name="ML_Tarsus_L.001.000">
-        <origin xyz="0.07474 -0.01048 -0.00454" rpy="-1.5708 -0.01487 0.01487"/>
-        <geometry>
-          <mesh filename="../meshes/dae/Textured_mesh_1.046.dae" scale="1.0 1.0 1.0"/>
-        </geometry>
-      </collision>
-    </link>
-
-    <link name="ML_Tarsus_R">
-      <inertial>
-        <origin xyz="-0.10979 -0.00875 -0.00688" rpy="0 0 0"/>
-        <mass value="0.23"/>
-        <inertia ixx="7e-05" ixy="-5e-05" ixz="2e-05" iyy="0.00073" iyz="1e-05" izz="0.00071"/>
-      </inertial>
-      <visual name="ML_Tarsus_R.001">
-        <origin xyz="-0.10979 -0.00875 -0.00688" rpy="-1.5708 -0.01487 0.01487"/>
-        <geometry>
-          <mesh filename="../meshes/dae/Textured_mesh_1.017.dae" scale="1.0 1.0 1.0"/>
-        </geometry>
-        <material name="Textured_mesh_1"/>
-      </visual>
-      <collision name="ML_Tarsus_R.001.000">
-        <origin xyz="-0.098 -0.01101 -0.01412" rpy="-1.5708 -0.01487 0.01487"/>
-        <geometry>
-          <mesh filename="../meshes/dae/Textured_mesh_1.041.dae" scale="1.0 1.0 1.0"/>
-        </geometry>
-      </collision>
-    </link>
-
-    <link name="ML_Tibia_L">
-      <inertial>
-        <origin xyz="0.02083 -0.56726 -0.00875" rpy="0 0 0"/>
-        <mass value="1.44"/>
-        <inertia ixx="0.17819" ixy="-0.00339" ixz="-0.00011" iyy="0.17767" iyz="0.00263" izz="0.00052"/>
-      </inertial>
-      <visual name="ML_Tibia_L.001">
-        <origin xyz="0.02083 -0.56726 -0.00875" rpy="-1.5708 -0.01487 0.01487"/>
-        <geometry>
-          <mesh filename="../meshes/dae/Textured_mesh_1.022.dae" scale="1.0 1.0 1.0"/>
-        </geometry>
-        <material name="Textured_mesh_1"/>
-      </visual>
-      <collision name="ML_Tibia_L.001.000">
-        <origin xyz="0.01768 -0.5586 -0.00809" rpy="-1.5708 -0.01487 0.01487"/>
-        <geometry>
-          <mesh filename="../meshes/dae/Textured_mesh_1.045.dae" scale="1.0 1.0 1.0"/>
-        </geometry>
-      </collision>
-    </link>
-
-    <link name="ML_Tibia_R">
-      <inertial>
-        <origin xyz="0.00146 -0.49641 0.00221" rpy="0 0 0"/>
-        <mass value="1.49"/>
-        <inertia ixx="0.21772" ixy="0.00142" ixz="0.00021" iyy="0.21806" iyz="-0.00267" izz="0.00077"/>
-      </inertial>
-      <visual name="ML_Tibia_R.001">
-        <origin xyz="0.00146 -0.49641 0.00221" rpy="-1.5708 -0.01487 0.01487"/>
-        <geometry>
-          <mesh filename="../meshes/dae/Textured_mesh_1.018.dae" scale="1.0 1.0 1.0"/>
-        </geometry>
-        <material name="Textured_mesh_1"/>
-      </visual>
-      <collision name="ML_Tibia_R.001.000">
-        <origin xyz="0.00471 -0.49962 0.00156" rpy="-1.5708 -0.01487 0.01487"/>
-        <geometry>
-          <mesh filename="../meshes/dae/Textured_mesh_1.040.dae" scale="1.0 1.0 1.0"/>
-        </geometry>
-      </collision>
-    </link>
-
-    <link name="Mesothorax">
-      <inertial>
-        <origin xyz="-0.0093 0.89929 0.0142" rpy="0 0 0"/>
-        <mass value="106.97"/>
-        <inertia ixx="20.60371" ixy="0.78315" ixz="-0.05197" iyy="1.47493" iyz="0.10068" izz="20.30968"/>
-      </inertial>
-      <visual name="03_Mesothorax">
-        <origin xyz="-0.0093 0.89929 0.0142" rpy="1.5708 -1.55593 -1.55593"/>
-        <geometry>
-          <mesh filename="../meshes/dae/Textured_mesh_1.015.dae" scale="1.0 1.0 1.0"/>
-        </geometry>
-        <material name="Textured_mesh_1"/>
-      </visual>
-      <collision name="03_Mesothorax.000">
-        <origin xyz="-0.01824 0.87338 0.01072" rpy="1.5708 -1.55593 -1.55593"/>
-        <geometry>
-          <mesh filename="../meshes/dae/Textured_mesh_1.064.dae" scale="1.0 1.0 1.0"/>
-        </geometry>
-      </collision>
-    </link>
-
-    <link name="Metathorax">
-      <inertial>
-        <origin xyz="0.00793 0.52285 -0.01246" rpy="0 0 0"/>
-        <mass value="81.29"/>
-        <inertia ixx="6.45446" ixy="0.10327" ixz="0.13269" iyy="1.283" iyz="-0.12884" izz="6.417"/>
-      </inertial>
-      <visual name="04_Metathorax">
-        <origin xyz="0.00793 0.52285 -0.01246" rpy="1.5708 -1.55593 -1.55593"/>
-        <geometry>
-          <mesh filename="../meshes/dae/Textured_mesh_1.025.dae" scale="1.0 1.0 1.0"/>
-        </geometry>
-        <material name="Textured_mesh_1"/>
-      </visual>
-      <collision name="04_Metathorax.000">
-        <origin xyz="0.00539 0.50517 -0.00101" rpy="1.5708 -1.55593 -1.55593"/>
-        <geometry>
-          <mesh filename="../meshes/dae/Textured_mesh_1.063.dae" scale="1.0 1.0 1.0"/>
-        </geometry>
-      </collision>
-    </link>
-
-    <link name="Prothorax">
+    <link name="02_Prothorax">
       <inertial>
         <origin xyz="-0.02188 0.16385 -0.00566" rpy="0 0 0"/>
         <mass value="16.52"/>
         <inertia ixx="1.58377" ixy="0.04347" ixz="0.00396" iyy="0.81574" iyz="0.07572" izz="1.50066"/>
       </inertial>
-      <visual name="02_Prothorax">
+      <visual name="02_Prothorax_Visual">
         <origin xyz="-0.02188 0.16385 -0.00566" rpy="1.5708 -1.55593 -1.55593"/>
         <geometry>
           <mesh filename="../meshes/dae/Textured_mesh_1.002.dae" scale="1.0 1.0 1.0"/>
         </geometry>
         <material name="Textured_mesh_1"/>
       </visual>
-      <collision name="02_Prothorax.000">
+      <collision name="02_Prothorax_Collision">
         <origin xyz="-0.03485 0.16313 -0.00501" rpy="1.5708 -1.55593 -1.55593"/>
         <geometry>
           <mesh filename="../meshes/dae/Textured_mesh_1.038.dae" scale="1.0 1.0 1.0"/>
@@ -800,298 +44,1054 @@
       </collision>
     </link>
 
-    <joint name="Abdomen_0" type="revolute">
-      <origin xyz="-0.01857 0.7985 -0.02414" rpy="0 0 0"/>
-      <parent link="Abdomen_1"/>
-      <child link="Abdomen_0"/>
-      <axis xyz="0 0 1.0"/>
-      <limit lower="-1.5708" upper="1.5708" effort="0" velocity="0"/>
-    </joint>
+    <link name="03_Mesothorax">
+      <inertial>
+        <origin xyz="-0.0093 0.89929 0.0142" rpy="0 0 0"/>
+        <mass value="106.97"/>
+        <inertia ixx="20.60371" ixy="0.78315" ixz="-0.05197" iyy="1.47493" iyz="0.10068" izz="20.30968"/>
+      </inertial>
+      <visual name="03_Mesothorax_Visual">
+        <origin xyz="-0.0093 0.89929 0.0142" rpy="1.5708 -1.55593 -1.55593"/>
+        <geometry>
+          <mesh filename="../meshes/dae/Textured_mesh_1.015.dae" scale="1.0 1.0 1.0"/>
+        </geometry>
+        <material name="Textured_mesh_1"/>
+      </visual>
+      <collision name="03_Mesothorax_Collision">
+        <origin xyz="-0.01824 0.87338 0.01072" rpy="1.5708 -1.55593 -1.55593"/>
+        <geometry>
+          <mesh filename="../meshes/dae/Textured_mesh_1.064.dae" scale="1.0 1.0 1.0"/>
+        </geometry>
+      </collision>
+    </link>
 
-    <joint name="Abdomen_1" type="revolute">
-      <origin xyz="0.00886 0.92056 0.01897" rpy="0 0 0"/>
-      <parent link="Abdomen_2"/>
-      <child link="Abdomen_1"/>
-      <axis xyz="0 0 1.0"/>
-      <limit lower="-1.5708" upper="1.5708" effort="0" velocity="0"/>
-    </joint>
+    <link name="04_Metathorax">
+      <inertial>
+        <origin xyz="0.00793 0.52285 -0.01246" rpy="0 0 0"/>
+        <mass value="81.29"/>
+        <inertia ixx="6.45446" ixy="0.10327" ixz="0.13269" iyy="1.283" iyz="-0.12884" izz="6.417"/>
+      </inertial>
+      <visual name="04_Metathorax_Visual">
+        <origin xyz="0.00793 0.52285 -0.01246" rpy="1.5708 -1.55593 -1.55593"/>
+        <geometry>
+          <mesh filename="../meshes/dae/Textured_mesh_1.025.dae" scale="1.0 1.0 1.0"/>
+        </geometry>
+        <material name="Textured_mesh_1"/>
+      </visual>
+      <collision name="04_Metathorax_Collision">
+        <origin xyz="0.00539 0.50517 -0.00101" rpy="1.5708 -1.55593 -1.55593"/>
+        <geometry>
+          <mesh filename="../meshes/dae/Textured_mesh_1.063.dae" scale="1.0 1.0 1.0"/>
+        </geometry>
+      </collision>
+    </link>
 
-    <joint name="Abdomen_2" type="revolute">
-      <origin xyz="0.04239 0.84128 0.00484" rpy="0 0 0"/>
-      <parent link="Abdomen_3"/>
-      <child link="Abdomen_2"/>
-      <axis xyz="0 0 1.0"/>
-      <limit lower="-1.5708" upper="1.5708" effort="0" velocity="0"/>
-    </joint>
+    <link name="05_Abdomen_3">
+      <inertial>
+        <origin xyz="0.02684 0.42317 0.00598" rpy="0 0 0"/>
+        <mass value="80.68"/>
+        <inertia ixx="4.67129" ixy="0.1158" ixz="0.01225" iyy="1.42033" iyz="-0.19931" izz="4.35911"/>
+      </inertial>
+      <visual name="05_Abdomen_3_Visual">
+        <origin xyz="0.02684 0.42317 0.00598" rpy="1.5708 -1.55593 -1.55593"/>
+        <geometry>
+          <mesh filename="../meshes/dae/Textured_mesh_1.024.dae" scale="1.0 1.0 1.0"/>
+        </geometry>
+        <material name="Textured_mesh_1"/>
+      </visual>
+      <collision name="05_Abdomen_3_Collision">
+        <origin xyz="0.0458 0.42051 0.01016" rpy="1.5708 -1.55593 -1.55593"/>
+        <geometry>
+          <mesh filename="../meshes/dae/Textured_mesh_1.062.dae" scale="1.0 1.0 1.0"/>
+        </geometry>
+      </collision>
+    </link>
 
-    <joint name="Abdomen_3" type="revolute">
-      <origin xyz="-0.04709 0.952 -0.01588" rpy="0 0 0"/>
-      <parent link="Metathorax"/>
-      <child link="Abdomen_3"/>
-      <axis xyz="0 0 1.0"/>
-      <limit lower="-1.5708" upper="1.5708" effort="0" velocity="0"/>
-    </joint>
+    <link name="06_Abdomen_2">
+      <inertial>
+        <origin xyz="0.0132 0.462 0.00721" rpy="0 0 0"/>
+        <mass value="79.52"/>
+        <inertia ixx="5.64524" ixy="0.19915" ixz="0.18241" iyy="1.29091" iyz="-0.17084" izz="5.30662"/>
+      </inertial>
+      <visual name="06_Abdomen_2_Visual">
+        <origin xyz="0.0132 0.462 0.00721" rpy="1.5708 -1.55593 -1.55593"/>
+        <geometry>
+          <mesh filename="../meshes/dae/Textured_mesh_1.035.dae" scale="1.0 1.0 1.0"/>
+        </geometry>
+        <material name="Textured_mesh_1"/>
+      </visual>
+      <collision name="06_Abdomen_2_Collision">
+        <origin xyz="0.00333 0.46033 0.01352" rpy="1.5708 -1.55593 -1.55593"/>
+        <geometry>
+          <mesh filename="../meshes/dae/Textured_mesh_1.061.dae" scale="1.0 1.0 1.0"/>
+        </geometry>
+      </collision>
+    </link>
 
-    <joint name="FL_CT_L" type="revolute">
-      <origin xyz="0.01474 0.13803 0.12265" rpy="1.5708 -1.55593 -1.55593"/>
-      <parent link="Prothorax"/>
-      <child link="FL_CT_L"/>
-      <axis xyz="0 0 1.0"/>
-      <limit lower="-1.5708" upper="1.5708" effort="0" velocity="0"/>
-    </joint>
+    <link name="07_Abdomen_1">
+      <inertial>
+        <origin xyz="-0.00193 0.38309 -0.01013" rpy="0 0 0"/>
+        <mass value="54.07"/>
+        <inertia ixx="2.73094" ixy="0.10817" ixz="0.0819" iyy="0.67247" iyz="-0.00785" izz="2.6494"/>
+      </inertial>
+      <visual name="07_Abdomen_1_Visual">
+        <origin xyz="-0.00193 0.38309 -0.01013" rpy="1.5708 -1.55593 -1.55593"/>
+        <geometry>
+          <mesh filename="../meshes/dae/Textured_mesh_1.036.dae" scale="1.0 1.0 1.0"/>
+        </geometry>
+        <material name="Textured_mesh_1"/>
+      </visual>
+      <collision name="07_Abdomen_1_Collision">
+        <origin xyz="-0.00809 0.39863 -0.00674" rpy="1.5708 -1.55593 -1.55593"/>
+        <geometry>
+          <mesh filename="../meshes/dae/Textured_mesh_1.060.dae" scale="1.0 1.0 1.0"/>
+        </geometry>
+      </collision>
+    </link>
 
-    <joint name="FL_CT_R" type="revolute">
-      <origin xyz="0.02108 0.15758 -0.13854" rpy="1.5708 -1.55593 -1.55593"/>
-      <parent link="Prothorax"/>
-      <child link="FL_CT_R"/>
-      <axis xyz="0 0 1.0"/>
-      <limit lower="-1.5708" upper="1.5708" effort="0" velocity="0"/>
-    </joint>
+    <link name="08_Abdomen_0">
+      <inertial>
+        <origin xyz="-0.04794 0.40528 -0.01267" rpy="0 0 0"/>
+        <mass value="46.23"/>
+        <inertia ixx="2.05257" ixy="0.07623" ixz="0.06869" iyy="0.6677" iyz="0.25277" izz="1.78699"/>
+      </inertial>
+      <visual name="08_Abdomen_0_Visual">
+        <origin xyz="-0.04794 0.40528 -0.01267" rpy="1.5708 -1.55593 -1.55593"/>
+        <geometry>
+          <mesh filename="../meshes/dae/Textured_mesh_1.037.dae" scale="1.0 1.0 1.0"/>
+        </geometry>
+        <material name="Textured_mesh_1"/>
+      </visual>
+      <collision name="08_Abdomen_0_Collision">
+        <origin xyz="-0.02635 0.35668 -0.00925" rpy="1.5708 -1.55593 -1.55593"/>
+        <geometry>
+          <mesh filename="../meshes/dae/Textured_mesh_1.059.dae" scale="1.0 1.0 1.0"/>
+        </geometry>
+      </collision>
+    </link>
 
-    <joint name="FL_Femur_L" type="revolute">
-      <origin xyz="0.12442 0.01758 -0.01703" rpy="1.5708 0.01487 0.01487"/>
-      <parent link="FL_CT_L"/>
-      <child link="FL_Femur_L"/>
-      <axis xyz="0 0 1.0"/>
-      <limit lower="-1.5708" upper="1.5708" effort="0" velocity="0"/>
-    </joint>
+    <link name="09_HL_CT_L">
+      <inertial>
+        <origin xyz="0.05059 0.00572 0.0055" rpy="0 0 0"/>
+        <mass value="1.05"/>
+        <inertia ixx="0.00199" ixy="5e-05" ixz="-9e-05" iyy="0.00209" iyz="-0.00015" izz="0.00156"/>
+      </inertial>
+      <visual name="09_HL_CT_L_Visual">
+        <origin xyz="0.05059 0.00572 0.0055" rpy="0 0 0"/>
+        <geometry>
+          <mesh filename="../meshes/dae/Textured_mesh_1.013.dae" scale="1.0 1.0 1.0"/>
+        </geometry>
+        <material name="Textured_mesh_1"/>
+      </visual>
+      <collision name="09_HL_CT_L_Collision">
+        <origin xyz="0.05571 0.00357 0.00927" rpy="0 0 0"/>
+        <geometry>
+          <mesh filename="../meshes/dae/Textured_mesh_1.053.dae" scale="1.0 1.0 1.0"/>
+        </geometry>
+      </collision>
+    </link>
 
-    <joint name="FL_Femur_R" type="revolute">
-      <origin xyz="-0.10675 -0.00175 0.00476" rpy="1.5708 0.01487 0.01487"/>
-      <parent link="FL_CT_R"/>
-      <child link="FL_Femur_R"/>
-      <axis xyz="0 0 1.0"/>
-      <limit lower="-1.5708" upper="1.5708" effort="0" velocity="0"/>
-    </joint>
+    <link name="10_HL_Femur_L">
+      <inertial>
+        <origin xyz="0.67236 0.01674 -0.00219" rpy="0 0 0"/>
+        <mass value="4.5"/>
+        <inertia ixx="0.00507" ixy="-0.01599" ixz="0.01795" iyy="0.61904" iyz="-0.00051" izz="0.6183"/>
+      </inertial>
+      <visual name="10_HL_Femur_L_Visual">
+        <origin xyz="0.67236 0.01674 -0.00219" rpy="-1.5708 -0.01487 0.01487"/>
+        <geometry>
+          <mesh filename="../meshes/dae/Textured_mesh_1.027.dae" scale="1.0 1.0 1.0"/>
+        </geometry>
+        <material name="Textured_mesh_1"/>
+      </visual>
+      <collision name="10_HL_Femur_L_Collision">
+        <origin xyz="0.62608 0.0165 -0.00451" rpy="-1.5708 -0.01487 0.01487"/>
+        <geometry>
+          <mesh filename="../meshes/dae/Textured_mesh_1.049.dae" scale="1.0 1.0 1.0"/>
+        </geometry>
+      </collision>
+    </link>
 
-    <joint name="FL_Pretarsus_L" type="revolute">
-      <origin xyz="0.15796 -0.00992 -0.00606" rpy="0 0 0"/>
-      <parent link="FL_Tarsus_L"/>
-      <child link="FL_Pretarsus_L"/>
-      <axis xyz="0 0 1.0"/>
-      <limit lower="-1.5708" upper="1.5708" effort="0" velocity="0"/>
-    </joint>
+    <link name="11_HL_Tibia_L">
+      <inertial>
+        <origin xyz="0.01228 -0.67668 0.00057" rpy="0 0 0"/>
+        <mass value="2.28"/>
+        <inertia ixx="0.46179" ixy="0.0008" ixz="-0.00026" iyy="0.46199" iyz="0.00424" izz="0.00093"/>
+      </inertial>
+      <visual name="11_HL_Tibia_L_Visual">
+        <origin xyz="0.01228 -0.67669 0.00057" rpy="-1.5708 -0.01487 0.01487"/>
+        <geometry>
+          <mesh filename="../meshes/dae/Textured_mesh_1.029.dae" scale="1.0 1.0 1.0"/>
+        </geometry>
+        <material name="Textured_mesh_1"/>
+      </visual>
+      <collision name="11_HL_Tibia_L_Collision">
+        <origin xyz="0.01463 -0.72451 -0.00246" rpy="-1.5708 -0.01487 0.01487"/>
+        <geometry>
+          <mesh filename="../meshes/dae/Textured_mesh_1.050.dae" scale="1.0 1.0 1.0"/>
+        </geometry>
+      </collision>
+    </link>
 
-    <joint name="FL_Pretarsus_R" type="revolute">
-      <origin xyz="-0.16119 -0.01761 -0.00282" rpy="0 0 0"/>
-      <parent link="FL_Tarsus_R"/>
-      <child link="FL_Pretarsus_R"/>
-      <axis xyz="0 0 1.0"/>
-      <limit lower="-1.5708" upper="1.5708" effort="0" velocity="0"/>
-    </joint>
+    <link name="12_HL_Tarsus_L">
+      <inertial>
+        <origin xyz="0.08915 -0.00613 0.00065" rpy="0 0 0"/>
+        <mass value="0.23"/>
+        <inertia ixx="7e-05" ixy="-3e-05" ixz="0" iyy="0.00052" iyz="-1e-05" izz="0.0005"/>
+      </inertial>
+      <visual name="12_HL_Tarsus_L_Visual">
+        <origin xyz="0.08915 -0.00613 0.00065" rpy="-1.5708 -0.01487 0.01487"/>
+        <geometry>
+          <mesh filename="../meshes/dae/Textured_mesh_1.028.dae" scale="1.0 1.0 1.0"/>
+        </geometry>
+        <material name="Textured_mesh_1"/>
+      </visual>
+      <collision name="12_HL_Tarsus_L_Collision">
+        <origin xyz="0.08204 -0.00932 0.00517" rpy="-1.5708 -0.01487 0.01487"/>
+        <geometry>
+          <mesh filename="../meshes/dae/Textured_mesh_1.051.dae" scale="1.0 1.0 1.0"/>
+        </geometry>
+      </collision>
+    </link>
 
-    <joint name="FL_Tarsus_L" type="revolute">
-      <origin xyz="0.02497 -1.29823 0.00154" rpy="0 0 0"/>
-      <parent link="FL_Tibia_L"/>
-      <child link="FL_Tarsus_L"/>
-      <axis xyz="0 0 1.0"/>
-      <limit lower="-1.5708" upper="1.5708" effort="0" velocity="0"/>
-    </joint>
+    <link name="13_HL_Pretarsus_L">
+      <inertial>
+        <origin xyz="0.08252 0.00663 -0.00613" rpy="0 0 0"/>
+        <mass value="0.3"/>
+        <inertia ixx="0.00013" ixy="1e-05" ixz="2e-05" iyy="0.00097" iyz="2e-05" izz="0.00099"/>
+      </inertial>
+      <visual name="13_HL_Pretarsus_L_Visual">
+        <origin xyz="0.08252 0.00663 -0.00613" rpy="-1.5708 -0.01487 0.01487"/>
+        <geometry>
+          <mesh filename="../meshes/dae/Textured_mesh_1.030.dae" scale="1.0 1.0 1.0"/>
+        </geometry>
+        <material name="Textured_mesh_1"/>
+      </visual>
+      <collision name="13_HL_Pretarsus_L_Collision">
+        <origin xyz="0.09089 0.01534 -0.01421" rpy="-1.5708 -0.01487 0.01487"/>
+        <geometry>
+          <mesh filename="../meshes/dae/Textured_mesh_1.052.dae" scale="1.0 1.0 1.0"/>
+        </geometry>
+      </collision>
+    </link>
 
-    <joint name="FL_Tarsus_R" type="revolute">
-      <origin xyz="-0.00112 -1.41627 -0.00491" rpy="0 0 0"/>
-      <parent link="FL_Tibia_R"/>
-      <child link="FL_Tarsus_R"/>
-      <axis xyz="0 0 1.0"/>
-      <limit lower="-1.5708" upper="1.5708" effort="0" velocity="0"/>
-    </joint>
+    <link name="14_HL_CT_R">
+      <inertial>
+        <origin xyz="-0.0598 -0.00109 -0.00204" rpy="0 0 0"/>
+        <mass value="1.38"/>
+        <inertia ixx="0.00288" ixy="-0.00026" ixz="6e-05" iyy="0.00362" iyz="3e-05" izz="0.00255"/>
+      </inertial>
+      <visual name="14_HL_CT_R_Visual">
+        <origin xyz="-0.0598 -0.00109 -0.00204" rpy="0 0 0"/>
+        <geometry>
+          <mesh filename="../meshes/dae/Textured_mesh_1.026.dae" scale="1.0 1.0 1.0"/>
+        </geometry>
+        <material name="Textured_mesh_1"/>
+      </visual>
+      <collision name="14_HL_CT_R_Collision">
+        <origin xyz="-0.06929 -0.01053 0.00277" rpy="0 0 0"/>
+        <geometry>
+          <mesh filename="../meshes/dae/Textured_mesh_1.058.dae" scale="1.0 1.0 1.0"/>
+        </geometry>
+      </collision>
+    </link>
 
-    <joint name="FL_Tibia_L" type="revolute">
-      <origin xyz="1.39525 0.01628 -0.00914" rpy="0 0 0"/>
-      <parent link="FL_Femur_L"/>
-      <child link="FL_Tibia_L"/>
-      <axis xyz="0 0 1.0"/>
-      <limit lower="-1.5708" upper="1.5708" effort="0" velocity="0"/>
-    </joint>
+    <link name="15_HL_Femur_R">
+      <inertial>
+        <origin xyz="-0.67541 -0.02913 0.00261" rpy="0 0 0"/>
+        <mass value="4.58"/>
+        <inertia ixx="0.00534" ixy="-0.02581" ixz="0.00749" iyy="0.65793" iyz="0.00014" izz="0.6566"/>
+      </inertial>
+      <visual name="15_HL_Femur_R_Visual">
+        <origin xyz="-0.67541 -0.02913 0.00261" rpy="-1.5708 -0.01487 0.01487"/>
+        <geometry>
+          <mesh filename="../meshes/dae/Textured_mesh_1.031.dae" scale="1.0 1.0 1.0"/>
+        </geometry>
+        <material name="Textured_mesh_1"/>
+      </visual>
+      <collision name="15_HL_Femur_R_Collision">
+        <origin xyz="-0.63769 -0.02852 0.00328" rpy="-1.5708 -0.01487 0.01487"/>
+        <geometry>
+          <mesh filename="../meshes/dae/Textured_mesh_1.054.dae" scale="1.0 1.0 1.0"/>
+        </geometry>
+      </collision>
+    </link>
 
-    <joint name="FL_Tibia_R" type="revolute">
-      <origin xyz="-1.39541 -0.03843 0.00396" rpy="0 0 0"/>
-      <parent link="FL_Femur_R"/>
-      <child link="FL_Tibia_R"/>
-      <axis xyz="0 0 1.0"/>
-      <limit lower="-1.5708" upper="1.5708" effort="0" velocity="0"/>
-    </joint>
+    <link name="16_HL_Tibia_R">
+      <inertial>
+        <origin xyz="0.01601 -0.59383 -0.00361" rpy="0 0 0"/>
+        <mass value="1.99"/>
+        <inertia ixx="0.30642" ixy="-0.00353" ixz="-5e-05" iyy="0.3058" iyz="0.00366" izz="0.00083"/>
+      </inertial>
+      <visual name="16_HL_Tibia_R_Visual">
+        <origin xyz="0.01601 -0.59383 -0.00361" rpy="-1.5708 -0.01487 0.01487"/>
+        <geometry>
+          <mesh filename="../meshes/dae/Textured_mesh_1.033.dae" scale="1.0 1.0 1.0"/>
+        </geometry>
+        <material name="Textured_mesh_1"/>
+      </visual>
+      <collision name="16_HL_Tibia_R_Collision">
+        <origin xyz="0.01133 -0.63228 -0.00535" rpy="-1.5708 -0.01487 0.01487"/>
+        <geometry>
+          <mesh filename="../meshes/dae/Textured_mesh_1.055.dae" scale="1.0 1.0 1.0"/>
+        </geometry>
+      </collision>
+    </link>
 
-    <joint name="HL_CT_L" type="revolute">
-      <origin xyz="0.11581 0.86767 0.17126" rpy="1.5708 -1.55593 -1.55593"/>
-      <parent link="Metathorax"/>
-      <child link="HL_CT_L"/>
-      <axis xyz="0 0 1.0"/>
-      <limit lower="-1.5708" upper="1.5708" effort="0" velocity="0"/>
-    </joint>
+    <link name="17_HL_Tarsus_R">
+      <inertial>
+        <origin xyz="-0.13775 -0.00868 0.00454" rpy="0 0 0"/>
+        <mass value="0.33"/>
+        <inertia ixx="0.0001" ixy="-0.00011" ixz="0.00013" iyy="0.00189" iyz="1e-05" izz="0.00189"/>
+      </inertial>
+      <visual name="17_HL_Tarsus_R_Visual">
+        <origin xyz="-0.13775 -0.00868 0.00454" rpy="-1.5708 -0.01487 0.01487"/>
+        <geometry>
+          <mesh filename="../meshes/dae/Textured_mesh_1.032.dae" scale="1.0 1.0 1.0"/>
+        </geometry>
+        <material name="Textured_mesh_1"/>
+      </visual>
+      <collision name="17_HL_Tarsus_R_Collision">
+        <origin xyz="-0.1195 -0.0037 0.00457" rpy="-1.5708 -0.01487 0.01487"/>
+        <geometry>
+          <mesh filename="../meshes/dae/Textured_mesh_1.056.dae" scale="1.0 1.0 1.0"/>
+        </geometry>
+      </collision>
+    </link>
 
-    <joint name="HL_CT_R" type="revolute">
-      <origin xyz="0.05706 0.86858 -0.17293" rpy="1.5708 -1.55593 -1.55593"/>
-      <parent link="Metathorax"/>
-      <child link="HL_CT_R"/>
-      <axis xyz="0 0 1.0"/>
-      <limit lower="-1.5708" upper="1.5708" effort="0" velocity="0"/>
-    </joint>
+    <link name="18_HL_Pretarsus_R">
+      <inertial>
+        <origin xyz="-0.11251 0.0067 -0.00946" rpy="0 0 0"/>
+        <mass value="0.39"/>
+        <inertia ixx="0.00019" ixy="-0.00026" ixz="-0.00013" iyy="0.00233" iyz="0" izz="0.00239"/>
+      </inertial>
+      <visual name="18_HL_Pretarsus_R_Visual">
+        <origin xyz="-0.11251 0.0067 -0.00946" rpy="-1.5708 -0.01487 0.01487"/>
+        <geometry>
+          <mesh filename="../meshes/dae/Textured_mesh_1.034.dae" scale="1.0 1.0 1.0"/>
+        </geometry>
+        <material name="Textured_mesh_1"/>
+      </visual>
+      <collision name="18_HL_Pretarsus_R_Collision">
+        <origin xyz="-0.12247 0.00686 -0.01808" rpy="-1.5708 -0.01487 0.01487"/>
+        <geometry>
+          <mesh filename="../meshes/dae/Textured_mesh_1.057.dae" scale="1.0 1.0 1.0"/>
+        </geometry>
+      </collision>
+    </link>
 
-    <joint name="HL_Femur_L" type="revolute">
-      <origin xyz="0.11235 0.01234 0.00904" rpy="1.5708 0.01487 0.01487"/>
-      <parent link="HL_CT_L"/>
-      <child link="HL_Femur_L"/>
-      <axis xyz="0 0 1.0"/>
-      <limit lower="-1.5708" upper="1.5708" effort="0" velocity="0"/>
-    </joint>
+    <link name="19_ML_CT_L">
+      <inertial>
+        <origin xyz="0.05976 0.00355 -0.00473" rpy="0 0 0"/>
+        <mass value="0.88"/>
+        <inertia ixx="0.00129" ixy="1e-05" ixz="5e-05" iyy="0.00177" iyz="0.0001" izz="0.00155"/>
+      </inertial>
+      <visual name="19_ML_CT_L_Visual">
+        <origin xyz="0.05976 0.00355 -0.00473" rpy="0 0 0"/>
+        <geometry>
+          <mesh filename="../meshes/dae/Textured_mesh_1.007.dae" scale="1.0 1.0 1.0"/>
+        </geometry>
+        <material name="Textured_mesh_1"/>
+      </visual>
+      <collision name="19_ML_CT_L_Collision">
+        <origin xyz="0.06138 -0.00159 -0.00601" rpy="0 0 0"/>
+        <geometry>
+          <mesh filename="../meshes/dae/Textured_mesh_1.048.dae" scale="1.0 1.0 1.0"/>
+        </geometry>
+      </collision>
+    </link>
 
-    <joint name="HL_Femur_R" type="revolute">
-      <origin xyz="-0.13933 -0.00283 -0.00741" rpy="1.5708 0.01487 0.01487"/>
-      <parent link="HL_CT_R"/>
-      <child link="HL_Femur_R"/>
-      <axis xyz="0 0 1.0"/>
-      <limit lower="-1.5708" upper="1.5708" effort="0" velocity="0"/>
-    </joint>
+    <link name="20_ML_Femur_L">
+      <inertial>
+        <origin xyz="0.5259 -0.00662 0.01525" rpy="0 0 0"/>
+        <mass value="4.57"/>
+        <inertia ixx="0.00454" ixy="-0.01513" ixz="-0.00475" iyy="0.31232" iyz="0.00068" izz="0.31323"/>
+      </inertial>
+      <visual name="20_ML_Femur_L_Visual">
+        <origin xyz="0.5259 -0.00662 0.01525" rpy="-1.5708 -0.01487 0.01487"/>
+        <geometry>
+          <mesh filename="../meshes/dae/Textured_mesh_1.021.dae" scale="1.0 1.0 1.0"/>
+        </geometry>
+        <material name="Textured_mesh_1"/>
+      </visual>
+      <collision name="20_ML_Femur_L_Collision">
+        <origin xyz="0.52321 -0.00657 0.01803" rpy="-1.5708 -0.01487 0.01487"/>
+        <geometry>
+          <mesh filename="../meshes/dae/Textured_mesh_1.044.dae" scale="1.0 1.0 1.0"/>
+        </geometry>
+      </collision>
+    </link>
 
-    <joint name="HL_Pretarsus_L" type="revolute">
-      <origin xyz="0.18012 -0.00329 -0.00104" rpy="0 0 0"/>
-      <parent link="HL_Tarsus_L"/>
-      <child link="HL_Pretarsus_L"/>
-      <axis xyz="0 0 1.0"/>
-      <limit lower="-1.5708" upper="1.5708" effort="0" velocity="0"/>
-    </joint>
+    <link name="21_ML_Tibia_L">
+      <inertial>
+        <origin xyz="0.02083 -0.56726 -0.00875" rpy="0 0 0"/>
+        <mass value="1.44"/>
+        <inertia ixx="0.17819" ixy="-0.00339" ixz="-0.00011" iyy="0.17767" iyz="0.00263" izz="0.00052"/>
+      </inertial>
+      <visual name="21_ML_Tibia_L_Visual">
+        <origin xyz="0.02083 -0.56726 -0.00875" rpy="-1.5708 -0.01487 0.01487"/>
+        <geometry>
+          <mesh filename="../meshes/dae/Textured_mesh_1.022.dae" scale="1.0 1.0 1.0"/>
+        </geometry>
+        <material name="Textured_mesh_1"/>
+      </visual>
+      <collision name="21_ML_Tibia_L_Collision">
+        <origin xyz="0.01768 -0.5586 -0.00809" rpy="-1.5708 -0.01487 0.01487"/>
+        <geometry>
+          <mesh filename="../meshes/dae/Textured_mesh_1.045.dae" scale="1.0 1.0 1.0"/>
+        </geometry>
+      </collision>
+    </link>
 
-    <joint name="HL_Pretarsus_R" type="revolute">
-      <origin xyz="-0.26774 -0.01534 0.01139" rpy="0 0 0"/>
-      <parent link="HL_Tarsus_R"/>
-      <child link="HL_Pretarsus_R"/>
-      <axis xyz="0 0 1.0"/>
-      <limit lower="-1.5708" upper="1.5708" effort="0" velocity="0"/>
-    </joint>
+    <link name="22_ML_Tarsus_L">
+      <inertial>
+        <origin xyz="0.07939 -0.00547 -0.00223" rpy="0 0 0"/>
+        <mass value="0.15"/>
+        <inertia ixx="5e-05" ixy="-1e-05" ixz="0" iyy="0.00043" iyz="0" izz="0.00042"/>
+      </inertial>
+      <visual name="22_ML_Tarsus_L_Visual">
+        <origin xyz="0.07939 -0.00547 -0.00223" rpy="-1.5708 -0.01487 0.01487"/>
+        <geometry>
+          <mesh filename="../meshes/dae/Textured_mesh_1.023.dae" scale="1.0 1.0 1.0"/>
+        </geometry>
+        <material name="Textured_mesh_1"/>
+      </visual>
+      <collision name="22_ML_Tarsus_L_Collision">
+        <origin xyz="0.07474 -0.01048 -0.00454" rpy="-1.5708 -0.01487 0.01487"/>
+        <geometry>
+          <mesh filename="../meshes/dae/Textured_mesh_1.046.dae" scale="1.0 1.0 1.0"/>
+        </geometry>
+      </collision>
+    </link>
 
-    <joint name="HL_Tarsus_L" type="revolute">
-      <origin xyz="0.0317 -1.4681 -0.00568" rpy="0 0 0"/>
-      <parent link="HL_Tibia_L"/>
-      <child link="HL_Tarsus_L"/>
-      <axis xyz="0 0 1.0"/>
-      <limit lower="-1.5708" upper="1.5708" effort="0" velocity="0"/>
-    </joint>
+    <link name="23_ML_Pretarsus_L">
+      <inertial>
+        <origin xyz="0.05906 0.00292 0.00266" rpy="0 0 0"/>
+        <mass value="0.18"/>
+        <inertia ixx="9e-05" ixy="0" ixz="2e-05" iyy="0.00052" iyz="0" izz="0.00055"/>
+      </inertial>
+      <visual name="23_ML_Pretarsus_L_Visual">
+        <origin xyz="0.05906 0.00292 0.00266" rpy="-1.5708 -0.01487 0.01487"/>
+        <geometry>
+          <mesh filename="../meshes/dae/Textured_mesh_1.020.dae" scale="1.0 1.0 1.0"/>
+        </geometry>
+        <material name="Textured_mesh_1"/>
+      </visual>
+      <collision name="23_ML_Pretarsus_L_Collision">
+        <origin xyz="0.06823 0.00318 -0.00152" rpy="-1.5708 -0.01487 0.01487"/>
+        <geometry>
+          <mesh filename="../meshes/dae/Textured_mesh_1.047.dae" scale="1.0 1.0 1.0"/>
+        </geometry>
+      </collision>
+    </link>
 
-    <joint name="HL_Tarsus_R" type="revolute">
-      <origin xyz="0.00654 -1.27212 -0.00879" rpy="0 0 0"/>
-      <parent link="HL_Tibia_R"/>
-      <child link="HL_Tarsus_R"/>
-      <axis xyz="0 0 1.0"/>
-      <limit lower="-1.5708" upper="1.5708" effort="0" velocity="0"/>
-    </joint>
+    <link name="24_ML_CT_R">
+      <inertial>
+        <origin xyz="-0.05312 -0.00115 -0.00042" rpy="0 0 0"/>
+        <mass value="0.84"/>
+        <inertia ixx="0.00149" ixy="2e-05" ixz="-1e-05" iyy="0.00185" iyz="-2e-05" izz="0.00147"/>
+      </inertial>
+      <visual name="24_ML_CT_R_Visual">
+        <origin xyz="-0.05312 -0.00115 -0.00042" rpy="0 0 0"/>
+        <geometry>
+          <mesh filename="../meshes/dae/Textured_mesh_1.014.dae" scale="1.0 1.0 1.0"/>
+        </geometry>
+        <material name="Textured_mesh_1"/>
+      </visual>
+      <collision name="24_ML_CT_R_Collision">
+        <origin xyz="-0.05985 -0.00207 -0.00148" rpy="0 0 0"/>
+        <geometry>
+          <mesh filename="../meshes/dae/Textured_mesh_1.043.dae" scale="1.0 1.0 1.0"/>
+        </geometry>
+      </collision>
+    </link>
 
-    <joint name="HL_Tibia_L" type="revolute">
-      <origin xyz="1.22244 0.01703 -0.00127" rpy="0 0 0"/>
-      <parent link="HL_Femur_L"/>
-      <child link="HL_Tibia_L"/>
-      <axis xyz="0 0 1.0"/>
-      <limit lower="-1.5708" upper="1.5708" effort="0" velocity="0"/>
-    </joint>
+    <link name="25_ML_Femur_R">
+      <inertial>
+        <origin xyz="-0.5338 -0.00281 0.00804" rpy="0 0 0"/>
+        <mass value="3.83"/>
+        <inertia ixx="0.00685" ixy="-0.02995" ixz="0.00967" iyy="0.36425" iyz="0.00089" izz="0.36355"/>
+      </inertial>
+      <visual name="25_ML_Femur_R_Visual">
+        <origin xyz="-0.5338 -0.00281 0.00804" rpy="-1.5708 -0.01487 0.01487"/>
+        <geometry>
+          <mesh filename="../meshes/dae/Textured_mesh_1.016.dae" scale="1.0 1.0 1.0"/>
+        </geometry>
+        <material name="Textured_mesh_1"/>
+      </visual>
+      <collision name="25_ML_Femur_R_Collision">
+        <origin xyz="-0.51651 -0.00177 0.00798" rpy="-1.5708 -0.01487 0.01487"/>
+        <geometry>
+          <mesh filename="../meshes/dae/Textured_mesh_1.039.dae" scale="1.0 1.0 1.0"/>
+        </geometry>
+      </collision>
+    </link>
 
-    <joint name="HL_Tibia_R" type="revolute">
-      <origin xyz="-1.2448 -0.07124 0.00429" rpy="0 0 0"/>
-      <parent link="HL_Femur_R"/>
-      <child link="HL_Tibia_R"/>
-      <axis xyz="0 0 1.0"/>
-      <limit lower="-1.5708" upper="1.5708" effort="0" velocity="0"/>
-    </joint>
+    <link name="26_ML_Tibia_R">
+      <inertial>
+        <origin xyz="0.00146 -0.49641 0.00221" rpy="0 0 0"/>
+        <mass value="1.49"/>
+        <inertia ixx="0.21772" ixy="0.00142" ixz="0.00021" iyy="0.21806" iyz="-0.00267" izz="0.00077"/>
+      </inertial>
+      <visual name="26_ML_Tibia_R_Visual">
+        <origin xyz="0.00146 -0.49641 0.00221" rpy="-1.5708 -0.01487 0.01487"/>
+        <geometry>
+          <mesh filename="../meshes/dae/Textured_mesh_1.018.dae" scale="1.0 1.0 1.0"/>
+        </geometry>
+        <material name="Textured_mesh_1"/>
+      </visual>
+      <collision name="26_ML_Tibia_R_Collision">
+        <origin xyz="0.00471 -0.49962 0.00156" rpy="-1.5708 -0.01487 0.01487"/>
+        <geometry>
+          <mesh filename="../meshes/dae/Textured_mesh_1.040.dae" scale="1.0 1.0 1.0"/>
+        </geometry>
+      </collision>
+    </link>
 
-    <joint name="ML_CT_L" type="revolute">
-      <origin xyz="0.05216 1.38959 0.19815" rpy="1.5708 -1.55593 -1.55593"/>
-      <parent link="Mesothorax"/>
-      <child link="ML_CT_L"/>
-      <axis xyz="0 0 1.0"/>
-      <limit lower="-1.5708" upper="1.5708" effort="0" velocity="0"/>
-    </joint>
+    <link name="27_ML_Tarsus_R">
+      <inertial>
+        <origin xyz="-0.10979 -0.00875 -0.00688" rpy="0 0 0"/>
+        <mass value="0.23"/>
+        <inertia ixx="7e-05" ixy="-5e-05" ixz="2e-05" iyy="0.00073" iyz="1e-05" izz="0.00071"/>
+      </inertial>
+      <visual name="27_ML_Tarsus_R_Visual">
+        <origin xyz="-0.10979 -0.00875 -0.00688" rpy="-1.5708 -0.01487 0.01487"/>
+        <geometry>
+          <mesh filename="../meshes/dae/Textured_mesh_1.017.dae" scale="1.0 1.0 1.0"/>
+        </geometry>
+        <material name="Textured_mesh_1"/>
+      </visual>
+      <collision name="27_ML_Tarsus_R_Collision">
+        <origin xyz="-0.098 -0.01101 -0.01412" rpy="-1.5708 -0.01487 0.01487"/>
+        <geometry>
+          <mesh filename="../meshes/dae/Textured_mesh_1.041.dae" scale="1.0 1.0 1.0"/>
+        </geometry>
+      </collision>
+    </link>
 
-    <joint name="ML_CT_R" type="revolute">
-      <origin xyz="0.08834 1.4053 -0.14673" rpy="1.5708 -1.55593 -1.55593"/>
-      <parent link="Mesothorax"/>
-      <child link="ML_CT_R"/>
-      <axis xyz="0 0 1.0"/>
-      <limit lower="-1.5708" upper="1.5708" effort="0" velocity="0"/>
-    </joint>
+    <link name="28_ML_Pretarsus_R">
+      <inertial>
+        <origin xyz="-0.08426 -0.00367 0.00286" rpy="0 0 0"/>
+        <mass value="0.26"/>
+        <inertia ixx="0.0001" ixy="-4e-05" ixz="9e-05" iyy="0.0012" iyz="0" izz="0.00124"/>
+      </inertial>
+      <visual name="28_ML_Pretarsus_R_Visual">
+        <origin xyz="-0.08426 -0.00367 0.00286" rpy="-1.5708 -0.01487 0.01487"/>
+        <geometry>
+          <mesh filename="../meshes/dae/Textured_mesh_1.019.dae" scale="1.0 1.0 1.0"/>
+        </geometry>
+        <material name="Textured_mesh_1"/>
+      </visual>
+      <collision name="28_ML_Pretarsus_R_Collision">
+        <origin xyz="-0.10475 -0.00246 0.015" rpy="-1.5708 -0.01487 0.01487"/>
+        <geometry>
+          <mesh filename="../meshes/dae/Textured_mesh_1.042.dae" scale="1.0 1.0 1.0"/>
+        </geometry>
+      </collision>
+    </link>
 
-    <joint name="ML_Femur_L" type="revolute">
-      <origin xyz="0.12326 0.00677 -0.0102" rpy="1.5708 0.01487 0.01487"/>
-      <parent link="ML_CT_L"/>
-      <child link="ML_Femur_L"/>
-      <axis xyz="0 0 1.0"/>
-      <limit lower="-1.5708" upper="1.5708" effort="0" velocity="0"/>
-    </joint>
+    <link name="29_FL_CT_L">
+      <inertial>
+        <origin xyz="0.05825 0.00669 -0.01075" rpy="0 0 0"/>
+        <mass value="1.28"/>
+        <inertia ixx="0.00275" ixy="0.00021" ixz="-2e-05" iyy="0.00299" iyz="0.00011" izz="0.00269"/>
+      </inertial>
+      <visual name="29_FL_CT_L_Visual">
+        <origin xyz="0.05825 0.00669 -0.01075" rpy="0 0 0"/>
+        <geometry>
+          <mesh filename="../meshes/dae/Textured_mesh_1.001.dae" scale="1.0 1.0 1.0"/>
+        </geometry>
+        <material name="Textured_mesh_1"/>
+      </visual>
+      <collision name="29_FL_CT_L_Collision">
+        <origin xyz="0.06109 0.00667 0.00327" rpy="0 0 0"/>
+        <geometry>
+          <mesh filename="../meshes/dae/Textured_mesh_1.069.dae" scale="1.0 1.0 1.0"/>
+        </geometry>
+      </collision>
+    </link>
 
-    <joint name="ML_Femur_R" type="revolute">
-      <origin xyz="-0.11998 0.00023 -0.00162" rpy="1.5708 0.01487 0.01487"/>
-      <parent link="ML_CT_R"/>
-      <child link="ML_Femur_R"/>
-      <axis xyz="0 0 1.0"/>
-      <limit lower="-1.5708" upper="1.5708" effort="0" velocity="0"/>
-    </joint>
+    <link name="30_FL_Femur_L">
+      <inertial>
+        <origin xyz="0.74981 0.02106 0.00263" rpy="0 0 0"/>
+        <mass value="6.69"/>
+        <inertia ixx="0.00915" ixy="-0.01685" ixz="0.01428" iyy="0.88191" iyz="0.00132" izz="0.88143"/>
+      </inertial>
+      <visual name="30_FL_Femur_L_Visual">
+        <origin xyz="0.74981 0.02106 0.00263" rpy="-1.5708 -0.01487 0.01487"/>
+        <geometry>
+          <mesh filename="../meshes/dae/Textured_mesh_1.004.dae" scale="1.0 1.0 1.0"/>
+        </geometry>
+        <material name="Textured_mesh_1"/>
+      </visual>
+      <collision name="30_FL_Femur_L_Collision">
+        <origin xyz="0.71889 0.02037 0.00664" rpy="-1.5708 -0.01487 0.01487"/>
+        <geometry>
+          <mesh filename="../meshes/dae/Textured_mesh_1.068.dae" scale="1.0 1.0 1.0"/>
+        </geometry>
+      </collision>
+    </link>
 
-    <joint name="ML_Pretarsus_L" type="revolute">
-      <origin xyz="0.16129 5e-05 -0.00209" rpy="0 0 0"/>
-      <parent link="ML_Tarsus_L"/>
-      <child link="ML_Pretarsus_L"/>
-      <axis xyz="0 0 1.0"/>
-      <limit lower="-1.5708" upper="1.5708" effort="0" velocity="0"/>
-    </joint>
+    <link name="31_FL_Tibia_L">
+      <inertial>
+        <origin xyz="0.00926 -0.63695 0.00189" rpy="0 0 0"/>
+        <mass value="2.09"/>
+        <inertia ixx="0.29766" ixy="0.00362" ixz="-0.0004" iyy="0.29885" iyz="0.00261" izz="0.0015"/>
+      </inertial>
+      <visual name="31_FL_Tibia_L_Visual">
+        <origin xyz="0.00926 -0.63695 0.00189" rpy="-1.5708 -0.01487 0.01487"/>
+        <geometry>
+          <mesh filename="../meshes/dae/Textured_mesh_1.005.dae" scale="1.0 1.0 1.0"/>
+        </geometry>
+        <material name="Textured_mesh_1"/>
+      </visual>
+      <collision name="31_FL_Tibia_L_Collision">
+        <origin xyz="0.01075 -0.63378 0.00093" rpy="-1.5708 -0.01487 0.01487"/>
+        <geometry>
+          <mesh filename="../meshes/dae/Textured_mesh_1.065.dae" scale="1.0 1.0 1.0"/>
+        </geometry>
+      </collision>
+    </link>
 
-    <joint name="ML_Pretarsus_R" type="revolute">
-      <origin xyz="-0.20934 -0.00253 -0.00584" rpy="0 0 0"/>
-      <parent link="ML_Tarsus_R"/>
-      <child link="ML_Pretarsus_R"/>
-      <axis xyz="0 0 1.0"/>
-      <limit lower="-1.5708" upper="1.5708" effort="0" velocity="0"/>
-    </joint>
+    <link name="32_FL_Tarsus_L">
+      <inertial>
+        <origin xyz="0.07146 -0.00243 -0.00319" rpy="0 0 0"/>
+        <mass value="0.18"/>
+        <inertia ixx="4e-05" ixy="-2e-05" ixz="0" iyy="0.00031" iyz="0" izz="0.00031"/>
+      </inertial>
+      <visual name="32_FL_Tarsus_L_Visual">
+        <origin xyz="0.07146 -0.00243 -0.00319" rpy="-1.5708 -0.01487 0.01487"/>
+        <geometry>
+          <mesh filename="../meshes/dae/Textured_mesh_1.003.dae" scale="1.0 1.0 1.0"/>
+        </geometry>
+        <material name="Textured_mesh_1"/>
+      </visual>
+      <collision name="32_FL_Tarsus_L_Collision">
+        <origin xyz="0.07222 -0.0047 -0.00169" rpy="-1.5708 -0.01487 0.01487"/>
+        <geometry>
+          <mesh filename="../meshes/dae/Textured_mesh_1.066.dae" scale="1.0 1.0 1.0"/>
+        </geometry>
+      </collision>
+    </link>
 
-    <joint name="ML_Tarsus_L" type="revolute">
-      <origin xyz="0.0474 -1.12595 -0.00892" rpy="0 0 0"/>
-      <parent link="ML_Tibia_L"/>
-      <child link="ML_Tarsus_L"/>
-      <axis xyz="0 0 1.0"/>
-      <limit lower="-1.5708" upper="1.5708" effort="0" velocity="0"/>
-    </joint>
+    <link name="33_FL_Pretarsus_L">
+      <inertial>
+        <origin xyz="0.07423 0.01283 0.00647" rpy="0 0 0"/>
+        <mass value="0.27"/>
+        <inertia ixx="0.0001" ixy="3e-05" ixz="0" iyy="0.00082" iyz="-1e-05" izz="0.00078"/>
+      </inertial>
+      <visual name="33_FL_Pretarsus_L_Visual">
+        <origin xyz="0.07423 0.01283 0.00647" rpy="-1.5708 -0.01487 0.01487"/>
+        <geometry>
+          <mesh filename="../meshes/dae/Textured_mesh_1.006.dae" scale="1.0 1.0 1.0"/>
+        </geometry>
+        <material name="Textured_mesh_1"/>
+      </visual>
+      <collision name="33_FL_Pretarsus_L_Collision">
+        <origin xyz="0.0875 0.02052 0.01066" rpy="-1.5708 -0.01487 0.01487"/>
+        <geometry>
+          <mesh filename="../meshes/dae/Textured_mesh_1.067.dae" scale="1.0 1.0 1.0"/>
+        </geometry>
+      </collision>
+    </link>
 
-    <joint name="ML_Tarsus_R" type="revolute">
-      <origin xyz="-0.00804 -1.01475 0.00158" rpy="0 0 0"/>
-      <parent link="ML_Tibia_R"/>
-      <child link="ML_Tarsus_R"/>
-      <axis xyz="0 0 1.0"/>
-      <limit lower="-1.5708" upper="1.5708" effort="0" velocity="0"/>
-    </joint>
+    <link name="34_FL_CT_R">
+      <inertial>
+        <origin xyz="-0.04796 -0.00236 -0.00015" rpy="0 0 0"/>
+        <mass value="0.88"/>
+        <inertia ixx="0.00142" ixy="-3e-05" ixz="-7e-05" iyy="0.0015" iyz="-8e-05" izz="0.00123"/>
+      </inertial>
+      <visual name="34_FL_CT_R_Visual">
+        <origin xyz="-0.04796 -0.00236 -0.00015" rpy="0 0 0"/>
+        <geometry>
+          <mesh filename="../meshes/dae/Textured_mesh_1.008.dae" scale="1.0 1.0 1.0"/>
+        </geometry>
+        <material name="Textured_mesh_1"/>
+      </visual>
+      <collision name="34_FL_CT_R_Collision">
+        <origin xyz="-0.05327 0.00237 -0.00253" rpy="0 0 0"/>
+        <geometry>
+          <mesh filename="../meshes/dae/Textured_mesh_1.074.dae" scale="1.0 1.0 1.0"/>
+        </geometry>
+      </collision>
+    </link>
 
-    <joint name="ML_Tibia_L" type="revolute">
-      <origin xyz="1.02447 -0.02296 0.01027" rpy="0 0 0"/>
-      <parent link="ML_Femur_L"/>
-      <child link="ML_Tibia_L"/>
-      <axis xyz="0 0 1.0"/>
-      <limit lower="-1.5708" upper="1.5708" effort="0" velocity="0"/>
-    </joint>
+    <link name="35_FL_Femur_R">
+      <inertial>
+        <origin xyz="-0.70545 -0.00442 0.02193" rpy="0 0 0"/>
+        <mass value="6.2"/>
+        <inertia ixx="0.01112" ixy="-0.054" ixz="0.01646" iyy="0.88078" iyz="0.00171" izz="0.88484"/>
+      </inertial>
+      <visual name="35_FL_Femur_R_Visual">
+        <origin xyz="-0.70545 -0.00442 0.02193" rpy="-1.5708 -0.01487 0.01487"/>
+        <geometry>
+          <mesh filename="../meshes/dae/Textured_mesh_1.010.dae" scale="1.0 1.0 1.0"/>
+        </geometry>
+        <material name="Textured_mesh_1"/>
+      </visual>
+      <collision name="35_FL_Femur_R_Collision">
+        <origin xyz="-0.71365 -0.00396 0.0329" rpy="-1.5708 -0.01487 0.01487"/>
+        <geometry>
+          <mesh filename="../meshes/dae/Textured_mesh_1.073.dae" scale="1.0 1.0 1.0"/>
+        </geometry>
+      </collision>
+    </link>
 
-    <joint name="ML_Tibia_R" type="revolute">
-      <origin xyz="-1.00324 -0.01434 0.01466" rpy="0 0 0"/>
-      <parent link="ML_Femur_R"/>
-      <child link="ML_Tibia_R"/>
-      <axis xyz="0 0 1.0"/>
-      <limit lower="-1.5708" upper="1.5708" effort="0" velocity="0"/>
-    </joint>
+    <link name="36_FL_Tibia_R">
+      <inertial>
+        <origin xyz="-0.0006 -0.67299 0.00244" rpy="0 0 0"/>
+        <mass value="2.64"/>
+        <inertia ixx="0.46305" ixy="0.00282" ixz="-0.00045" iyy="0.46342" iyz="0.00939" izz="0.00157"/>
+      </inertial>
+      <visual name="36_FL_Tibia_R_Visual">
+        <origin xyz="-0.0006 -0.67299 0.00244" rpy="-1.5708 -0.01487 0.01487"/>
+        <geometry>
+          <mesh filename="../meshes/dae/Textured_mesh_1.011.dae" scale="1.0 1.0 1.0"/>
+        </geometry>
+        <material name="Textured_mesh_1"/>
+      </visual>
+      <collision name="36_FL_Tibia_R_Collision">
+        <origin xyz="0.00254 -0.69922 -0.00368" rpy="-1.5708 -0.01487 0.01487"/>
+        <geometry>
+          <mesh filename="../meshes/dae/Textured_mesh_1.070.dae" scale="1.0 1.0 1.0"/>
+        </geometry>
+      </collision>
+    </link>
 
-    <joint name="Mesothorax" type="revolute">
-      <origin xyz="-0.04181 0.35326 0.00516" rpy="0 0 0"/>
-      <parent link="Prothorax"/>
-      <child link="Mesothorax"/>
-      <axis xyz="0 0 1.0"/>
-      <limit lower="-1.5708" upper="1.5708" effort="0" velocity="0"/>
-    </joint>
+    <link name="37_FL_Tarsus_R">
+      <inertial>
+        <origin xyz="-0.08245 -0.01025 0.00014" rpy="0 0 0"/>
+        <mass value="0.17"/>
+        <inertia ixx="3e-05" ixy="-1e-05" ixz="2e-05" iyy="0.00038" iyz="0" izz="0.00038"/>
+      </inertial>
+      <visual name="37_FL_Tarsus_R_Visual">
+        <origin xyz="-0.08245 -0.01025 0.00014" rpy="-1.5708 -0.01487 0.01487"/>
+        <geometry>
+          <mesh filename="../meshes/dae/Textured_mesh_1.009.dae" scale="1.0 1.0 1.0"/>
+        </geometry>
+        <material name="Textured_mesh_1"/>
+      </visual>
+      <collision name="37_FL_Tarsus_R_Collision">
+        <origin xyz="-0.07257 -0.0103 0.00297" rpy="-1.5708 -0.01487 0.01487"/>
+        <geometry>
+          <mesh filename="../meshes/dae/Textured_mesh_1.071.dae" scale="1.0 1.0 1.0"/>
+        </geometry>
+      </collision>
+    </link>
 
-    <joint name="Metathorax" type="revolute">
-      <origin xyz="-0.0529 1.49806 0.0154" rpy="0 0 0"/>
-      <parent link="Mesothorax"/>
-      <child link="Metathorax"/>
-      <axis xyz="0 0 1.0"/>
-      <limit lower="-1.5708" upper="1.5708" effort="0" velocity="0"/>
-    </joint>
+    <link name="38_FL_Pretarsus_R">
+      <inertial>
+        <origin xyz="-0.07406 0.01029 0.00618" rpy="0 0 0"/>
+        <mass value="0.27"/>
+        <inertia ixx="7e-05" ixy="-5e-05" ixz="1e-05" iyy="0.00051" iyz="0" izz="0.00048"/>
+      </inertial>
+      <visual name="38_FL_Pretarsus_R_Visual">
+        <origin xyz="-0.07406 0.01029 0.00618" rpy="-1.5708 -0.01487 0.01487"/>
+        <geometry>
+          <mesh filename="../meshes/dae/Textured_mesh_1.012.dae" scale="1.0 1.0 1.0"/>
+        </geometry>
+        <material name="Textured_mesh_1"/>
+      </visual>
+      <collision name="38_FL_Pretarsus_R_Collision">
+        <origin xyz="-0.08783 0.01742 0.01144" rpy="-1.5708 -0.01487 0.01487"/>
+        <geometry>
+          <mesh filename="../meshes/dae/Textured_mesh_1.072.dae" scale="1.0 1.0 1.0"/>
+        </geometry>
+      </collision>
+    </link>
 
-    <joint name="Prothorax" type="revolute">
+    <joint name="02_Prothorax" type="revolute">
       <origin xyz="0 0 0" rpy="-1.5708 1.55593 -1.55593"/>
-      <parent link="Carput"/>
-      <child link="Prothorax"/>
+      <parent link="01_Carput"/>
+      <child link="02_Prothorax"/>
+      <axis xyz="0 0 1.0"/>
+      <limit lower="-1.5708" upper="1.5708" effort="0" velocity="0"/>
+    </joint>
+
+    <joint name="03_Mesothorax" type="revolute">
+      <origin xyz="-0.04181 0.35326 0.00516" rpy="0 0 0"/>
+      <parent link="02_Prothorax"/>
+      <child link="03_Mesothorax"/>
+      <axis xyz="0 0 1.0"/>
+      <limit lower="-1.5708" upper="1.5708" effort="0" velocity="0"/>
+    </joint>
+
+    <joint name="04_Metathorax" type="revolute">
+      <origin xyz="-0.0529 1.49806 0.0154" rpy="0 0 0"/>
+      <parent link="03_Mesothorax"/>
+      <child link="04_Metathorax"/>
+      <axis xyz="0 0 1.0"/>
+      <limit lower="-1.5708" upper="1.5708" effort="0" velocity="0"/>
+    </joint>
+
+    <joint name="05_Abdomen_3" type="revolute">
+      <origin xyz="-0.04709 0.952 -0.01588" rpy="0 0 0"/>
+      <parent link="04_Metathorax"/>
+      <child link="05_Abdomen_3"/>
+      <axis xyz="0 0 1.0"/>
+      <limit lower="-1.5708" upper="1.5708" effort="0" velocity="0"/>
+    </joint>
+
+    <joint name="06_Abdomen_2" type="revolute">
+      <origin xyz="0.04239 0.84128 0.00484" rpy="0 0 0"/>
+      <parent link="05_Abdomen_3"/>
+      <child link="06_Abdomen_2"/>
+      <axis xyz="0 0 1.0"/>
+      <limit lower="-1.5708" upper="1.5708" effort="0" velocity="0"/>
+    </joint>
+
+    <joint name="07_Abdomen_1" type="revolute">
+      <origin xyz="0.00886 0.92056 0.01897" rpy="0 0 0"/>
+      <parent link="06_Abdomen_2"/>
+      <child link="07_Abdomen_1"/>
+      <axis xyz="0 0 1.0"/>
+      <limit lower="-1.5708" upper="1.5708" effort="0" velocity="0"/>
+    </joint>
+
+    <joint name="08_Abdomen_0" type="revolute">
+      <origin xyz="-0.01857 0.7985 -0.02414" rpy="0 0 0"/>
+      <parent link="07_Abdomen_1"/>
+      <child link="08_Abdomen_0"/>
+      <axis xyz="0 0 1.0"/>
+      <limit lower="-1.5708" upper="1.5708" effort="0" velocity="0"/>
+    </joint>
+
+    <joint name="09_HL_CT_L" type="revolute">
+      <origin xyz="0.11581 0.86767 0.17126" rpy="1.5708 -1.55593 -1.55593"/>
+      <parent link="04_Metathorax"/>
+      <child link="09_HL_CT_L"/>
+      <axis xyz="0 0 1.0"/>
+      <limit lower="-1.5708" upper="1.5708" effort="0" velocity="0"/>
+    </joint>
+
+    <joint name="10_HL_Femur_L" type="revolute">
+      <origin xyz="0.11235 0.01234 0.00904" rpy="1.5708 0.01487 0.01487"/>
+      <parent link="09_HL_CT_L"/>
+      <child link="10_HL_Femur_L"/>
+      <axis xyz="0 0 1.0"/>
+      <limit lower="-1.5708" upper="1.5708" effort="0" velocity="0"/>
+    </joint>
+
+    <joint name="11_HL_Tibia_L" type="revolute">
+      <origin xyz="1.22244 0.01703 -0.00127" rpy="0 0 0"/>
+      <parent link="10_HL_Femur_L"/>
+      <child link="11_HL_Tibia_L"/>
+      <axis xyz="0 0 1.0"/>
+      <limit lower="-1.5708" upper="1.5708" effort="0" velocity="0"/>
+    </joint>
+
+    <joint name="12_HL_Tarsus_L" type="revolute">
+      <origin xyz="0.0317 -1.4681 -0.00568" rpy="0 0 0"/>
+      <parent link="11_HL_Tibia_L"/>
+      <child link="12_HL_Tarsus_L"/>
+      <axis xyz="0 0 1.0"/>
+      <limit lower="-1.5708" upper="1.5708" effort="0" velocity="0"/>
+    </joint>
+
+    <joint name="13_HL_Pretarsus_L" type="revolute">
+      <origin xyz="0.18012 -0.00329 -0.00104" rpy="0 0 0"/>
+      <parent link="12_HL_Tarsus_L"/>
+      <child link="13_HL_Pretarsus_L"/>
+      <axis xyz="0 0 1.0"/>
+      <limit lower="-1.5708" upper="1.5708" effort="0" velocity="0"/>
+    </joint>
+
+    <joint name="14_HL_CT_R" type="revolute">
+      <origin xyz="0.05706 0.86858 -0.17293" rpy="1.5708 -1.55593 -1.55593"/>
+      <parent link="04_Metathorax"/>
+      <child link="14_HL_CT_R"/>
+      <axis xyz="0 0 1.0"/>
+      <limit lower="-1.5708" upper="1.5708" effort="0" velocity="0"/>
+    </joint>
+
+    <joint name="15_HL_Femur_R" type="revolute">
+      <origin xyz="-0.13933 -0.00283 -0.00741" rpy="1.5708 0.01487 0.01487"/>
+      <parent link="14_HL_CT_R"/>
+      <child link="15_HL_Femur_R"/>
+      <axis xyz="0 0 1.0"/>
+      <limit lower="-1.5708" upper="1.5708" effort="0" velocity="0"/>
+    </joint>
+
+    <joint name="16_HL_Tibia_R" type="revolute">
+      <origin xyz="-1.2448 -0.07124 0.00429" rpy="0 0 0"/>
+      <parent link="15_HL_Femur_R"/>
+      <child link="16_HL_Tibia_R"/>
+      <axis xyz="0 0 1.0"/>
+      <limit lower="-1.5708" upper="1.5708" effort="0" velocity="0"/>
+    </joint>
+
+    <joint name="17_HL_Tarsus_R" type="revolute">
+      <origin xyz="0.00654 -1.27212 -0.00879" rpy="0 0 0"/>
+      <parent link="16_HL_Tibia_R"/>
+      <child link="17_HL_Tarsus_R"/>
+      <axis xyz="0 0 1.0"/>
+      <limit lower="-1.5708" upper="1.5708" effort="0" velocity="0"/>
+    </joint>
+
+    <joint name="18_HL_Pretarsus_R" type="revolute">
+      <origin xyz="-0.26774 -0.01534 0.01139" rpy="0 0 0"/>
+      <parent link="17_HL_Tarsus_R"/>
+      <child link="18_HL_Pretarsus_R"/>
+      <axis xyz="0 0 1.0"/>
+      <limit lower="-1.5708" upper="1.5708" effort="0" velocity="0"/>
+    </joint>
+
+    <joint name="19_ML_CT_L" type="revolute">
+      <origin xyz="0.05216 1.38959 0.19815" rpy="1.5708 -1.55593 -1.55593"/>
+      <parent link="03_Mesothorax"/>
+      <child link="19_ML_CT_L"/>
+      <axis xyz="0 0 1.0"/>
+      <limit lower="-1.5708" upper="1.5708" effort="0" velocity="0"/>
+    </joint>
+
+    <joint name="20_ML_Femur_L" type="revolute">
+      <origin xyz="0.12326 0.00677 -0.0102" rpy="1.5708 0.01487 0.01487"/>
+      <parent link="19_ML_CT_L"/>
+      <child link="20_ML_Femur_L"/>
+      <axis xyz="0 0 1.0"/>
+      <limit lower="-1.5708" upper="1.5708" effort="0" velocity="0"/>
+    </joint>
+
+    <joint name="21_ML_Tibia_L" type="revolute">
+      <origin xyz="1.02447 -0.02296 0.01027" rpy="0 0 0"/>
+      <parent link="20_ML_Femur_L"/>
+      <child link="21_ML_Tibia_L"/>
+      <axis xyz="0 0 1.0"/>
+      <limit lower="-1.5708" upper="1.5708" effort="0" velocity="0"/>
+    </joint>
+
+    <joint name="22_ML_Tarsus_L" type="revolute">
+      <origin xyz="0.0474 -1.12595 -0.00892" rpy="0 0 0"/>
+      <parent link="21_ML_Tibia_L"/>
+      <child link="22_ML_Tarsus_L"/>
+      <axis xyz="0 0 1.0"/>
+      <limit lower="-1.5708" upper="1.5708" effort="0" velocity="0"/>
+    </joint>
+
+    <joint name="23_ML_Pretarsus_L" type="revolute">
+      <origin xyz="0.16129 5e-05 -0.00209" rpy="0 0 0"/>
+      <parent link="22_ML_Tarsus_L"/>
+      <child link="23_ML_Pretarsus_L"/>
+      <axis xyz="0 0 1.0"/>
+      <limit lower="-1.5708" upper="1.5708" effort="0" velocity="0"/>
+    </joint>
+
+    <joint name="24_ML_CT_R" type="revolute">
+      <origin xyz="0.08834 1.4053 -0.14673" rpy="1.5708 -1.55593 -1.55593"/>
+      <parent link="03_Mesothorax"/>
+      <child link="24_ML_CT_R"/>
+      <axis xyz="0 0 1.0"/>
+      <limit lower="-1.5708" upper="1.5708" effort="0" velocity="0"/>
+    </joint>
+
+    <joint name="25_ML_Femur_R" type="revolute">
+      <origin xyz="-0.11998 0.00023 -0.00162" rpy="1.5708 0.01487 0.01487"/>
+      <parent link="24_ML_CT_R"/>
+      <child link="25_ML_Femur_R"/>
+      <axis xyz="0 0 1.0"/>
+      <limit lower="-1.5708" upper="1.5708" effort="0" velocity="0"/>
+    </joint>
+
+    <joint name="26_ML_Tibia_R" type="revolute">
+      <origin xyz="-1.00324 -0.01434 0.01466" rpy="0 0 0"/>
+      <parent link="25_ML_Femur_R"/>
+      <child link="26_ML_Tibia_R"/>
+      <axis xyz="0 0 1.0"/>
+      <limit lower="-1.5708" upper="1.5708" effort="0" velocity="0"/>
+    </joint>
+
+    <joint name="27_ML_Tarsus_R" type="revolute">
+      <origin xyz="-0.00804 -1.01475 0.00158" rpy="0 0 0"/>
+      <parent link="26_ML_Tibia_R"/>
+      <child link="27_ML_Tarsus_R"/>
+      <axis xyz="0 0 1.0"/>
+      <limit lower="-1.5708" upper="1.5708" effort="0" velocity="0"/>
+    </joint>
+
+    <joint name="28_ML_Pretarsus_R" type="revolute">
+      <origin xyz="-0.20934 -0.00253 -0.00584" rpy="0 0 0"/>
+      <parent link="27_ML_Tarsus_R"/>
+      <child link="28_ML_Pretarsus_R"/>
+      <axis xyz="0 0 1.0"/>
+      <limit lower="-1.5708" upper="1.5708" effort="0" velocity="0"/>
+    </joint>
+
+    <joint name="29_FL_CT_L" type="revolute">
+      <origin xyz="0.01474 0.13803 0.12265" rpy="1.5708 -1.55593 -1.55593"/>
+      <parent link="02_Prothorax"/>
+      <child link="29_FL_CT_L"/>
+      <axis xyz="0 0 1.0"/>
+      <limit lower="-1.5708" upper="1.5708" effort="0" velocity="0"/>
+    </joint>
+
+    <joint name="30_FL_Femur_L" type="revolute">
+      <origin xyz="0.12442 0.01758 -0.01703" rpy="1.5708 0.01487 0.01487"/>
+      <parent link="29_FL_CT_L"/>
+      <child link="30_FL_Femur_L"/>
+      <axis xyz="0 0 1.0"/>
+      <limit lower="-1.5708" upper="1.5708" effort="0" velocity="0"/>
+    </joint>
+
+    <joint name="31_FL_Tibia_L" type="revolute">
+      <origin xyz="1.39525 0.01628 -0.00914" rpy="0 0 0"/>
+      <parent link="30_FL_Femur_L"/>
+      <child link="31_FL_Tibia_L"/>
+      <axis xyz="0 0 1.0"/>
+      <limit lower="-1.5708" upper="1.5708" effort="0" velocity="0"/>
+    </joint>
+
+    <joint name="32_FL_Tarsus_L" type="revolute">
+      <origin xyz="0.02497 -1.29823 0.00154" rpy="0 0 0"/>
+      <parent link="31_FL_Tibia_L"/>
+      <child link="32_FL_Tarsus_L"/>
+      <axis xyz="0 0 1.0"/>
+      <limit lower="-1.5708" upper="1.5708" effort="0" velocity="0"/>
+    </joint>
+
+    <joint name="33_FL_Pretarsus_L" type="revolute">
+      <origin xyz="0.15796 -0.00992 -0.00606" rpy="0 0 0"/>
+      <parent link="32_FL_Tarsus_L"/>
+      <child link="33_FL_Pretarsus_L"/>
+      <axis xyz="0 0 1.0"/>
+      <limit lower="-1.5708" upper="1.5708" effort="0" velocity="0"/>
+    </joint>
+
+    <joint name="34_FL_CT_R" type="revolute">
+      <origin xyz="0.02108 0.15758 -0.13854" rpy="1.5708 -1.55593 -1.55593"/>
+      <parent link="02_Prothorax"/>
+      <child link="34_FL_CT_R"/>
+      <axis xyz="0 0 1.0"/>
+      <limit lower="-1.5708" upper="1.5708" effort="0" velocity="0"/>
+    </joint>
+
+    <joint name="35_FL_Femur_R" type="revolute">
+      <origin xyz="-0.10675 -0.00175 0.00476" rpy="1.5708 0.01487 0.01487"/>
+      <parent link="34_FL_CT_R"/>
+      <child link="35_FL_Femur_R"/>
+      <axis xyz="0 0 1.0"/>
+      <limit lower="-1.5708" upper="1.5708" effort="0" velocity="0"/>
+    </joint>
+
+    <joint name="36_FL_Tibia_R" type="revolute">
+      <origin xyz="-1.39541 -0.03843 0.00396" rpy="0 0 0"/>
+      <parent link="35_FL_Femur_R"/>
+      <child link="36_FL_Tibia_R"/>
+      <axis xyz="0 0 1.0"/>
+      <limit lower="-1.5708" upper="1.5708" effort="0" velocity="0"/>
+    </joint>
+
+    <joint name="37_FL_Tarsus_R" type="revolute">
+      <origin xyz="-0.00112 -1.41627 -0.00491" rpy="0 0 0"/>
+      <parent link="36_FL_Tibia_R"/>
+      <child link="37_FL_Tarsus_R"/>
+      <axis xyz="0 0 1.0"/>
+      <limit lower="-1.5708" upper="1.5708" effort="0" velocity="0"/>
+    </joint>
+
+    <joint name="38_FL_Pretarsus_R" type="revolute">
+      <origin xyz="-0.16119 -0.01761 -0.00282" rpy="0 0 0"/>
+      <parent link="37_FL_Tarsus_R"/>
+      <child link="38_FL_Pretarsus_R"/>
       <axis xyz="0 0 1.0"/>
       <limit lower="-1.5708" upper="1.5708" effort="0" velocity="0"/>
     </joint>

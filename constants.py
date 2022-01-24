@@ -16,10 +16,10 @@ NUMBER_OF_GENERATIONS = 2
 POPULATION_SIZE = 100
 
 # Number of sensor neurons
-NUM_SENSOR_NEURONS = 9
+NUM_SENSOR_NEURONS = 37
 
 # Number of motor neurons
-NUM_MOTOR_NEURONS = 8
+NUM_MOTOR_NEURONS = 36
 
 # time between simuation steps [s]
 TIME_BETWEEN_STEPS = 1/240
