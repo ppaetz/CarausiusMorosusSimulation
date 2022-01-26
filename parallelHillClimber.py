@@ -10,9 +10,9 @@ class PARALLEL_HILL_CLIMBER:
     def __init__(self):
         '''Constructor of PARALLEL_HILL_CLIMBER class'''
 
-        os.system("rm fitness*.txt")
-        os.system("rm body*.urdf")
-        os.system("rm brain*.nndf")
+        os.system("rm fitness/fitness*.txt")
+        os.system("rm urdf/body*.urdf")
+        os.system("rm nndf/brain*.nndf")
 
         self.nextAvailableID = 0
         self.parent = {}
@@ -73,7 +73,7 @@ class PARALLEL_HILL_CLIMBER:
         '''Weighs up wether the childs solution was better or not'''
 
         for i in self.parent:
-            if float(self.parent[i].fitness) <= float(self.child[i].fitness):
+            if float(self.parent[i].fitness) >= float(self.child[i].fitness):
                 self.parent[i] = copy.deepcopy(self.child[i])
 
 
@@ -100,6 +100,7 @@ class PARALLEL_HILL_CLIMBER:
         self.corespondingParent = [k for k, v in self.fitness.items() if v == self.maxFitness]
         self.parent[self.corespondingParent[0]].Start_Simulation("GUI")
 
+        os.system("touch data/winningParent.pk1")
         self.save_parent(self.parent[self.corespondingParent[0]], "data/winningParent.pk1")
 
         print("MAX_VALUE", self.maxFitness)
