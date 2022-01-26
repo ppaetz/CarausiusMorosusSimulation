@@ -15,17 +15,17 @@ class ROBOT:
 
         self.robot = p.loadURDF("urdf/Carausius_Morosus.urdf", 0, 0, 1.5)
         pyrosim.Prepare_To_Simulate("urdf/Carausius_Morosus.urdf")
-        self.nn = NEURAL_NETWORK("brain.nndf")
 
         self.maxJointTorques = 0
         self.sensorNeuronNames = {}
         self.motorNeuronNames = {}
         self.weights = numpy.random.rand(c.NUM_SENSOR_NEURONS,c.NUM_MOTOR_NEURONS)
         self.weights = self.weights * 2 - 1
+        self.Generate_Brain()
+        self.nn = NEURAL_NETWORK("brain.nndf")
 
         self.Prepare_To_Sense()
         self.Prepare_To_Act()
-        self.Generate_Brain()
 
 
     def Prepare_To_Sense(self):
@@ -92,12 +92,10 @@ class ROBOT:
 
         for linkName in pyrosim.linkNamesToIndices:
             pyrosim.Send_Sensor_Neuron(name = i , linkName = linkName)
-            print("Sensor_Neuron: ", i, ", Link: ", linkName)
             i += 1 
 
         for jointName in pyrosim.jointNamesToIndices:
             pyrosim.Send_Motor_Neuron(name = i , jointName = jointName)
-            print("Motor_Neuron: ", i, ", Joint: ", jointName)
             i += 1
 
         for currentRow in range(0, c.NUM_SENSOR_NEURONS):
