@@ -6,3 +6,4 @@ class WORLD:
         '''Constructor of WORLD class'''
 
         self.planeId = p.loadURDF("plane.urdf")
+        # self.objects = p.loadSDF("world.sdf")

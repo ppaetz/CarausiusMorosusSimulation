@@ -29,8 +29,5 @@ CONTROL_MODE = p.POSITION_CONTROL
 MAX_FORCE = 1500
 MOTOR_JOINT_RANGE = 0.2
 
-# Mass of the robot
-ROBOT_MASS = 100
-
 # Coefficient for friction of objects within the simulation
 LATERAL_FRICTION_COEFFICIENT = 10000

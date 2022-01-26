@@ -10,12 +10,12 @@ import numpy
 
 class ROBOT:
 
-    def __init__(self):
+    def __init__(self, solutionID):
         '''Constructor of ROBOT class'''
 
-        self.robot = p.loadURDF("urdf/Carausius_Morosus.urdf", 0, 0, 1.5)
-        pyrosim.Prepare_To_Simulate("urdf/Carausius_Morosus.urdf")
-        self.nn = NEURAL_NETWORK("brain.nndf")
+        self.robot = p.loadURDF("body" + str(solutionID) + ".urdf", 0, 0, 1.5)
+        pyrosim.Prepare_To_Simulate("body" + str(solutionID) + ".urdf")
+        self.nn = NEURAL_NETWORK("brain" + str(solutionID) + ".nndf")
 
         self.maxJointTorques = 0
         self.sensorNeuronNames = {}
@@ -25,7 +25,11 @@ class ROBOT:
 
         self.Prepare_To_Sense()
         self.Prepare_To_Act()
-        self.Generate_Brain()
+
+        self.solutionID = solutionID
+
+        os.system("rm brain" + str(self.solutionID) + ".nndf")
+        os.system("rm body" + str(self.solutionID) + ".urdf")
 
 
     def Prepare_To_Sense(self):
@@ -67,11 +71,13 @@ class ROBOT:
                 self.jointTorques[t] = torques[3]
                 self.jointTorques[t] = numpy.sqrt(torques[3] ** 2)
                 self.maxJointTorques = self.maxJointTorques + self.jointTorques[t]
+
         
     def Think(self):
         '''updates the value for all neurons'''
         
         self.nn.Update()
+
 
     def Act(self):
         '''Sets the motorvalues according to the sensorvalues'''
@@ -83,26 +89,19 @@ class ROBOT:
                 desiredAngle = desiredAngle *2
                 self.motors[jointName].Set_Value(desiredAngle, self.robot)
 
-    def Generate_Brain(self):
-        '''Creates the neural network of the robot'''
 
-        pyrosim.Start_NeuralNetwork("brain.nndf")
+    def Get_Fitness(self):
+        '''Extracts the 'fitness' and writes it into a txt file'''
 
-        i = 0
+        'Position of Robot'
+        self.basePositionAndOrientation = p.getBasePositionAndOrientation(self.robot)
+        self.basePosition = self.basePositionAndOrientation[0]
+        xPosition = self.basePosition[0]
+        yPosition = self.basePosition[1]
+        zPosition = self.basePosition[2]
 
-        for linkName in pyrosim.linkNamesToIndices:
-            pyrosim.Send_Sensor_Neuron(name = i , linkName = linkName)
-            print("Sensor_Neuron: ", i, ", Link: ", linkName)
-            i += 1 
-
-        for jointName in pyrosim.jointNamesToIndices:
-            pyrosim.Send_Motor_Neuron(name = i , jointName = jointName)
-            print("Motor_Neuron: ", i, ", Joint: ", jointName)
-            i += 1
-
-        for currentRow in range(0, c.NUM_SENSOR_NEURONS):
-            for currentColumn in range(0, c.NUM_MOTOR_NEURONS):
-                pyrosim.Send_Synapse( sourceNeuronName = currentRow , targetNeuronName = currentColumn+c.NUM_SENSOR_NEURONS , weight = self.weights[currentRow][currentColumn] )
-
-
-        pyrosim.End()
+        self.fitness = xPosition
+        file = open("tmp" + str(self.solutionID) + ".txt", "w")
+        file.write(str(self.fitness))
+        file.close()
+        os.system("mv tmp" + str(self.solutionID) + ".txt fitness" + str(self.solutionID) + ".txt")

@@ -8,15 +8,22 @@ import time
 
 class SIMULATION:
 
-    def __init__(self):
+    def __init__(self, directGUI, solutionID):
         '''Constructor of the SIMULATION class'''
 
-        self.physicsClient = p.connect(p.GUI)
+        self.directGUI = directGUI
+
+        if directGUI == "DIRECT":
+            self.physicsClient = p.connect(p.DIRECT)
+
+        elif directGUI == "GUI":
+            self.physicsClient = p.connect(p.GUI)
+
         p.setAdditionalSearchPath(pybullet_data.getDataPath())
         p.setGravity(c.GRAVITY_X, c.GRAVITY_Y, c.GRAVITY_Z)
 
         self.world = WORLD()
-        self.robot = ROBOT()
+        self.robot = ROBOT(solutionID)
 
 
     def __del__(self):
@@ -36,5 +43,13 @@ class SIMULATION:
             self.robot.Think()
             self.robot.Act()
 
-            time.sleep(c.TIME_BETWEEN_STEPS)
+            if self.directGUI == "GUI":
+                time.sleep(c.TIME_BETWEEN_STEPS)
+
             t += 1
+
+
+    def Get_Fitness(self):
+        '''Gets the of the robot'''
+
+        self.robot.Get_Fitness()
