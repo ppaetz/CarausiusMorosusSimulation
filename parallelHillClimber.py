@@ -21,6 +21,7 @@ class PARALLEL_HILL_CLIMBER:
             self.parent.update({i: SOLUTION(self.nextAvailableID)})
             self.nextAvailableID += 1
 
+
     def Evolve(self):
         '''Defines the number of evolving generations and starts the evolving process'''
 
@@ -29,6 +30,7 @@ class PARALLEL_HILL_CLIMBER:
         for currentGeneration in range(0, c.NUMBER_OF_GENERATIONS):
             self.Evolve_For_One_Generation(currentGeneration)
             currentGeneration += 1
+
     
     def Evolve_For_One_Generation(self, currentGeneration):
         '''Creates a child for a given parent, mutates it, and creates a simulation for it'''
@@ -39,6 +41,7 @@ class PARALLEL_HILL_CLIMBER:
         self.Select()
         self.Print(currentGeneration)
 
+
     def Spawn(self):
         '''Creates a childs as a deep copies from each parent'''
 
@@ -48,11 +51,13 @@ class PARALLEL_HILL_CLIMBER:
             self.child[i].Set_ID(self.nextAvailableID)
             self.nextAvailableID += 1
 
+
     def Mutate(self):
         '''Calls the Mutation method for each of the childs'''
 
         for i in self.child:
             self.child[i].Mutate()
+
 
     def Evaluate(self ,solutions):
         '''Calss method to start the simulation for the given argument'''
@@ -63,12 +68,14 @@ class PARALLEL_HILL_CLIMBER:
         for i in solutions:
             solutions[i].Wait_For_Simulation_To_End()
 
+
     def Select(self):
         '''Weighs up wether the childs solution was better or not'''
 
         for i in self.parent:
             if float(self.parent[i].fitness) <= float(self.child[i].fitness):
                 self.parent[i] = copy.deepcopy(self.child[i])
+
 
     def Print(self, currentGeneration):
         '''Prints the fitness of the parents and the corresponding child'''
@@ -79,6 +86,7 @@ class PARALLEL_HILL_CLIMBER:
             print(i, ": Parent", "fitness: ", self.parent[i].fitness, ", Child" , "fitness: ", self.child[i].fitness)
         print("This was generation: ", currentGeneration)
         print()
+
 
     def Show_Best(self):
         '''Presents the final and best fitting solution'''
@@ -105,6 +113,7 @@ class PARALLEL_HILL_CLIMBER:
     def save_parent(self, obj, filename):
         with open(filename, 'wb') as outp:
             pickle.dump(obj, outp, pickle.HIGHEST_PROTOCOL)
+            
 
     def get_last_parent(self, filename):
         with open(filename, 'rb') as inp:

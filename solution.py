@@ -17,6 +17,7 @@ class SOLUTION:
         self.weights = numpy.random.rand(c.NUM_SENSOR_NEURONS,c.NUM_MOTOR_NEURONS)
         self.weights = self.weights * 2 - 1
 
+
     def Start_Simulation(self, directGUI):
         '''Generating a simulation for the current instance'''
         '''directGUI:   use "GUI" for a visual presentation of the simulation (slower)'''
@@ -40,6 +41,7 @@ class SOLUTION:
         file.close()
         os.system("rm fitness" + str(self.myID) + ".txt")
 
+
     def Mutate(self):
         '''Creates a random "mutation" of a certain number within the weight matrix'''
         
@@ -47,10 +49,12 @@ class SOLUTION:
         randomColumn = random.randint(0,c.NUM_MOTOR_NEURONS-1)
         self.weights[randomRow,randomColumn] =  random.random() * 2 - 1
 
+
     def Set_ID(self, nextAvailableID):
         '''Gets the current unique ID'''
         
         self.myID = nextAvailableID
+
 
     def Create_World(self):
         '''Creates sdf file for the world'''
@@ -66,35 +70,44 @@ class SOLUTION:
         pyrosim.Send_Cube(name="Box", pos=[x, y + 2, z, 0], size=[length,width,height])
         pyrosim.End()
 
+
     def Generate_Body(self):
         '''Creates the "physical" body of the robot'''
 
-        pyrosim.Start_URDF("body" + str(self.myID) + ".urdf")
+        # pyrosim.Start_URDF("body" + str(self.myID) + ".urdf")
+        # pyrosim.End()
 
-        file = open("urdf/Carausius_Morosus.urdf")
-        
-        pyrosim.End()
+        sourceFile = open("urdf/Carausius_Morosus.urdf", "r")
+        content = sourceFile.read()
+        sourceFile.close()
+
+        os.system("touch body" + str(self.myID) + ".urdf")
+
+        newFile = open("body" + str(self.myID) + ".urdf", "w")
+        newFile.write(content)
+        newFile.close()
 
 
     def Generate_Brain(self):
         '''Creates the neural network of the robot'''
 
-        pyrosim.Start_NeuralNetwork("brain.nndf")
+        pyrosim.Start_NeuralNetwork("brain" + str(self.myID) + ".nndf")
 
-        i = 0
 
-        for linkName in pyrosim.linkNamesToIndices:
-            pyrosim.Send_Sensor_Neuron(name = i , linkName = linkName)
-            print("Sensor_Neuron: ", i, ", Link: ", linkName)
-            i += 1 
+        # i = 0
 
-        for jointName in pyrosim.jointNamesToIndices:
-            pyrosim.Send_Motor_Neuron(name = i , jointName = jointName)
-            print("Motor_Neuron: ", i, ", Joint: ", jointName)
-            i += 1
+        # for linkName in pyrosim.linkNamesToIndices:
+        #     pyrosim.Send_Sensor_Neuron(name = i , linkName = linkName)
+        #     print("Sensor_Neuron: ", i, ", Link: ", linkName)
+        #     i += 1 
 
-        for currentRow in range(0, c.NUM_SENSOR_NEURONS):
-            for currentColumn in range(0, c.NUM_MOTOR_NEURONS):
-                pyrosim.Send_Synapse( sourceNeuronName = currentRow , targetNeuronName = currentColumn+c.NUM_SENSOR_NEURONS , weight = self.weights[currentRow][currentColumn] )
+        # for jointName in pyrosim.jointNamesToIndices:
+        #     pyrosim.Send_Motor_Neuron(name = i , jointName = jointName)
+        #     print("Motor_Neuron: ", i, ", Joint: ", jointName)
+        #     i += 1
+
+        # for currentRow in range(0, c.NUM_SENSOR_NEURONS):
+        #     for currentColumn in range(0, c.NUM_MOTOR_NEURONS):
+        #         pyrosim.Send_Synapse( sourceNeuronName = currentRow , targetNeuronName = currentColumn+c.NUM_SENSOR_NEURONS , weight = self.weights[currentRow][currentColumn] )
 
         pyrosim.End()
