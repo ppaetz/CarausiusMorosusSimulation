@@ -163,9 +163,9 @@ class SOLUTION:
         pyrosim.Send_Motor_Neuron(name = 69, jointName = "33_FL_Pretarsus_L")
         pyrosim.Send_Motor_Neuron(name = 70, jointName = "34_FL_CT_R")
         pyrosim.Send_Motor_Neuron(name = 71, jointName = "35_FL_Femur_R")
-        pyrosim.Send_Motor_Neuron(name = 71, jointName = "36_FL_Tibia_R")
-        pyrosim.Send_Motor_Neuron(name = 71, jointName = "37_FL_Tarsus_R")
-        pyrosim.Send_Motor_Neuron(name = 72, jointName = "38_FL_Pretarsus_R")
+        pyrosim.Send_Motor_Neuron(name = 72, jointName = "36_FL_Tibia_R")
+        pyrosim.Send_Motor_Neuron(name = 73, jointName = "37_FL_Tarsus_R")
+        pyrosim.Send_Motor_Neuron(name = 74, jointName = "38_FL_Pretarsus_R")
 
         for currentRow in range(0, c.NUM_SENSOR_NEURONS):
             for currentColumn in range(0, c.NUM_MOTOR_NEURONS):

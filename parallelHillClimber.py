@@ -73,7 +73,7 @@ class PARALLEL_HILL_CLIMBER:
         '''Weighs up wether the childs solution was better or not'''
 
         for i in self.parent:
-            if float(self.parent[i].fitness) >= float(self.child[i].fitness):
+            if float(self.parent[i].fitness) <= float(self.child[i].fitness):
                 self.parent[i] = copy.deepcopy(self.child[i])
 
 
@@ -106,10 +106,6 @@ class PARALLEL_HILL_CLIMBER:
         print("MAX_VALUE", self.maxFitness)
         print("MAX_KEY: ", self.corespondingParent)
 
-# TODO 
-# 
-#   - implementing saving of urdf and nndf file of winnerParent
-#   - at the beginning of the simulation:   copying the winnerParent from the last simulation
 
     def save_parent(self, obj, filename):
         with open(filename, 'wb') as outp:

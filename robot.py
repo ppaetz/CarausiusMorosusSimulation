@@ -1,3 +1,4 @@
+from matplotlib.pyplot import text
 from pyrosim.neuralNetwork import NEURAL_NETWORK
 from sensor import SENSOR
 from motor import MOTOR
@@ -13,7 +14,8 @@ class ROBOT:
     def __init__(self, solutionID):
         '''Constructor of ROBOT class'''
 
-        self.robot = p.loadURDF("urdf/body" + str(solutionID) + ".urdf", 0, 0, 1.5)
+        self.robot = p.loadURDF("urdf/body" + str(solutionID) + ".urdf", 0, 0, 1.5, 0, 0, 180, 0)
+
         pyrosim.Prepare_To_Simulate("urdf/body" + str(solutionID) + ".urdf")
         self.nn = NEURAL_NETWORK("nndf/brain" + str(solutionID) + ".nndf")
 
@@ -50,14 +52,14 @@ class ROBOT:
         for jointName in pyrosim.jointNamesToIndices:
             self.motors[jointName] = MOTOR(jointName)
 
-        p.changeDynamics(self.robot, 0, c.LOWER_LIMIT_PROTHORAX_MESOTHORAX, c.UPPER_LIMIT_PROTHORAX_MESOTHORAX)
-        p.changeDynamics(self.robot, 1, c.LOWER_LIMIT_MESOTHORAX_METATHORAX, c.UPPER_LIMIT_MESOTHORAX_METATHORAX)
-        p.changeDynamics(self.robot, 2, c.LOWER_LIMIT_PROTHORAX_MESOTHORAX, c.UPPER_LIMIT_PROTHORAX_MESOTHORAX)
-        p.changeDynamics(self.robot, 3, c.LOWER_LIMIT_MESOTHORAX_METATHORAX, c.UPPER_LIMIT_MESOTHORAX_METATHORAX)
-        p.changeDynamics(self.robot, 4, c.LOWER_LIMIT_METATHORAX_ABDOMEN_3, c.UPPER_LIMIT_METATHORAX_ABDOMEN_3)
-        p.changeDynamics(self.robot, 5, c.LOWER_LIMIT_ABDOMEN_3_ABDOMEN_2, c.UPPER_LIMIT_ABDOMEN_3_ABDOMEN_2)
-        p.changeDynamics(self.robot, 5, c.LOWER_LIMIT_ABDOMEN_2_ABDOMEN_1, c.UPPER_LIMIT_ABDOMEN_2_ABDOMEN_1)
-        p.changeDynamics(self.robot, 5, c.LOWER_LIMIT_ABDOMEN_1_ABDOMEN_0, c.UPPER_LIMIT_ABDOMEN_1_ABDOMEN_0)
+        p.changeDynamics(self.robot, 0, jointLowerLimit=c.LOWER_LIMIT_PROTHORAX_MESOTHORAX, jointUpperLimit=c.UPPER_LIMIT_PROTHORAX_MESOTHORAX)
+        p.changeDynamics(self.robot, 1, jointLowerLimit=c.LOWER_LIMIT_MESOTHORAX_METATHORAX, jointUpperLimit=c.UPPER_LIMIT_MESOTHORAX_METATHORAX)
+        p.changeDynamics(self.robot, 2, jointLowerLimit=c.LOWER_LIMIT_PROTHORAX_MESOTHORAX, jointUpperLimit=c.UPPER_LIMIT_PROTHORAX_MESOTHORAX)
+        p.changeDynamics(self.robot, 3, jointLowerLimit=c.LOWER_LIMIT_MESOTHORAX_METATHORAX, jointUpperLimit=c.UPPER_LIMIT_MESOTHORAX_METATHORAX)
+        p.changeDynamics(self.robot, 4, jointLowerLimit=c.LOWER_LIMIT_METATHORAX_ABDOMEN_3, jointUpperLimit=c.UPPER_LIMIT_METATHORAX_ABDOMEN_3)
+        p.changeDynamics(self.robot, 5, jointLowerLimit=c.LOWER_LIMIT_ABDOMEN_3_ABDOMEN_2, jointUpperLimit=c.UPPER_LIMIT_ABDOMEN_3_ABDOMEN_2)
+        p.changeDynamics(self.robot, 5, jointLowerLimit=c.LOWER_LIMIT_ABDOMEN_2_ABDOMEN_1, jointUpperLimit=c.UPPER_LIMIT_ABDOMEN_2_ABDOMEN_1)
+        p.changeDynamics(self.robot, 5, jointLowerLimit=c.LOWER_LIMIT_ABDOMEN_1_ABDOMEN_0, jointUpperLimit=c.UPPER_LIMIT_ABDOMEN_1_ABDOMEN_0)
 
 
     def Sense(self, t):
@@ -73,8 +75,6 @@ class ROBOT:
 
         for jointIndex in range(0,p.getNumJoints(self.robot)):
             self.jointState[jointIndex] = p.getJointState(self.robot, jointIndex)
-            p.changeDynamics(self.robot, jointIndex, 
-                             lateralFriction=c.LATERAL_FRICTION_COEFFICIENT)
 
             for torques in self.jointState.values(): 
                 self.jointTorques[t] = torques[3]

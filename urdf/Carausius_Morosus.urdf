@@ -11,14 +11,14 @@
       <visual name="01_Carput_Visual">
         <origin xyz="0.00299 -0.20745 -0.00121" rpy="0 0 0"/>
         <geometry>
-          <mesh filename="../meshes/dae/Textured_mesh_1.dae" scale="1.0 1.0 1.0"/>
+          <mesh filename="../meshes/obj/Textured_mesh_1.obj" scale="1.0 1.0 1.0"/>
         </geometry>
         <material name="Textured_mesh_1"/>
       </visual>
       <collision name="01_Carput_Collision">
         <origin xyz="0.00144 -0.22508 -0.00708" rpy="0 0 0"/>
         <geometry>
-          <mesh filename="../meshes/dae/Textured_mesh_1.075.dae" scale="1.0 1.0 1.0"/>
+          <mesh filename="../meshes/obj/Textured_mesh_1.075.obj" scale="1.0 1.0 1.0"/>
         </geometry>
       </collision>
     </link>
@@ -32,14 +32,14 @@
       <visual name="02_Prothorax_Visual">
         <origin xyz="-0.02188 0.16385 -0.00566" rpy="1.5708 -1.55593 -1.55593"/>
         <geometry>
-          <mesh filename="../meshes/dae/Textured_mesh_1.002.dae" scale="1.0 1.0 1.0"/>
+          <mesh filename="../meshes/obj/Textured_mesh_1.002.obj" scale="1.0 1.0 1.0"/>
         </geometry>
         <material name="Textured_mesh_1"/>
       </visual>
       <collision name="02_Prothorax_Collision">
         <origin xyz="-0.03485 0.16313 -0.00501" rpy="1.5708 -1.55593 -1.55593"/>
         <geometry>
-          <mesh filename="../meshes/dae/Textured_mesh_1.038.dae" scale="1.0 1.0 1.0"/>
+          <mesh filename="../meshes/obj/Textured_mesh_1.038.obj" scale="1.0 1.0 1.0"/>
         </geometry>
       </collision>
     </link>
@@ -53,14 +53,14 @@
       <visual name="03_Mesothorax_Visual">
         <origin xyz="-0.0093 0.89929 0.0142" rpy="1.5708 -1.55593 -1.55593"/>
         <geometry>
-          <mesh filename="../meshes/dae/Textured_mesh_1.015.dae" scale="1.0 1.0 1.0"/>
+          <mesh filename="../meshes/obj/Textured_mesh_1.015.obj" scale="1.0 1.0 1.0"/>
         </geometry>
         <material name="Textured_mesh_1"/>
       </visual>
       <collision name="03_Mesothorax_Collision">
         <origin xyz="-0.01824 0.87338 0.01072" rpy="1.5708 -1.55593 -1.55593"/>
         <geometry>
-          <mesh filename="../meshes/dae/Textured_mesh_1.064.dae" scale="1.0 1.0 1.0"/>
+          <mesh filename="../meshes/obj/Textured_mesh_1.064.obj" scale="1.0 1.0 1.0"/>
         </geometry>
       </collision>
     </link>
@@ -74,14 +74,14 @@
       <visual name="04_Metathorax_Visual">
         <origin xyz="0.00793 0.52285 -0.01246" rpy="1.5708 -1.55593 -1.55593"/>
         <geometry>
-          <mesh filename="../meshes/dae/Textured_mesh_1.025.dae" scale="1.0 1.0 1.0"/>
+          <mesh filename="../meshes/obj/Textured_mesh_1.025.obj" scale="1.0 1.0 1.0"/>
         </geometry>
         <material name="Textured_mesh_1"/>
       </visual>
       <collision name="04_Metathorax_Collision">
         <origin xyz="0.00539 0.50517 -0.00101" rpy="1.5708 -1.55593 -1.55593"/>
         <geometry>
-          <mesh filename="../meshes/dae/Textured_mesh_1.063.dae" scale="1.0 1.0 1.0"/>
+          <mesh filename="../meshes/obj/Textured_mesh_1.063.obj" scale="1.0 1.0 1.0"/>
         </geometry>
       </collision>
     </link>
@@ -95,14 +95,14 @@
       <visual name="05_Abdomen_3_Visual">
         <origin xyz="0.02684 0.42317 0.00598" rpy="1.5708 -1.55593 -1.55593"/>
         <geometry>
-          <mesh filename="../meshes/dae/Textured_mesh_1.024.dae" scale="1.0 1.0 1.0"/>
+          <mesh filename="../meshes/obj/Textured_mesh_1.024.obj" scale="1.0 1.0 1.0"/>
         </geometry>
         <material name="Textured_mesh_1"/>
       </visual>
       <collision name="05_Abdomen_3_Collision">
         <origin xyz="0.0458 0.42051 0.01016" rpy="1.5708 -1.55593 -1.55593"/>
         <geometry>
-          <mesh filename="../meshes/dae/Textured_mesh_1.062.dae" scale="1.0 1.0 1.0"/>
+          <mesh filename="../meshes/obj/Textured_mesh_1.062.obj" scale="1.0 1.0 1.0"/>
         </geometry>
       </collision>
     </link>
@@ -116,14 +116,14 @@
       <visual name="06_Abdomen_2_Visual">
         <origin xyz="0.0132 0.462 0.00721" rpy="1.5708 -1.55593 -1.55593"/>
         <geometry>
-          <mesh filename="../meshes/dae/Textured_mesh_1.035.dae" scale="1.0 1.0 1.0"/>
+          <mesh filename="../meshes/obj/Textured_mesh_1.035.obj" scale="1.0 1.0 1.0"/>
         </geometry>
         <material name="Textured_mesh_1"/>
       </visual>
       <collision name="06_Abdomen_2_Collision">
         <origin xyz="0.00333 0.46033 0.01352" rpy="1.5708 -1.55593 -1.55593"/>
         <geometry>
-          <mesh filename="../meshes/dae/Textured_mesh_1.061.dae" scale="1.0 1.0 1.0"/>
+          <mesh filename="../meshes/obj/Textured_mesh_1.061.obj" scale="1.0 1.0 1.0"/>
         </geometry>
       </collision>
     </link>
@@ -137,14 +137,14 @@
       <visual name="07_Abdomen_1_Visual">
         <origin xyz="-0.00193 0.38309 -0.01013" rpy="1.5708 -1.55593 -1.55593"/>
         <geometry>
-          <mesh filename="../meshes/dae/Textured_mesh_1.036.dae" scale="1.0 1.0 1.0"/>
+          <mesh filename="../meshes/obj/Textured_mesh_1.036.obj" scale="1.0 1.0 1.0"/>
         </geometry>
         <material name="Textured_mesh_1"/>
       </visual>
       <collision name="07_Abdomen_1_Collision">
         <origin xyz="-0.00809 0.39863 -0.00674" rpy="1.5708 -1.55593 -1.55593"/>
         <geometry>
-          <mesh filename="../meshes/dae/Textured_mesh_1.060.dae" scale="1.0 1.0 1.0"/>
+          <mesh filename="../meshes/obj/Textured_mesh_1.060.obj" scale="1.0 1.0 1.0"/>
         </geometry>
       </collision>
     </link>
@@ -158,14 +158,14 @@
       <visual name="08_Abdomen_0_Visual">
         <origin xyz="-0.04794 0.40528 -0.01267" rpy="1.5708 -1.55593 -1.55593"/>
         <geometry>
-          <mesh filename="../meshes/dae/Textured_mesh_1.037.dae" scale="1.0 1.0 1.0"/>
+          <mesh filename="../meshes/obj/Textured_mesh_1.037.obj" scale="1.0 1.0 1.0"/>
         </geometry>
         <material name="Textured_mesh_1"/>
       </visual>
       <collision name="08_Abdomen_0_Collision">
         <origin xyz="-0.02635 0.35668 -0.00925" rpy="1.5708 -1.55593 -1.55593"/>
         <geometry>
-          <mesh filename="../meshes/dae/Textured_mesh_1.059.dae" scale="1.0 1.0 1.0"/>
+          <mesh filename="../meshes/obj/Textured_mesh_1.059.obj" scale="1.0 1.0 1.0"/>
         </geometry>
       </collision>
     </link>
@@ -179,14 +179,14 @@
       <visual name="09_HL_CT_L_Visual">
         <origin xyz="0.05059 0.00572 0.0055" rpy="0 0 0"/>
         <geometry>
-          <mesh filename="../meshes/dae/Textured_mesh_1.013.dae" scale="1.0 1.0 1.0"/>
+          <mesh filename="../meshes/obj/Textured_mesh_1.013.obj" scale="1.0 1.0 1.0"/>
         </geometry>
         <material name="Textured_mesh_1"/>
       </visual>
       <collision name="09_HL_CT_L_Collision">
         <origin xyz="0.05571 0.00357 0.00927" rpy="0 0 0"/>
         <geometry>
-          <mesh filename="../meshes/dae/Textured_mesh_1.053.dae" scale="1.0 1.0 1.0"/>
+          <mesh filename="../meshes/obj/Textured_mesh_1.053.obj" scale="1.0 1.0 1.0"/>
         </geometry>
       </collision>
     </link>
@@ -200,14 +200,14 @@
       <visual name="10_HL_Femur_L_Visual">
         <origin xyz="0.67236 0.01674 -0.00219" rpy="-1.5708 -0.01487 0.01487"/>
         <geometry>
-          <mesh filename="../meshes/dae/Textured_mesh_1.027.dae" scale="1.0 1.0 1.0"/>
+          <mesh filename="../meshes/obj/Textured_mesh_1.027.obj" scale="1.0 1.0 1.0"/>
         </geometry>
         <material name="Textured_mesh_1"/>
       </visual>
       <collision name="10_HL_Femur_L_Collision">
         <origin xyz="0.62608 0.0165 -0.00451" rpy="-1.5708 -0.01487 0.01487"/>
         <geometry>
-          <mesh filename="../meshes/dae/Textured_mesh_1.049.dae" scale="1.0 1.0 1.0"/>
+          <mesh filename="../meshes/obj/Textured_mesh_1.049.obj" scale="1.0 1.0 1.0"/>
         </geometry>
       </collision>
     </link>
@@ -221,14 +221,14 @@
       <visual name="11_HL_Tibia_L_Visual">
         <origin xyz="0.01228 -0.67669 0.00057" rpy="-1.5708 -0.01487 0.01487"/>
         <geometry>
-          <mesh filename="../meshes/dae/Textured_mesh_1.029.dae" scale="1.0 1.0 1.0"/>
+          <mesh filename="../meshes/obj/Textured_mesh_1.029.obj" scale="1.0 1.0 1.0"/>
         </geometry>
         <material name="Textured_mesh_1"/>
       </visual>
       <collision name="11_HL_Tibia_L_Collision">
         <origin xyz="0.01463 -0.72451 -0.00246" rpy="-1.5708 -0.01487 0.01487"/>
         <geometry>
-          <mesh filename="../meshes/dae/Textured_mesh_1.050.dae" scale="1.0 1.0 1.0"/>
+          <mesh filename="../meshes/obj/Textured_mesh_1.050.obj" scale="1.0 1.0 1.0"/>
         </geometry>
       </collision>
     </link>
@@ -242,14 +242,14 @@
       <visual name="12_HL_Tarsus_L_Visual">
         <origin xyz="0.08915 -0.00613 0.00065" rpy="-1.5708 -0.01487 0.01487"/>
         <geometry>
-          <mesh filename="../meshes/dae/Textured_mesh_1.028.dae" scale="1.0 1.0 1.0"/>
+          <mesh filename="../meshes/obj/Textured_mesh_1.028.obj" scale="1.0 1.0 1.0"/>
         </geometry>
         <material name="Textured_mesh_1"/>
       </visual>
       <collision name="12_HL_Tarsus_L_Collision">
         <origin xyz="0.08204 -0.00932 0.00517" rpy="-1.5708 -0.01487 0.01487"/>
         <geometry>
-          <mesh filename="../meshes/dae/Textured_mesh_1.051.dae" scale="1.0 1.0 1.0"/>
+          <mesh filename="../meshes/obj/Textured_mesh_1.051.obj" scale="1.0 1.0 1.0"/>
         </geometry>
       </collision>
     </link>
@@ -263,14 +263,14 @@
       <visual name="13_HL_Pretarsus_L_Visual">
         <origin xyz="0.08252 0.00663 -0.00613" rpy="-1.5708 -0.01487 0.01487"/>
         <geometry>
-          <mesh filename="../meshes/dae/Textured_mesh_1.030.dae" scale="1.0 1.0 1.0"/>
+          <mesh filename="../meshes/obj/Textured_mesh_1.030.obj" scale="1.0 1.0 1.0"/>
         </geometry>
         <material name="Textured_mesh_1"/>
       </visual>
       <collision name="13_HL_Pretarsus_L_Collision">
         <origin xyz="0.09089 0.01534 -0.01421" rpy="-1.5708 -0.01487 0.01487"/>
         <geometry>
-          <mesh filename="../meshes/dae/Textured_mesh_1.052.dae" scale="1.0 1.0 1.0"/>
+          <mesh filename="../meshes/obj/Textured_mesh_1.052.obj" scale="1.0 1.0 1.0"/>
         </geometry>
       </collision>
     </link>
@@ -284,14 +284,14 @@
       <visual name="14_HL_CT_R_Visual">
         <origin xyz="-0.0598 -0.00109 -0.00204" rpy="0 0 0"/>
         <geometry>
-          <mesh filename="../meshes/dae/Textured_mesh_1.026.dae" scale="1.0 1.0 1.0"/>
+          <mesh filename="../meshes/obj/Textured_mesh_1.026.obj" scale="1.0 1.0 1.0"/>
         </geometry>
         <material name="Textured_mesh_1"/>
       </visual>
       <collision name="14_HL_CT_R_Collision">
         <origin xyz="-0.06929 -0.01053 0.00277" rpy="0 0 0"/>
         <geometry>
-          <mesh filename="../meshes/dae/Textured_mesh_1.058.dae" scale="1.0 1.0 1.0"/>
+          <mesh filename="../meshes/obj/Textured_mesh_1.058.obj" scale="1.0 1.0 1.0"/>
         </geometry>
       </collision>
     </link>
@@ -305,14 +305,14 @@
       <visual name="15_HL_Femur_R_Visual">
         <origin xyz="-0.67541 -0.02913 0.00261" rpy="-1.5708 -0.01487 0.01487"/>
         <geometry>
-          <mesh filename="../meshes/dae/Textured_mesh_1.031.dae" scale="1.0 1.0 1.0"/>
+          <mesh filename="../meshes/obj/Textured_mesh_1.031.obj" scale="1.0 1.0 1.0"/>
         </geometry>
         <material name="Textured_mesh_1"/>
       </visual>
       <collision name="15_HL_Femur_R_Collision">
         <origin xyz="-0.63769 -0.02852 0.00328" rpy="-1.5708 -0.01487 0.01487"/>
         <geometry>
-          <mesh filename="../meshes/dae/Textured_mesh_1.054.dae" scale="1.0 1.0 1.0"/>
+          <mesh filename="../meshes/obj/Textured_mesh_1.054.obj" scale="1.0 1.0 1.0"/>
         </geometry>
       </collision>
     </link>
@@ -326,14 +326,14 @@
       <visual name="16_HL_Tibia_R_Visual">
         <origin xyz="0.01601 -0.59383 -0.00361" rpy="-1.5708 -0.01487 0.01487"/>
         <geometry>
-          <mesh filename="../meshes/dae/Textured_mesh_1.033.dae" scale="1.0 1.0 1.0"/>
+          <mesh filename="../meshes/obj/Textured_mesh_1.033.obj" scale="1.0 1.0 1.0"/>
         </geometry>
         <material name="Textured_mesh_1"/>
       </visual>
       <collision name="16_HL_Tibia_R_Collision">
         <origin xyz="0.01133 -0.63228 -0.00535" rpy="-1.5708 -0.01487 0.01487"/>
         <geometry>
-          <mesh filename="../meshes/dae/Textured_mesh_1.055.dae" scale="1.0 1.0 1.0"/>
+          <mesh filename="../meshes/obj/Textured_mesh_1.055.obj" scale="1.0 1.0 1.0"/>
         </geometry>
       </collision>
     </link>
@@ -347,14 +347,14 @@
       <visual name="17_HL_Tarsus_R_Visual">
         <origin xyz="-0.13775 -0.00868 0.00454" rpy="-1.5708 -0.01487 0.01487"/>
         <geometry>
-          <mesh filename="../meshes/dae/Textured_mesh_1.032.dae" scale="1.0 1.0 1.0"/>
+          <mesh filename="../meshes/obj/Textured_mesh_1.032.obj" scale="1.0 1.0 1.0"/>
         </geometry>
         <material name="Textured_mesh_1"/>
       </visual>
       <collision name="17_HL_Tarsus_R_Collision">
         <origin xyz="-0.1195 -0.0037 0.00457" rpy="-1.5708 -0.01487 0.01487"/>
         <geometry>
-          <mesh filename="../meshes/dae/Textured_mesh_1.056.dae" scale="1.0 1.0 1.0"/>
+          <mesh filename="../meshes/obj/Textured_mesh_1.056.obj" scale="1.0 1.0 1.0"/>
         </geometry>
       </collision>
     </link>
@@ -368,14 +368,14 @@
       <visual name="18_HL_Pretarsus_R_Visual">
         <origin xyz="-0.11251 0.0067 -0.00946" rpy="-1.5708 -0.01487 0.01487"/>
         <geometry>
-          <mesh filename="../meshes/dae/Textured_mesh_1.034.dae" scale="1.0 1.0 1.0"/>
+          <mesh filename="../meshes/obj/Textured_mesh_1.034.obj" scale="1.0 1.0 1.0"/>
         </geometry>
         <material name="Textured_mesh_1"/>
       </visual>
       <collision name="18_HL_Pretarsus_R_Collision">
         <origin xyz="-0.12247 0.00686 -0.01808" rpy="-1.5708 -0.01487 0.01487"/>
         <geometry>
-          <mesh filename="../meshes/dae/Textured_mesh_1.057.dae" scale="1.0 1.0 1.0"/>
+          <mesh filename="../meshes/obj/Textured_mesh_1.057.obj" scale="1.0 1.0 1.0"/>
         </geometry>
       </collision>
     </link>
@@ -389,14 +389,14 @@
       <visual name="19_ML_CT_L_Visual">
         <origin xyz="0.05976 0.00355 -0.00473" rpy="0 0 0"/>
         <geometry>
-          <mesh filename="../meshes/dae/Textured_mesh_1.007.dae" scale="1.0 1.0 1.0"/>
+          <mesh filename="../meshes/obj/Textured_mesh_1.007.obj" scale="1.0 1.0 1.0"/>
         </geometry>
         <material name="Textured_mesh_1"/>
       </visual>
       <collision name="19_ML_CT_L_Collision">
         <origin xyz="0.06138 -0.00159 -0.00601" rpy="0 0 0"/>
         <geometry>
-          <mesh filename="../meshes/dae/Textured_mesh_1.048.dae" scale="1.0 1.0 1.0"/>
+          <mesh filename="../meshes/obj/Textured_mesh_1.048.obj" scale="1.0 1.0 1.0"/>
         </geometry>
       </collision>
     </link>
@@ -410,14 +410,14 @@
       <visual name="20_ML_Femur_L_Visual">
         <origin xyz="0.5259 -0.00662 0.01525" rpy="-1.5708 -0.01487 0.01487"/>
         <geometry>
-          <mesh filename="../meshes/dae/Textured_mesh_1.021.dae" scale="1.0 1.0 1.0"/>
+          <mesh filename="../meshes/obj/Textured_mesh_1.021.obj" scale="1.0 1.0 1.0"/>
         </geometry>
         <material name="Textured_mesh_1"/>
       </visual>
       <collision name="20_ML_Femur_L_Collision">
         <origin xyz="0.52321 -0.00657 0.01803" rpy="-1.5708 -0.01487 0.01487"/>
         <geometry>
-          <mesh filename="../meshes/dae/Textured_mesh_1.044.dae" scale="1.0 1.0 1.0"/>
+          <mesh filename="../meshes/obj/Textured_mesh_1.044.obj" scale="1.0 1.0 1.0"/>
         </geometry>
       </collision>
     </link>
@@ -431,14 +431,14 @@
       <visual name="21_ML_Tibia_L_Visual">
         <origin xyz="0.02083 -0.56726 -0.00875" rpy="-1.5708 -0.01487 0.01487"/>
         <geometry>
-          <mesh filename="../meshes/dae/Textured_mesh_1.022.dae" scale="1.0 1.0 1.0"/>
+          <mesh filename="../meshes/obj/Textured_mesh_1.022.obj" scale="1.0 1.0 1.0"/>
         </geometry>
         <material name="Textured_mesh_1"/>
       </visual>
       <collision name="21_ML_Tibia_L_Collision">
         <origin xyz="0.01768 -0.5586 -0.00809" rpy="-1.5708 -0.01487 0.01487"/>
         <geometry>
-          <mesh filename="../meshes/dae/Textured_mesh_1.045.dae" scale="1.0 1.0 1.0"/>
+          <mesh filename="../meshes/obj/Textured_mesh_1.045.obj" scale="1.0 1.0 1.0"/>
         </geometry>
       </collision>
     </link>
@@ -452,14 +452,14 @@
       <visual name="22_ML_Tarsus_L_Visual">
         <origin xyz="0.07939 -0.00547 -0.00223" rpy="-1.5708 -0.01487 0.01487"/>
         <geometry>
-          <mesh filename="../meshes/dae/Textured_mesh_1.023.dae" scale="1.0 1.0 1.0"/>
+          <mesh filename="../meshes/obj/Textured_mesh_1.023.obj" scale="1.0 1.0 1.0"/>
         </geometry>
         <material name="Textured_mesh_1"/>
       </visual>
       <collision name="22_ML_Tarsus_L_Collision">
         <origin xyz="0.07474 -0.01048 -0.00454" rpy="-1.5708 -0.01487 0.01487"/>
         <geometry>
-          <mesh filename="../meshes/dae/Textured_mesh_1.046.dae" scale="1.0 1.0 1.0"/>
+          <mesh filename="../meshes/obj/Textured_mesh_1.046.obj" scale="1.0 1.0 1.0"/>
         </geometry>
       </collision>
     </link>
@@ -473,14 +473,14 @@
       <visual name="23_ML_Pretarsus_L_Visual">
         <origin xyz="0.05906 0.00292 0.00266" rpy="-1.5708 -0.01487 0.01487"/>
         <geometry>
-          <mesh filename="../meshes/dae/Textured_mesh_1.020.dae" scale="1.0 1.0 1.0"/>
+          <mesh filename="../meshes/obj/Textured_mesh_1.020.obj" scale="1.0 1.0 1.0"/>
         </geometry>
         <material name="Textured_mesh_1"/>
       </visual>
       <collision name="23_ML_Pretarsus_L_Collision">
         <origin xyz="0.06823 0.00318 -0.00152" rpy="-1.5708 -0.01487 0.01487"/>
         <geometry>
-          <mesh filename="../meshes/dae/Textured_mesh_1.047.dae" scale="1.0 1.0 1.0"/>
+          <mesh filename="../meshes/obj/Textured_mesh_1.047.obj" scale="1.0 1.0 1.0"/>
         </geometry>
       </collision>
     </link>
@@ -494,14 +494,14 @@
       <visual name="24_ML_CT_R_Visual">
         <origin xyz="-0.05312 -0.00115 -0.00042" rpy="0 0 0"/>
         <geometry>
-          <mesh filename="../meshes/dae/Textured_mesh_1.014.dae" scale="1.0 1.0 1.0"/>
+          <mesh filename="../meshes/obj/Textured_mesh_1.014.obj" scale="1.0 1.0 1.0"/>
         </geometry>
         <material name="Textured_mesh_1"/>
       </visual>
       <collision name="24_ML_CT_R_Collision">
         <origin xyz="-0.05985 -0.00207 -0.00148" rpy="0 0 0"/>
         <geometry>
-          <mesh filename="../meshes/dae/Textured_mesh_1.043.dae" scale="1.0 1.0 1.0"/>
+          <mesh filename="../meshes/obj/Textured_mesh_1.043.obj" scale="1.0 1.0 1.0"/>
         </geometry>
       </collision>
     </link>
@@ -515,14 +515,14 @@
       <visual name="25_ML_Femur_R_Visual">
         <origin xyz="-0.5338 -0.00281 0.00804" rpy="-1.5708 -0.01487 0.01487"/>
         <geometry>
-          <mesh filename="../meshes/dae/Textured_mesh_1.016.dae" scale="1.0 1.0 1.0"/>
+          <mesh filename="../meshes/obj/Textured_mesh_1.016.obj" scale="1.0 1.0 1.0"/>
         </geometry>
         <material name="Textured_mesh_1"/>
       </visual>
       <collision name="25_ML_Femur_R_Collision">
         <origin xyz="-0.51651 -0.00177 0.00798" rpy="-1.5708 -0.01487 0.01487"/>
         <geometry>
-          <mesh filename="../meshes/dae/Textured_mesh_1.039.dae" scale="1.0 1.0 1.0"/>
+          <mesh filename="../meshes/obj/Textured_mesh_1.039.obj" scale="1.0 1.0 1.0"/>
         </geometry>
       </collision>
     </link>
@@ -536,14 +536,14 @@
       <visual name="26_ML_Tibia_R_Visual">
         <origin xyz="0.00146 -0.49641 0.00221" rpy="-1.5708 -0.01487 0.01487"/>
         <geometry>
-          <mesh filename="../meshes/dae/Textured_mesh_1.018.dae" scale="1.0 1.0 1.0"/>
+          <mesh filename="../meshes/obj/Textured_mesh_1.018.obj" scale="1.0 1.0 1.0"/>
         </geometry>
         <material name="Textured_mesh_1"/>
       </visual>
       <collision name="26_ML_Tibia_R_Collision">
         <origin xyz="0.00471 -0.49962 0.00156" rpy="-1.5708 -0.01487 0.01487"/>
         <geometry>
-          <mesh filename="../meshes/dae/Textured_mesh_1.040.dae" scale="1.0 1.0 1.0"/>
+          <mesh filename="../meshes/obj/Textured_mesh_1.040.obj" scale="1.0 1.0 1.0"/>
         </geometry>
       </collision>
     </link>
@@ -557,14 +557,14 @@
       <visual name="27_ML_Tarsus_R_Visual">
         <origin xyz="-0.10979 -0.00875 -0.00688" rpy="-1.5708 -0.01487 0.01487"/>
         <geometry>
-          <mesh filename="../meshes/dae/Textured_mesh_1.017.dae" scale="1.0 1.0 1.0"/>
+          <mesh filename="../meshes/obj/Textured_mesh_1.017.obj" scale="1.0 1.0 1.0"/>
         </geometry>
         <material name="Textured_mesh_1"/>
       </visual>
       <collision name="27_ML_Tarsus_R_Collision">
         <origin xyz="-0.098 -0.01101 -0.01412" rpy="-1.5708 -0.01487 0.01487"/>
         <geometry>
-          <mesh filename="../meshes/dae/Textured_mesh_1.041.dae" scale="1.0 1.0 1.0"/>
+          <mesh filename="../meshes/obj/Textured_mesh_1.041.obj" scale="1.0 1.0 1.0"/>
         </geometry>
       </collision>
     </link>
@@ -578,14 +578,14 @@
       <visual name="28_ML_Pretarsus_R_Visual">
         <origin xyz="-0.08426 -0.00367 0.00286" rpy="-1.5708 -0.01487 0.01487"/>
         <geometry>
-          <mesh filename="../meshes/dae/Textured_mesh_1.019.dae" scale="1.0 1.0 1.0"/>
+          <mesh filename="../meshes/obj/Textured_mesh_1.019.obj" scale="1.0 1.0 1.0"/>
         </geometry>
         <material name="Textured_mesh_1"/>
       </visual>
       <collision name="28_ML_Pretarsus_R_Collision">
         <origin xyz="-0.10475 -0.00246 0.015" rpy="-1.5708 -0.01487 0.01487"/>
         <geometry>
-          <mesh filename="../meshes/dae/Textured_mesh_1.042.dae" scale="1.0 1.0 1.0"/>
+          <mesh filename="../meshes/obj/Textured_mesh_1.042.obj" scale="1.0 1.0 1.0"/>
         </geometry>
       </collision>
     </link>
@@ -599,14 +599,14 @@
       <visual name="29_FL_CT_L_Visual">
         <origin xyz="0.05825 0.00669 -0.01075" rpy="0 0 0"/>
         <geometry>
-          <mesh filename="../meshes/dae/Textured_mesh_1.001.dae" scale="1.0 1.0 1.0"/>
+          <mesh filename="../meshes/obj/Textured_mesh_1.001.obj" scale="1.0 1.0 1.0"/>
         </geometry>
         <material name="Textured_mesh_1"/>
       </visual>
       <collision name="29_FL_CT_L_Collision">
         <origin xyz="0.06109 0.00667 0.00327" rpy="0 0 0"/>
         <geometry>
-          <mesh filename="../meshes/dae/Textured_mesh_1.069.dae" scale="1.0 1.0 1.0"/>
+          <mesh filename="../meshes/obj/Textured_mesh_1.069.obj" scale="1.0 1.0 1.0"/>
         </geometry>
       </collision>
     </link>
@@ -620,14 +620,14 @@
       <visual name="30_FL_Femur_L_Visual">
         <origin xyz="0.74981 0.02106 0.00263" rpy="-1.5708 -0.01487 0.01487"/>
         <geometry>
-          <mesh filename="../meshes/dae/Textured_mesh_1.004.dae" scale="1.0 1.0 1.0"/>
+          <mesh filename="../meshes/obj/Textured_mesh_1.004.obj" scale="1.0 1.0 1.0"/>
         </geometry>
         <material name="Textured_mesh_1"/>
       </visual>
       <collision name="30_FL_Femur_L_Collision">
         <origin xyz="0.71889 0.02037 0.00664" rpy="-1.5708 -0.01487 0.01487"/>
         <geometry>
-          <mesh filename="../meshes/dae/Textured_mesh_1.068.dae" scale="1.0 1.0 1.0"/>
+          <mesh filename="../meshes/obj/Textured_mesh_1.068.obj" scale="1.0 1.0 1.0"/>
         </geometry>
       </collision>
     </link>
@@ -641,14 +641,14 @@
       <visual name="31_FL_Tibia_L_Visual">
         <origin xyz="0.00926 -0.63695 0.00189" rpy="-1.5708 -0.01487 0.01487"/>
         <geometry>
-          <mesh filename="../meshes/dae/Textured_mesh_1.005.dae" scale="1.0 1.0 1.0"/>
+          <mesh filename="../meshes/obj/Textured_mesh_1.005.obj" scale="1.0 1.0 1.0"/>
         </geometry>
         <material name="Textured_mesh_1"/>
       </visual>
       <collision name="31_FL_Tibia_L_Collision">
         <origin xyz="0.01075 -0.63378 0.00093" rpy="-1.5708 -0.01487 0.01487"/>
         <geometry>
-          <mesh filename="../meshes/dae/Textured_mesh_1.065.dae" scale="1.0 1.0 1.0"/>
+          <mesh filename="../meshes/obj/Textured_mesh_1.065.obj" scale="1.0 1.0 1.0"/>
         </geometry>
       </collision>
     </link>
@@ -662,14 +662,14 @@
       <visual name="32_FL_Tarsus_L_Visual">
         <origin xyz="0.07146 -0.00243 -0.00319" rpy="-1.5708 -0.01487 0.01487"/>
         <geometry>
-          <mesh filename="../meshes/dae/Textured_mesh_1.003.dae" scale="1.0 1.0 1.0"/>
+          <mesh filename="../meshes/obj/Textured_mesh_1.003.obj" scale="1.0 1.0 1.0"/>
         </geometry>
         <material name="Textured_mesh_1"/>
       </visual>
       <collision name="32_FL_Tarsus_L_Collision">
         <origin xyz="0.07222 -0.0047 -0.00169" rpy="-1.5708 -0.01487 0.01487"/>
         <geometry>
-          <mesh filename="../meshes/dae/Textured_mesh_1.066.dae" scale="1.0 1.0 1.0"/>
+          <mesh filename="../meshes/obj/Textured_mesh_1.066.obj" scale="1.0 1.0 1.0"/>
         </geometry>
       </collision>
     </link>
@@ -683,14 +683,14 @@
       <visual name="33_FL_Pretarsus_L_Visual">
         <origin xyz="0.07423 0.01283 0.00647" rpy="-1.5708 -0.01487 0.01487"/>
         <geometry>
-          <mesh filename="../meshes/dae/Textured_mesh_1.006.dae" scale="1.0 1.0 1.0"/>
+          <mesh filename="../meshes/obj/Textured_mesh_1.006.obj" scale="1.0 1.0 1.0"/>
         </geometry>
         <material name="Textured_mesh_1"/>
       </visual>
       <collision name="33_FL_Pretarsus_L_Collision">
         <origin xyz="0.0875 0.02052 0.01066" rpy="-1.5708 -0.01487 0.01487"/>
         <geometry>
-          <mesh filename="../meshes/dae/Textured_mesh_1.067.dae" scale="1.0 1.0 1.0"/>
+          <mesh filename="../meshes/obj/Textured_mesh_1.067.obj" scale="1.0 1.0 1.0"/>
         </geometry>
       </collision>
     </link>
@@ -704,14 +704,14 @@
       <visual name="34_FL_CT_R_Visual">
         <origin xyz="-0.04796 -0.00236 -0.00015" rpy="0 0 0"/>
         <geometry>
-          <mesh filename="../meshes/dae/Textured_mesh_1.008.dae" scale="1.0 1.0 1.0"/>
+          <mesh filename="../meshes/obj/Textured_mesh_1.008.obj" scale="1.0 1.0 1.0"/>
         </geometry>
         <material name="Textured_mesh_1"/>
       </visual>
       <collision name="34_FL_CT_R_Collision">
         <origin xyz="-0.05327 0.00237 -0.00253" rpy="0 0 0"/>
         <geometry>
-          <mesh filename="../meshes/dae/Textured_mesh_1.074.dae" scale="1.0 1.0 1.0"/>
+          <mesh filename="../meshes/obj/Textured_mesh_1.074.obj" scale="1.0 1.0 1.0"/>
         </geometry>
       </collision>
     </link>
@@ -725,14 +725,14 @@
       <visual name="35_FL_Femur_R_Visual">
         <origin xyz="-0.70545 -0.00442 0.02193" rpy="-1.5708 -0.01487 0.01487"/>
         <geometry>
-          <mesh filename="../meshes/dae/Textured_mesh_1.010.dae" scale="1.0 1.0 1.0"/>
+          <mesh filename="../meshes/obj/Textured_mesh_1.010.obj" scale="1.0 1.0 1.0"/>
         </geometry>
         <material name="Textured_mesh_1"/>
       </visual>
       <collision name="35_FL_Femur_R_Collision">
         <origin xyz="-0.71365 -0.00396 0.0329" rpy="-1.5708 -0.01487 0.01487"/>
         <geometry>
-          <mesh filename="../meshes/dae/Textured_mesh_1.073.dae" scale="1.0 1.0 1.0"/>
+          <mesh filename="../meshes/obj/Textured_mesh_1.073.obj" scale="1.0 1.0 1.0"/>
         </geometry>
       </collision>
     </link>
@@ -746,14 +746,14 @@
       <visual name="36_FL_Tibia_R_Visual">
         <origin xyz="-0.0006 -0.67299 0.00244" rpy="-1.5708 -0.01487 0.01487"/>
         <geometry>
-          <mesh filename="../meshes/dae/Textured_mesh_1.011.dae" scale="1.0 1.0 1.0"/>
+          <mesh filename="../meshes/obj/Textured_mesh_1.011.obj" scale="1.0 1.0 1.0"/>
         </geometry>
         <material name="Textured_mesh_1"/>
       </visual>
       <collision name="36_FL_Tibia_R_Collision">
         <origin xyz="0.00254 -0.69922 -0.00368" rpy="-1.5708 -0.01487 0.01487"/>
         <geometry>
-          <mesh filename="../meshes/dae/Textured_mesh_1.070.dae" scale="1.0 1.0 1.0"/>
+          <mesh filename="../meshes/obj/Textured_mesh_1.070.obj" scale="1.0 1.0 1.0"/>
         </geometry>
       </collision>
     </link>
@@ -767,14 +767,14 @@
       <visual name="37_FL_Tarsus_R_Visual">
         <origin xyz="-0.08245 -0.01025 0.00014" rpy="-1.5708 -0.01487 0.01487"/>
         <geometry>
-          <mesh filename="../meshes/dae/Textured_mesh_1.009.dae" scale="1.0 1.0 1.0"/>
+          <mesh filename="../meshes/obj/Textured_mesh_1.009.obj" scale="1.0 1.0 1.0"/>
         </geometry>
         <material name="Textured_mesh_1"/>
       </visual>
       <collision name="37_FL_Tarsus_R_Collision">
         <origin xyz="-0.07257 -0.0103 0.00297" rpy="-1.5708 -0.01487 0.01487"/>
         <geometry>
-          <mesh filename="../meshes/dae/Textured_mesh_1.071.dae" scale="1.0 1.0 1.0"/>
+          <mesh filename="../meshes/obj/Textured_mesh_1.071.obj" scale="1.0 1.0 1.0"/>
         </geometry>
       </collision>
     </link>
@@ -788,14 +788,14 @@
       <visual name="38_FL_Pretarsus_R_Visual">
         <origin xyz="-0.07406 0.01029 0.00618" rpy="-1.5708 -0.01487 0.01487"/>
         <geometry>
-          <mesh filename="../meshes/dae/Textured_mesh_1.012.dae" scale="1.0 1.0 1.0"/>
+          <mesh filename="../meshes/obj/Textured_mesh_1.012.obj" scale="1.0 1.0 1.0"/>
         </geometry>
         <material name="Textured_mesh_1"/>
       </visual>
       <collision name="38_FL_Pretarsus_R_Collision">
         <origin xyz="-0.08783 0.01742 0.01144" rpy="-1.5708 -0.01487 0.01487"/>
         <geometry>
-          <mesh filename="../meshes/dae/Textured_mesh_1.072.dae" scale="1.0 1.0 1.0"/>
+          <mesh filename="../meshes/obj/Textured_mesh_1.072.obj" scale="1.0 1.0 1.0"/>
         </geometry>
       </collision>
     </link>
@@ -1097,7 +1097,7 @@
     </joint>
 
     <material name="Textured_mesh_1">
-      <color rgba="0 0 0 1.0"/>
+      <color rgba="1 1 1 1.0"/>
     </material>
 
   </robot>
