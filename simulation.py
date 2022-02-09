@@ -48,7 +48,7 @@ class SIMULATION:
 
             t += 1
 
-
+            
     def Get_Fitness(self):
         '''Gets the of the robot'''
 

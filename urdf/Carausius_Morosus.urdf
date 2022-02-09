@@ -5,7 +5,7 @@
     <link name="01_Carput">
       <inertial>
         <origin xyz="0.00299 -0.20745 -0.00121" rpy="0 0 0"/>
-        <mass value="17.34"/>
+        <mass value="0.00173"/>
         <inertia ixx="0.29364" ixy="0.00491" ixz="-0.0002" iyy="0.11728" iyz="0.00443" izz="0.3038"/>
       </inertial>
       <visual name="01_Carput_Visual">
@@ -26,7 +26,7 @@
     <link name="02_Prothorax">
       <inertial>
         <origin xyz="-0.02188 0.16385 -0.00566" rpy="0 0 0"/>
-        <mass value="16.52"/>
+        <mass value="0.00165"/>
         <inertia ixx="1.58377" ixy="0.04347" ixz="0.00396" iyy="0.81574" iyz="0.07572" izz="1.50066"/>
       </inertial>
       <visual name="02_Prothorax_Visual">
@@ -47,7 +47,7 @@
     <link name="03_Mesothorax">
       <inertial>
         <origin xyz="-0.0093 0.89929 0.0142" rpy="0 0 0"/>
-        <mass value="106.97"/>
+        <mass value="0.0107"/>
         <inertia ixx="20.60371" ixy="0.78315" ixz="-0.05197" iyy="1.47493" iyz="0.10068" izz="20.30968"/>
       </inertial>
       <visual name="03_Mesothorax_Visual">
@@ -68,7 +68,7 @@
     <link name="04_Metathorax">
       <inertial>
         <origin xyz="0.00793 0.52285 -0.01246" rpy="0 0 0"/>
-        <mass value="81.29"/>
+        <mass value="0.00813"/>
         <inertia ixx="6.45446" ixy="0.10327" ixz="0.13269" iyy="1.283" iyz="-0.12884" izz="6.417"/>
       </inertial>
       <visual name="04_Metathorax_Visual">
@@ -89,7 +89,7 @@
     <link name="05_Abdomen_3">
       <inertial>
         <origin xyz="0.02684 0.42317 0.00598" rpy="0 0 0"/>
-        <mass value="80.68"/>
+        <mass value="0.00807"/>
         <inertia ixx="4.67129" ixy="0.1158" ixz="0.01225" iyy="1.42033" iyz="-0.19931" izz="4.35911"/>
       </inertial>
       <visual name="05_Abdomen_3_Visual">
@@ -110,7 +110,7 @@
     <link name="06_Abdomen_2">
       <inertial>
         <origin xyz="0.0132 0.462 0.00721" rpy="0 0 0"/>
-        <mass value="79.52"/>
+        <mass value="0.00795"/>
         <inertia ixx="5.64524" ixy="0.19915" ixz="0.18241" iyy="1.29091" iyz="-0.17084" izz="5.30662"/>
       </inertial>
       <visual name="06_Abdomen_2_Visual">
@@ -131,7 +131,7 @@
     <link name="07_Abdomen_1">
       <inertial>
         <origin xyz="-0.00193 0.38309 -0.01013" rpy="0 0 0"/>
-        <mass value="54.07"/>
+        <mass value="0.00541"/>
         <inertia ixx="2.73094" ixy="0.10817" ixz="0.0819" iyy="0.67247" iyz="-0.00785" izz="2.6494"/>
       </inertial>
       <visual name="07_Abdomen_1_Visual">
@@ -152,7 +152,7 @@
     <link name="08_Abdomen_0">
       <inertial>
         <origin xyz="-0.04794 0.40528 -0.01267" rpy="0 0 0"/>
-        <mass value="46.23"/>
+        <mass value="0.00462"/>
         <inertia ixx="2.05257" ixy="0.07623" ixz="0.06869" iyy="0.6677" iyz="0.25277" izz="1.78699"/>
       </inertial>
       <visual name="08_Abdomen_0_Visual">
@@ -173,7 +173,7 @@
     <link name="09_HL_CT_L">
       <inertial>
         <origin xyz="0.05059 0.00572 0.0055" rpy="0 0 0"/>
-        <mass value="1.05"/>
+        <mass value="0.0001"/>
         <inertia ixx="0.00199" ixy="5e-05" ixz="-9e-05" iyy="0.00209" iyz="-0.00015" izz="0.00156"/>
       </inertial>
       <visual name="09_HL_CT_L_Visual">
@@ -194,7 +194,7 @@
     <link name="10_HL_Femur_L">
       <inertial>
         <origin xyz="0.67236 0.01674 -0.00219" rpy="0 0 0"/>
-        <mass value="4.5"/>
+        <mass value="0.00045"/>
         <inertia ixx="0.00507" ixy="-0.01599" ixz="0.01795" iyy="0.61904" iyz="-0.00051" izz="0.6183"/>
       </inertial>
       <visual name="10_HL_Femur_L_Visual">
@@ -214,8 +214,8 @@
 
     <link name="11_HL_Tibia_L">
       <inertial>
-        <origin xyz="0.01228 -0.67668 0.00057" rpy="0 0 0"/>
-        <mass value="2.28"/>
+        <origin xyz="0.01228 -0.67669 0.00057" rpy="0 0 0"/>
+        <mass value="0.00023"/>
         <inertia ixx="0.46179" ixy="0.0008" ixz="-0.00026" iyy="0.46199" iyz="0.00424" izz="0.00093"/>
       </inertial>
       <visual name="11_HL_Tibia_L_Visual">
@@ -236,7 +236,7 @@
     <link name="12_HL_Tarsus_L">
       <inertial>
         <origin xyz="0.08915 -0.00613 0.00065" rpy="0 0 0"/>
-        <mass value="0.23"/>
+        <mass value="2e-05"/>
         <inertia ixx="7e-05" ixy="-3e-05" ixz="0" iyy="0.00052" iyz="-1e-05" izz="0.0005"/>
       </inertial>
       <visual name="12_HL_Tarsus_L_Visual">
@@ -257,7 +257,7 @@
     <link name="13_HL_Pretarsus_L">
       <inertial>
         <origin xyz="0.08252 0.00663 -0.00613" rpy="0 0 0"/>
-        <mass value="0.3"/>
+        <mass value="3e-05"/>
         <inertia ixx="0.00013" ixy="1e-05" ixz="2e-05" iyy="0.00097" iyz="2e-05" izz="0.00099"/>
       </inertial>
       <visual name="13_HL_Pretarsus_L_Visual">
@@ -277,12 +277,12 @@
 
     <link name="14_HL_CT_R">
       <inertial>
-        <origin xyz="-0.0598 -0.00109 -0.00204" rpy="0 0 0"/>
-        <mass value="1.38"/>
+        <origin xyz="-0.0598 -0.00109 -0.00203" rpy="0 0 0"/>
+        <mass value="0.00014"/>
         <inertia ixx="0.00288" ixy="-0.00026" ixz="6e-05" iyy="0.00362" iyz="3e-05" izz="0.00255"/>
       </inertial>
       <visual name="14_HL_CT_R_Visual">
-        <origin xyz="-0.0598 -0.00109 -0.00204" rpy="0 0 0"/>
+        <origin xyz="-0.0598 -0.00109 -0.00203" rpy="0 0 0"/>
         <geometry>
           <mesh filename="../meshes/obj/Textured_mesh_1.026.obj" scale="1.0 1.0 1.0"/>
         </geometry>
@@ -299,7 +299,7 @@
     <link name="15_HL_Femur_R">
       <inertial>
         <origin xyz="-0.67541 -0.02913 0.00261" rpy="0 0 0"/>
-        <mass value="4.58"/>
+        <mass value="0.00046"/>
         <inertia ixx="0.00534" ixy="-0.02581" ixz="0.00749" iyy="0.65793" iyz="0.00014" izz="0.6566"/>
       </inertial>
       <visual name="15_HL_Femur_R_Visual">
@@ -320,7 +320,7 @@
     <link name="16_HL_Tibia_R">
       <inertial>
         <origin xyz="0.01601 -0.59383 -0.00361" rpy="0 0 0"/>
-        <mass value="1.99"/>
+        <mass value="0.0002"/>
         <inertia ixx="0.30642" ixy="-0.00353" ixz="-5e-05" iyy="0.3058" iyz="0.00366" izz="0.00083"/>
       </inertial>
       <visual name="16_HL_Tibia_R_Visual">
@@ -341,7 +341,7 @@
     <link name="17_HL_Tarsus_R">
       <inertial>
         <origin xyz="-0.13775 -0.00868 0.00454" rpy="0 0 0"/>
-        <mass value="0.33"/>
+        <mass value="3e-05"/>
         <inertia ixx="0.0001" ixy="-0.00011" ixz="0.00013" iyy="0.00189" iyz="1e-05" izz="0.00189"/>
       </inertial>
       <visual name="17_HL_Tarsus_R_Visual">
@@ -362,7 +362,7 @@
     <link name="18_HL_Pretarsus_R">
       <inertial>
         <origin xyz="-0.11251 0.0067 -0.00946" rpy="0 0 0"/>
-        <mass value="0.39"/>
+        <mass value="4e-05"/>
         <inertia ixx="0.00019" ixy="-0.00026" ixz="-0.00013" iyy="0.00233" iyz="0" izz="0.00239"/>
       </inertial>
       <visual name="18_HL_Pretarsus_R_Visual">
@@ -383,7 +383,7 @@
     <link name="19_ML_CT_L">
       <inertial>
         <origin xyz="0.05976 0.00355 -0.00473" rpy="0 0 0"/>
-        <mass value="0.88"/>
+        <mass value="9e-05"/>
         <inertia ixx="0.00129" ixy="1e-05" ixz="5e-05" iyy="0.00177" iyz="0.0001" izz="0.00155"/>
       </inertial>
       <visual name="19_ML_CT_L_Visual">
@@ -404,7 +404,7 @@
     <link name="20_ML_Femur_L">
       <inertial>
         <origin xyz="0.5259 -0.00662 0.01525" rpy="0 0 0"/>
-        <mass value="4.57"/>
+        <mass value="0.00046"/>
         <inertia ixx="0.00454" ixy="-0.01513" ixz="-0.00475" iyy="0.31232" iyz="0.00068" izz="0.31323"/>
       </inertial>
       <visual name="20_ML_Femur_L_Visual">
@@ -425,7 +425,7 @@
     <link name="21_ML_Tibia_L">
       <inertial>
         <origin xyz="0.02083 -0.56726 -0.00875" rpy="0 0 0"/>
-        <mass value="1.44"/>
+        <mass value="0.00014"/>
         <inertia ixx="0.17819" ixy="-0.00339" ixz="-0.00011" iyy="0.17767" iyz="0.00263" izz="0.00052"/>
       </inertial>
       <visual name="21_ML_Tibia_L_Visual">
@@ -446,7 +446,7 @@
     <link name="22_ML_Tarsus_L">
       <inertial>
         <origin xyz="0.07939 -0.00547 -0.00223" rpy="0 0 0"/>
-        <mass value="0.15"/>
+        <mass value="1e-05"/>
         <inertia ixx="5e-05" ixy="-1e-05" ixz="0" iyy="0.00043" iyz="0" izz="0.00042"/>
       </inertial>
       <visual name="22_ML_Tarsus_L_Visual">
@@ -467,7 +467,7 @@
     <link name="23_ML_Pretarsus_L">
       <inertial>
         <origin xyz="0.05906 0.00292 0.00266" rpy="0 0 0"/>
-        <mass value="0.18"/>
+        <mass value="2e-05"/>
         <inertia ixx="9e-05" ixy="0" ixz="2e-05" iyy="0.00052" iyz="0" izz="0.00055"/>
       </inertial>
       <visual name="23_ML_Pretarsus_L_Visual">
@@ -488,7 +488,7 @@
     <link name="24_ML_CT_R">
       <inertial>
         <origin xyz="-0.05312 -0.00115 -0.00042" rpy="0 0 0"/>
-        <mass value="0.84"/>
+        <mass value="8e-05"/>
         <inertia ixx="0.00149" ixy="2e-05" ixz="-1e-05" iyy="0.00185" iyz="-2e-05" izz="0.00147"/>
       </inertial>
       <visual name="24_ML_CT_R_Visual">
@@ -509,7 +509,7 @@
     <link name="25_ML_Femur_R">
       <inertial>
         <origin xyz="-0.5338 -0.00281 0.00804" rpy="0 0 0"/>
-        <mass value="3.83"/>
+        <mass value="0.00038"/>
         <inertia ixx="0.00685" ixy="-0.02995" ixz="0.00967" iyy="0.36425" iyz="0.00089" izz="0.36355"/>
       </inertial>
       <visual name="25_ML_Femur_R_Visual">
@@ -530,8 +530,8 @@
     <link name="26_ML_Tibia_R">
       <inertial>
         <origin xyz="0.00146 -0.49641 0.00221" rpy="0 0 0"/>
-        <mass value="1.49"/>
-        <inertia ixx="0.21772" ixy="0.00142" ixz="0.00021" iyy="0.21806" iyz="-0.00267" izz="0.00077"/>
+        <mass value="0.00015"/>
+        <inertia ixx="0.21772" ixy="0.00142" ixz="0.00021" iyy="0.21805" iyz="-0.00267" izz="0.00077"/>
       </inertial>
       <visual name="26_ML_Tibia_R_Visual">
         <origin xyz="0.00146 -0.49641 0.00221" rpy="-1.5708 -0.01487 0.01487"/>
@@ -551,7 +551,7 @@
     <link name="27_ML_Tarsus_R">
       <inertial>
         <origin xyz="-0.10979 -0.00875 -0.00688" rpy="0 0 0"/>
-        <mass value="0.23"/>
+        <mass value="2e-05"/>
         <inertia ixx="7e-05" ixy="-5e-05" ixz="2e-05" iyy="0.00073" iyz="1e-05" izz="0.00071"/>
       </inertial>
       <visual name="27_ML_Tarsus_R_Visual">
@@ -572,7 +572,7 @@
     <link name="28_ML_Pretarsus_R">
       <inertial>
         <origin xyz="-0.08426 -0.00367 0.00286" rpy="0 0 0"/>
-        <mass value="0.26"/>
+        <mass value="3e-05"/>
         <inertia ixx="0.0001" ixy="-4e-05" ixz="9e-05" iyy="0.0012" iyz="0" izz="0.00124"/>
       </inertial>
       <visual name="28_ML_Pretarsus_R_Visual">
@@ -593,7 +593,7 @@
     <link name="29_FL_CT_L">
       <inertial>
         <origin xyz="0.05825 0.00669 -0.01075" rpy="0 0 0"/>
-        <mass value="1.28"/>
+        <mass value="0.00013"/>
         <inertia ixx="0.00275" ixy="0.00021" ixz="-2e-05" iyy="0.00299" iyz="0.00011" izz="0.00269"/>
       </inertial>
       <visual name="29_FL_CT_L_Visual">
@@ -614,7 +614,7 @@
     <link name="30_FL_Femur_L">
       <inertial>
         <origin xyz="0.74981 0.02106 0.00263" rpy="0 0 0"/>
-        <mass value="6.69"/>
+        <mass value="0.00067"/>
         <inertia ixx="0.00915" ixy="-0.01685" ixz="0.01428" iyy="0.88191" iyz="0.00132" izz="0.88143"/>
       </inertial>
       <visual name="30_FL_Femur_L_Visual">
@@ -635,7 +635,7 @@
     <link name="31_FL_Tibia_L">
       <inertial>
         <origin xyz="0.00926 -0.63695 0.00189" rpy="0 0 0"/>
-        <mass value="2.09"/>
+        <mass value="0.00021"/>
         <inertia ixx="0.29766" ixy="0.00362" ixz="-0.0004" iyy="0.29885" iyz="0.00261" izz="0.0015"/>
       </inertial>
       <visual name="31_FL_Tibia_L_Visual">
@@ -656,7 +656,7 @@
     <link name="32_FL_Tarsus_L">
       <inertial>
         <origin xyz="0.07146 -0.00243 -0.00319" rpy="0 0 0"/>
-        <mass value="0.18"/>
+        <mass value="2e-05"/>
         <inertia ixx="4e-05" ixy="-2e-05" ixz="0" iyy="0.00031" iyz="0" izz="0.00031"/>
       </inertial>
       <visual name="32_FL_Tarsus_L_Visual">
@@ -677,7 +677,7 @@
     <link name="33_FL_Pretarsus_L">
       <inertial>
         <origin xyz="0.07423 0.01283 0.00647" rpy="0 0 0"/>
-        <mass value="0.27"/>
+        <mass value="3e-05"/>
         <inertia ixx="0.0001" ixy="3e-05" ixz="0" iyy="0.00082" iyz="-1e-05" izz="0.00078"/>
       </inertial>
       <visual name="33_FL_Pretarsus_L_Visual">
@@ -698,7 +698,7 @@
     <link name="34_FL_CT_R">
       <inertial>
         <origin xyz="-0.04796 -0.00236 -0.00015" rpy="0 0 0"/>
-        <mass value="0.88"/>
+        <mass value="9e-05"/>
         <inertia ixx="0.00142" ixy="-3e-05" ixz="-7e-05" iyy="0.0015" iyz="-8e-05" izz="0.00123"/>
       </inertial>
       <visual name="34_FL_CT_R_Visual">
@@ -719,7 +719,7 @@
     <link name="35_FL_Femur_R">
       <inertial>
         <origin xyz="-0.70545 -0.00442 0.02193" rpy="0 0 0"/>
-        <mass value="6.2"/>
+        <mass value="0.00062"/>
         <inertia ixx="0.01112" ixy="-0.054" ixz="0.01646" iyy="0.88078" iyz="0.00171" izz="0.88484"/>
       </inertial>
       <visual name="35_FL_Femur_R_Visual">
@@ -740,7 +740,7 @@
     <link name="36_FL_Tibia_R">
       <inertial>
         <origin xyz="-0.0006 -0.67299 0.00244" rpy="0 0 0"/>
-        <mass value="2.64"/>
+        <mass value="0.00026"/>
         <inertia ixx="0.46305" ixy="0.00282" ixz="-0.00045" iyy="0.46342" iyz="0.00939" izz="0.00157"/>
       </inertial>
       <visual name="36_FL_Tibia_R_Visual">
@@ -761,7 +761,7 @@
     <link name="37_FL_Tarsus_R">
       <inertial>
         <origin xyz="-0.08245 -0.01025 0.00014" rpy="0 0 0"/>
-        <mass value="0.17"/>
+        <mass value="2e-05"/>
         <inertia ixx="3e-05" ixy="-1e-05" ixz="2e-05" iyy="0.00038" iyz="0" izz="0.00038"/>
       </inertial>
       <visual name="37_FL_Tarsus_R_Visual">
@@ -782,7 +782,7 @@
     <link name="38_FL_Pretarsus_R">
       <inertial>
         <origin xyz="-0.07406 0.01029 0.00618" rpy="0 0 0"/>
-        <mass value="0.27"/>
+        <mass value="3e-05"/>
         <inertia ixx="7e-05" ixy="-5e-05" ixz="1e-05" iyy="0.00051" iyz="0" izz="0.00048"/>
       </inertial>
       <visual name="38_FL_Pretarsus_R_Visual">
@@ -857,7 +857,7 @@
     </joint>
 
     <joint name="09_HL_CT_L" type="revolute">
-      <origin xyz="0.11581 0.86767 0.17126" rpy="1.5708 -1.55593 -1.55593"/>
+      <origin xyz="0.11581 0.86767 0.17126" rpy="-1.5708 -1.06207 1.58566"/>
       <parent link="04_Metathorax"/>
       <child link="09_HL_CT_L"/>
       <axis xyz="0 0 1.0"/>
@@ -897,7 +897,7 @@
     </joint>
 
     <joint name="14_HL_CT_R" type="revolute">
-      <origin xyz="0.05706 0.86858 -0.17293" rpy="1.5708 -1.55593 -1.55593"/>
+      <origin xyz="0.05706 0.86858 -0.17293" rpy="1.5708 -1.03233 -1.55593"/>
       <parent link="04_Metathorax"/>
       <child link="14_HL_CT_R"/>
       <axis xyz="0 0 1.0"/>
@@ -1017,7 +1017,7 @@
     </joint>
 
     <joint name="29_FL_CT_L" type="revolute">
-      <origin xyz="0.01474 0.13803 0.12265" rpy="1.5708 -1.55593 -1.55593"/>
+      <origin xyz="0.01474 0.13803 0.12265" rpy="1.5708 -1.54344 -1.55593"/>
       <parent link="02_Prothorax"/>
       <child link="29_FL_CT_L"/>
       <axis xyz="0 0 1.0"/>

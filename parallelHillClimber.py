@@ -107,6 +107,7 @@ class PARALLEL_HILL_CLIMBER:
         print("MAX_KEY: ", self.corespondingParent)
 
 
+
     def save_parent(self, obj, filename):
         with open(filename, 'wb') as outp:
             pickle.dump(obj, outp, pickle.HIGHEST_PROTOCOL)
