@@ -52,7 +52,7 @@ class ROBOT:
         for jointName in pyrosim.jointNamesToIndices:
             self.motors[jointName] = MOTOR(jointName)
 
-        # self.changeJointLimits()
+        self.changeJointLimits()
 
 
     def Sense(self, t):
@@ -111,13 +111,13 @@ class ROBOT:
     def changeJointLimits(self):
         '''changing the limits of all joints'''
 
-        # p.changeDynamics(self.robot, 0, jointLowerLimit=c.LOWER_LIMIT_CARPUT_PROTHORAX, jointUpperLimit=c.UPPER_LIMIT_CARPUT_PROTHORAX)
-        # p.changeDynamics(self.robot, 1, jointLowerLimit=c.LOWER_LIMIT_PROTHORAX_MESOTHORAX, jointUpperLimit=c.UPPER_LIMIT_PROTHORAX_MESOTHORAX)
-        # p.changeDynamics(self.robot, 2, jointLowerLimit=c.LOWER_LIMIT_MESOTHORAX_METATHORAX, jointUpperLimit=c.UPPER_LIMIT_MESOTHORAX_METATHORAX)
-        # p.changeDynamics(self.robot, 3, jointLowerLimit=c.LOWER_LIMIT_METATHORAX_ABDOMEN_3, jointUpperLimit=c.UPPER_LIMIT_METATHORAX_ABDOMEN_3)
-        # p.changeDynamics(self.robot, 4, jointLowerLimit=c.LOWER_LIMIT_ABDOMEN_3_ABDOMEN_2, jointUpperLimit=c.UPPER_LIMIT_ABDOMEN_3_ABDOMEN_2)
-        # p.changeDynamics(self.robot, 5, jointLowerLimit=c.LOWER_LIMIT_ABDOMEN_2_ABDOMEN_1, jointUpperLimit=c.UPPER_LIMIT_ABDOMEN_2_ABDOMEN_1)
-        # p.changeDynamics(self.robot, 6, jointLowerLimit=c.LOWER_LIMIT_ABDOMEN_1_ABDOMEN_0, jointUpperLimit=c.UPPER_LIMIT_ABDOMEN_1_ABDOMEN_0)
+        p.changeDynamics(self.robot, 0, jointLowerLimit=c.LOWER_LIMIT_CARPUT_PROTHORAX, jointUpperLimit=c.UPPER_LIMIT_CARPUT_PROTHORAX)
+        p.changeDynamics(self.robot, 1, jointLowerLimit=c.LOWER_LIMIT_PROTHORAX_MESOTHORAX, jointUpperLimit=c.UPPER_LIMIT_PROTHORAX_MESOTHORAX)
+        p.changeDynamics(self.robot, 2, jointLowerLimit=c.LOWER_LIMIT_MESOTHORAX_METATHORAX, jointUpperLimit=c.UPPER_LIMIT_MESOTHORAX_METATHORAX)
+        p.changeDynamics(self.robot, 3, jointLowerLimit=c.LOWER_LIMIT_METATHORAX_ABDOMEN_3, jointUpperLimit=c.UPPER_LIMIT_METATHORAX_ABDOMEN_3)
+        p.changeDynamics(self.robot, 4, jointLowerLimit=c.LOWER_LIMIT_ABDOMEN_3_ABDOMEN_2, jointUpperLimit=c.UPPER_LIMIT_ABDOMEN_3_ABDOMEN_2)
+        p.changeDynamics(self.robot, 5, jointLowerLimit=c.LOWER_LIMIT_ABDOMEN_2_ABDOMEN_1, jointUpperLimit=c.UPPER_LIMIT_ABDOMEN_2_ABDOMEN_1)
+        p.changeDynamics(self.robot, 6, jointLowerLimit=c.LOWER_LIMIT_ABDOMEN_1_ABDOMEN_0, jointUpperLimit=c.UPPER_LIMIT_ABDOMEN_1_ABDOMEN_0)
         # p.changeDynamics(self.robot, 7, jointLowerLimit=c.LOWER_LIMIT_HL_CT_L, jointUpperLimit=c.UPPER_LIMIT_HL_CT_L)
         # p.changeDynamics(self.robot, 8, jointLowerLimit=c.LOWER_LIMIT_HL_FEMUR_L, jointUpperLimit=c.UPPER_LIMIT_HL_FEMUR_L)
         # p.changeDynamics(self.robot, 9, jointLowerLimit=c.LOWER_LIMIT_HL_TIBIA_L, jointUpperLimit=c.UPPER_LIMIT_HL_TIBIA_L)

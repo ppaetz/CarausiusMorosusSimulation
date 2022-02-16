@@ -214,12 +214,12 @@
 
     <link name="11_HL_Tibia_L">
       <inertial>
-        <origin xyz="0.01228 -0.67669 0.00057" rpy="0 0 0"/>
+        <origin xyz="0.01228 -0.67668 0.00057" rpy="0 0 0"/>
         <mass value="0.00023"/>
         <inertia ixx="0.46179" ixy="0.0008" ixz="-0.00026" iyy="0.46199" iyz="0.00424" izz="0.00093"/>
       </inertial>
       <visual name="11_HL_Tibia_L_Visual">
-        <origin xyz="0.01228 -0.67669 0.00057" rpy="-1.5708 -0.01487 0.01487"/>
+        <origin xyz="0.01228 -0.67668 0.00057" rpy="-1.5708 -0.01487 0.01487"/>
         <geometry>
           <mesh filename="../meshes/obj/Textured_mesh_1.029.obj" scale="1.0 1.0 1.0"/>
         </geometry>
@@ -256,12 +256,12 @@
 
     <link name="13_HL_Pretarsus_L">
       <inertial>
-        <origin xyz="0.08252 0.00663 -0.00613" rpy="0 0 0"/>
+        <origin xyz="0.08252 0.00663 -0.00612" rpy="0 0 0"/>
         <mass value="3e-05"/>
         <inertia ixx="0.00013" ixy="1e-05" ixz="2e-05" iyy="0.00097" iyz="2e-05" izz="0.00099"/>
       </inertial>
       <visual name="13_HL_Pretarsus_L_Visual">
-        <origin xyz="0.08252 0.00663 -0.00613" rpy="-1.5708 -0.01487 0.01487"/>
+        <origin xyz="0.08252 0.00663 -0.00612" rpy="-1.5708 -0.01487 0.01487"/>
         <geometry>
           <mesh filename="../meshes/obj/Textured_mesh_1.030.obj" scale="1.0 1.0 1.0"/>
         </geometry>
@@ -571,7 +571,7 @@
 
     <link name="28_ML_Pretarsus_R">
       <inertial>
-        <origin xyz="-0.08426 -0.00367 0.00286" rpy="0 0 0"/>
+        <origin xyz="-0.08426 -0.00366 0.00286" rpy="0 0 0"/>
         <mass value="3e-05"/>
         <inertia ixx="0.0001" ixy="-4e-05" ixz="9e-05" iyy="0.0012" iyz="0" izz="0.00124"/>
       </inertial>
@@ -718,7 +718,7 @@
 
     <link name="35_FL_Femur_R">
       <inertial>
-        <origin xyz="-0.70545 -0.00442 0.02193" rpy="0 0 0"/>
+        <origin xyz="-0.70545 -0.00442 0.02192" rpy="0 0 0"/>
         <mass value="0.00062"/>
         <inertia ixx="0.01112" ixy="-0.054" ixz="0.01646" iyy="0.88078" iyz="0.00171" izz="0.88484"/>
       </inertial>
@@ -857,7 +857,7 @@
     </joint>
 
     <joint name="09_HL_CT_L" type="revolute">
-      <origin xyz="0.11581 0.86767 0.17126" rpy="-1.5708 -1.06207 1.58566"/>
+      <origin xyz="0.11581 0.86767 0.17126" rpy="-1.5708 -0.80027 1.58566"/>
       <parent link="04_Metathorax"/>
       <child link="09_HL_CT_L"/>
       <axis xyz="0 0 1.0"/>
@@ -865,7 +865,7 @@
     </joint>
 
     <joint name="10_HL_Femur_L" type="revolute">
-      <origin xyz="0.11235 0.01234 0.00904" rpy="1.5708 0.01487 0.01487"/>
+      <origin xyz="0.11235 0.01234 0.00904" rpy="1.5708 -0.17679 0.01487"/>
       <parent link="09_HL_CT_L"/>
       <child link="10_HL_Femur_L"/>
       <axis xyz="0 0 1.0"/>
@@ -873,7 +873,7 @@
     </joint>
 
     <joint name="11_HL_Tibia_L" type="revolute">
-      <origin xyz="1.22244 0.01703 -0.00127" rpy="0 0 0"/>
+      <origin xyz="1.22244 0.01703 -0.00127" rpy="0 0 0.1853"/>
       <parent link="10_HL_Femur_L"/>
       <child link="11_HL_Tibia_L"/>
       <axis xyz="0 0 1.0"/>
@@ -881,7 +881,7 @@
     </joint>
 
     <joint name="12_HL_Tarsus_L" type="revolute">
-      <origin xyz="0.0317 -1.4681 -0.00568" rpy="0 0 0"/>
+      <origin xyz="0.0317 -1.4681 -0.00568" rpy="0 0 -0.35937"/>
       <parent link="11_HL_Tibia_L"/>
       <child link="12_HL_Tarsus_L"/>
       <axis xyz="0 0 1.0"/>
@@ -897,7 +897,7 @@
     </joint>
 
     <joint name="14_HL_CT_R" type="revolute">
-      <origin xyz="0.05706 0.86858 -0.17293" rpy="1.5708 -1.03233 -1.55593"/>
+      <origin xyz="0.05706 0.86858 -0.17293" rpy="1.5708 -0.77053 -1.55593"/>
       <parent link="04_Metathorax"/>
       <child link="14_HL_CT_R"/>
       <axis xyz="0 0 1.0"/>
@@ -905,7 +905,7 @@
     </joint>
 
     <joint name="15_HL_Femur_R" type="revolute">
-      <origin xyz="-0.13933 -0.00283 -0.00741" rpy="1.5708 0.01487 0.01487"/>
+      <origin xyz="-0.13933 -0.00283 -0.00741" rpy="1.5708 0.34608 0.01487"/>
       <parent link="14_HL_CT_R"/>
       <child link="15_HL_Femur_R"/>
       <axis xyz="0 0 1.0"/>
@@ -913,7 +913,7 @@
     </joint>
 
     <joint name="16_HL_Tibia_R" type="revolute">
-      <origin xyz="-1.2448 -0.07124 0.00429" rpy="0 0 0"/>
+      <origin xyz="-1.2448 -0.07124 0.00429" rpy="0 0 0.09208"/>
       <parent link="15_HL_Femur_R"/>
       <child link="16_HL_Tibia_R"/>
       <axis xyz="0 0 1.0"/>
@@ -921,7 +921,7 @@
     </joint>
 
     <joint name="17_HL_Tarsus_R" type="revolute">
-      <origin xyz="0.00654 -1.27212 -0.00879" rpy="0 0 0"/>
+      <origin xyz="0.00654 -1.27212 -0.00879" rpy="0 0 0.15798"/>
       <parent link="16_HL_Tibia_R"/>
       <child link="17_HL_Tarsus_R"/>
       <axis xyz="0 0 1.0"/>
@@ -945,7 +945,7 @@
     </joint>
 
     <joint name="20_ML_Femur_L" type="revolute">
-      <origin xyz="0.12326 0.00677 -0.0102" rpy="1.5708 0.01487 0.01487"/>
+      <origin xyz="0.12326 0.00677 -0.0102" rpy="1.5708 -0.42082 0.01487"/>
       <parent link="19_ML_CT_L"/>
       <child link="20_ML_Femur_L"/>
       <axis xyz="0 0 1.0"/>
@@ -953,7 +953,7 @@
     </joint>
 
     <joint name="21_ML_Tibia_L" type="revolute">
-      <origin xyz="1.02447 -0.02296 0.01027" rpy="0 0 0"/>
+      <origin xyz="1.02447 -0.02296 0.01027" rpy="0 0 -0.28186"/>
       <parent link="20_ML_Femur_L"/>
       <child link="21_ML_Tibia_L"/>
       <axis xyz="0 0 1.0"/>
@@ -961,7 +961,7 @@
     </joint>
 
     <joint name="22_ML_Tarsus_L" type="revolute">
-      <origin xyz="0.0474 -1.12595 -0.00892" rpy="0 0 0"/>
+      <origin xyz="0.0474 -1.12595 -0.00892" rpy="0 0 -0.09032"/>
       <parent link="21_ML_Tibia_L"/>
       <child link="22_ML_Tarsus_L"/>
       <axis xyz="0 0 1.0"/>
@@ -985,7 +985,7 @@
     </joint>
 
     <joint name="25_ML_Femur_R" type="revolute">
-      <origin xyz="-0.11998 0.00023 -0.00162" rpy="1.5708 0.01487 0.01487"/>
+      <origin xyz="-0.11998 0.00023 -0.00162" rpy="1.5708 0.45666 0.01487"/>
       <parent link="24_ML_CT_R"/>
       <child link="25_ML_Femur_R"/>
       <axis xyz="0 0 1.0"/>
@@ -993,7 +993,7 @@
     </joint>
 
     <joint name="26_ML_Tibia_R" type="revolute">
-      <origin xyz="-1.00324 -0.01434 0.01466" rpy="0 0 0"/>
+      <origin xyz="-1.00324 -0.01434 0.01466" rpy="0 0 0.01545"/>
       <parent link="25_ML_Femur_R"/>
       <child link="26_ML_Tibia_R"/>
       <axis xyz="0 0 1.0"/>
@@ -1001,7 +1001,7 @@
     </joint>
 
     <joint name="27_ML_Tarsus_R" type="revolute">
-      <origin xyz="-0.00804 -1.01475 0.00158" rpy="0 0 0"/>
+      <origin xyz="-0.00804 -1.01475 0.00158" rpy="0 0 0.46229"/>
       <parent link="26_ML_Tibia_R"/>
       <child link="27_ML_Tarsus_R"/>
       <axis xyz="0 0 1.0"/>
@@ -1017,7 +1017,7 @@
     </joint>
 
     <joint name="29_FL_CT_L" type="revolute">
-      <origin xyz="0.01474 0.13803 0.12265" rpy="1.5708 -1.54344 -1.55593"/>
+      <origin xyz="0.01474 0.13803 0.12265" rpy="1.5708 -1.01984 -1.55593"/>
       <parent link="02_Prothorax"/>
       <child link="29_FL_CT_L"/>
       <axis xyz="0 0 1.0"/>
@@ -1025,7 +1025,7 @@
     </joint>
 
     <joint name="30_FL_Femur_L" type="revolute">
-      <origin xyz="0.12442 0.01758 -0.01703" rpy="1.5708 0.01487 0.01487"/>
+      <origin xyz="0.12442 0.01758 -0.01703" rpy="1.57412 -0.24646 0.01448"/>
       <parent link="29_FL_CT_L"/>
       <child link="30_FL_Femur_L"/>
       <axis xyz="0 0 1.0"/>
@@ -1033,7 +1033,7 @@
     </joint>
 
     <joint name="31_FL_Tibia_L" type="revolute">
-      <origin xyz="1.39525 0.01628 -0.00914" rpy="0 0 0"/>
+      <origin xyz="1.39525 0.01628 -0.00914" rpy="0.00105 -0.00023 0.08576"/>
       <parent link="30_FL_Femur_L"/>
       <child link="31_FL_Tibia_L"/>
       <axis xyz="0 0 1.0"/>
@@ -1057,7 +1057,7 @@
     </joint>
 
     <joint name="34_FL_CT_R" type="revolute">
-      <origin xyz="0.02108 0.15758 -0.13854" rpy="1.5708 -1.55593 -1.55593"/>
+      <origin xyz="0.02108 0.15758 -0.13854" rpy="-1.5708 -1.06207 1.58566"/>
       <parent link="02_Prothorax"/>
       <child link="34_FL_CT_R"/>
       <axis xyz="0 0 1.0"/>
@@ -1065,7 +1065,7 @@
     </joint>
 
     <joint name="35_FL_Femur_R" type="revolute">
-      <origin xyz="-0.10675 -0.00175 0.00476" rpy="1.5708 0.01487 0.01487"/>
+      <origin xyz="-0.10675 -0.00175 0.00476" rpy="1.5708 0.21853 0.01487"/>
       <parent link="34_FL_CT_R"/>
       <child link="35_FL_Femur_R"/>
       <axis xyz="0 0 1.0"/>
@@ -1073,7 +1073,7 @@
     </joint>
 
     <joint name="36_FL_Tibia_R" type="revolute">
-      <origin xyz="-1.39541 -0.03843 0.00396" rpy="0 0 0"/>
+      <origin xyz="-1.39541 -0.03843 0.00396" rpy="0 0 -0.18769"/>
       <parent link="35_FL_Femur_R"/>
       <child link="36_FL_Tibia_R"/>
       <axis xyz="0 0 1.0"/>
@@ -1081,7 +1081,7 @@
     </joint>
 
     <joint name="37_FL_Tarsus_R" type="revolute">
-      <origin xyz="-0.00112 -1.41627 -0.00491" rpy="0 0 0"/>
+      <origin xyz="-0.00112 -1.41627 -0.00491" rpy="0 0 0.37813"/>
       <parent link="36_FL_Tibia_R"/>
       <child link="37_FL_Tarsus_R"/>
       <axis xyz="0 0 1.0"/>
