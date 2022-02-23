@@ -13,7 +13,7 @@ class SIMULATION:
 
         self.physicsClient = p.connect(p.GUI)
         p.setAdditionalSearchPath(pybullet_data.getDataPath())
-        p.setGravity(c.GRAVITY_X, c.GRAVITY_Y, c.GRAVITY_Z)
+        p.setGravity(c.GRAVITY_X, c.GRAVITY_Y, c.GRAVITY_Z) 
 
         self.world = WORLD()
         self.robot = ROBOT()
@@ -33,7 +33,6 @@ class SIMULATION:
             p.stepSimulation()
 
             self.robot.Sense(t)
-            self.robot.Think()
             self.robot.Act()
 
             time.sleep(c.TIME_BETWEEN_STEPS)

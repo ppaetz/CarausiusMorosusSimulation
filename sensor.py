@@ -15,7 +15,3 @@ class SENSOR:
         '''Captures the sensor values of each link'''
 
         self.values[t] = pyrosim.Get_Touch_Sensor_Value_For_Link(self.linkName)
-        # print("Linkname: ", self.linkName, ", Value: ", self.values[t])
-
-        # self.values[t] = pyrosim.Get_Touch_Sensor_Value_For_Link("38_FL_Pretarsus_R")
-        # print("Linkname: ", "FL_CT_L", ", Value: ", self.values[t])
