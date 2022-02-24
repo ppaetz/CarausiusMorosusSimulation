@@ -4,7 +4,7 @@ import pybullet as p
 # setting up the gravity
 GRAVITY_X = 0
 GRAVITY_Y = 0
-GRAVITY_Z = -98.1
+GRAVITY_Z = -981
 
 # steps of simulation
 SIMULATION_STEPS = 10000
@@ -14,10 +14,10 @@ TIME_BETWEEN_STEPS = 1/240
 
 # parameters for all motors
 CONTROL_MODE = p.POSITION_CONTROL
-MAX_FORCE = 500000
+MAX_FORCE = 50
 
 # Coefficient for friction of objects within the simulation
-LATERAL_FRICTION_COEFFICIENT = 100
+LATERAL_FRICTION_COEFFICIENT = 1000
 
 # Limits of the Joints
 UPPER_LIMIT_CARPUT_PROTHORAX = 0

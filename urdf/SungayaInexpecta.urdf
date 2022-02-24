@@ -1,0 +1,1248 @@
+<?xml version="1.0"?>
+<!-- created with Phobos 1.0.1 "Capricious Choutengan" -->
+  <robot name="SungayaInexpecta">
+
+    <link name="01_Carput">
+      <inertial>
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <mass value="0.001"/>
+        <inertia ixx="0.001" ixy="0" ixz="0" iyy="0.001" iyz="0" izz="0.001"/>
+      </inertial>
+      <visual name="03_caput">
+        <origin xyz="0.08139357 0.433166414 -0.118143879" rpy="0 -1.570796251 0"/>
+        <geometry>
+          <mesh filename="../meshes/obj/Sungaya_inexpectata_31mg.051.obj" scale="100.0 100.0 100.0"/>
+        </geometry>
+        <material name="Sungaya_inexpectata_31mg"/>
+      </visual>
+      <collision name="03_caput.000">
+        <origin xyz="0.08139357 0.433166414 -0.118143879" rpy="0 -1.570796251 0"/>
+        <geometry>
+          <mesh filename="../meshes/obj/Sungaya_inexpectata_31mg.131.obj" scale="100.0 100.0 100.0"/>
+        </geometry>
+      </collision>
+    </link>
+
+    <link name="02_Prothorax">
+      <inertial>
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <mass value="0.001"/>
+        <inertia ixx="0.001" ixy="0" ixz="0" iyy="0.001" iyz="0" izz="0.001"/>
+      </inertial>
+      <visual name="04_t1">
+        <origin xyz="0.022835033 -0.071372911 -0.112794869" rpy="0 -1.570796251 0"/>
+        <geometry>
+          <mesh filename="../meshes/obj/Sungaya_inexpectata_31mg.016.obj" scale="100.0 100.0 100.0"/>
+        </geometry>
+        <material name="Sungaya_inexpectata_31mg"/>
+      </visual>
+      <collision name="04_t1.000">
+        <origin xyz="0.022835033 -0.071372971 -0.112794869" rpy="0 -1.570796251 0"/>
+        <geometry>
+          <mesh filename="../meshes/obj/Sungaya_inexpectata_31mg.130.obj" scale="100.0 100.0 100.0"/>
+        </geometry>
+      </collision>
+    </link>
+
+    <link name="03_Mesothorax">
+      <inertial>
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <mass value="0.001"/>
+        <inertia ixx="0.001" ixy="0" ixz="0" iyy="0.001" iyz="0" izz="0.001"/>
+      </inertial>
+      <visual name="05_t2">
+        <origin xyz="0.032171875 -0.21571365 -0.085753329" rpy="0 -1.570796251 0"/>
+        <geometry>
+          <mesh filename="../meshes/obj/Sungaya_inexpectata_31mg.018.obj" scale="100.0 100.0 100.0"/>
+        </geometry>
+        <material name="Sungaya_inexpectata_31mg"/>
+      </visual>
+      <collision name="05_t2.000">
+        <origin xyz="0.032171875 -0.21571365 -0.085753337" rpy="0 -1.570796251 0"/>
+        <geometry>
+          <mesh filename="../meshes/obj/Sungaya_inexpectata_31mg.119.obj" scale="100.0 100.0 100.0"/>
+        </geometry>
+      </collision>
+    </link>
+
+    <link name="04_Metathorax">
+      <inertial>
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <mass value="0.001"/>
+        <inertia ixx="0.001" ixy="0" ixz="0" iyy="0.001" iyz="0" izz="0.001"/>
+      </inertial>
+      <visual name="06_t3">
+        <origin xyz="0.030135544 -0.063431233 -0.080801614" rpy="0 -1.570796251 0"/>
+        <geometry>
+          <mesh filename="../meshes/obj/Sungaya_inexpectata_31mg.019.obj" scale="100.0 100.0 100.0"/>
+        </geometry>
+        <material name="Sungaya_inexpectata_31mg"/>
+      </visual>
+      <collision name="06_t3.000">
+        <origin xyz="0.030135544 -0.063431233 -0.080801614" rpy="0 -1.570796251 0"/>
+        <geometry>
+          <mesh filename="../meshes/obj/Sungaya_inexpectata_31mg.108.obj" scale="100.0 100.0 100.0"/>
+        </geometry>
+      </collision>
+    </link>
+
+    <link name="05_Abdomen2">
+      <inertial>
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <mass value="0.001"/>
+        <inertia ixx="0.001" ixy="0" ixz="0" iyy="0.001" iyz="0" izz="0.001"/>
+      </inertial>
+      <visual name="07_a2">
+        <origin xyz="0.027714022 -0.045568388 -0.080784924" rpy="0 -1.570796251 0"/>
+        <geometry>
+          <mesh filename="../meshes/obj/Sungaya_inexpectata_31mg.020.obj" scale="100.0 100.0 100.0"/>
+        </geometry>
+        <material name="Sungaya_inexpectata_31mg"/>
+      </visual>
+      <collision name="07_a2.000">
+        <origin xyz="0.027714022 -0.045568373 -0.080784932" rpy="0 -1.570796251 0"/>
+        <geometry>
+          <mesh filename="../meshes/obj/Sungaya_inexpectata_31mg.107.obj" scale="100.0 100.0 100.0"/>
+        </geometry>
+      </collision>
+    </link>
+
+    <link name="06_Abdomen3">
+      <inertial>
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <mass value="0.001"/>
+        <inertia ixx="0.001" ixy="0" ixz="0" iyy="0.001" iyz="0" izz="0.001"/>
+      </inertial>
+      <visual name="08_a3">
+        <origin xyz="0.018590147 -0.064954661 -0.090111241" rpy="0 -1.570796251 0"/>
+        <geometry>
+          <mesh filename="../meshes/obj/Sungaya_inexpectata_31mg.021.obj" scale="100.0 100.0 100.0"/>
+        </geometry>
+        <material name="Sungaya_inexpectata_31mg"/>
+      </visual>
+      <collision name="08_a3.000">
+        <origin xyz="0.018590147 -0.064954661 -0.090111248" rpy="0 -1.570796251 0"/>
+        <geometry>
+          <mesh filename="../meshes/obj/Sungaya_inexpectata_31mg.096.obj" scale="100.0 100.0 100.0"/>
+        </geometry>
+      </collision>
+    </link>
+
+    <link name="07_Abdomen4">
+      <inertial>
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <mass value="0.001"/>
+        <inertia ixx="0.001" ixy="0" ixz="0" iyy="0.001" iyz="0" izz="0.001"/>
+      </inertial>
+      <visual name="09_a4">
+        <origin xyz="0.022988424 -0.067074291 -0.09463945" rpy="0 -1.570796251 0"/>
+        <geometry>
+          <mesh filename="../meshes/obj/Sungaya_inexpectata_31mg.022.obj" scale="100.0 100.0 100.0"/>
+        </geometry>
+        <material name="Sungaya_inexpectata_31mg"/>
+      </visual>
+      <collision name="09_a4.000">
+        <origin xyz="0.022988424 -0.067074262 -0.094639458" rpy="0 -1.570796251 0"/>
+        <geometry>
+          <mesh filename="../meshes/obj/Sungaya_inexpectata_31mg.095.obj" scale="100.0 100.0 100.0"/>
+        </geometry>
+      </collision>
+    </link>
+
+    <link name="08_Abdomen5">
+      <inertial>
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <mass value="0.001"/>
+        <inertia ixx="0.001" ixy="0" ixz="0" iyy="0.001" iyz="0" izz="0.001"/>
+      </inertial>
+      <visual name="10_a5">
+        <origin xyz="0.014604541 -0.065614454 -0.097968869" rpy="0 -1.570796251 0"/>
+        <geometry>
+          <mesh filename="../meshes/obj/Sungaya_inexpectata_31mg.023.obj" scale="100.0 100.0 100.0"/>
+        </geometry>
+        <material name="Sungaya_inexpectata_31mg"/>
+      </visual>
+      <collision name="10_a5.000">
+        <origin xyz="0.014604541 -0.065614454 -0.097968869" rpy="0 -1.570796251 0"/>
+        <geometry>
+          <mesh filename="../meshes/obj/Sungaya_inexpectata_31mg.094.obj" scale="100.0 100.0 100.0"/>
+        </geometry>
+      </collision>
+    </link>
+
+    <link name="09_Abdomen6">
+      <inertial>
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <mass value="0.001"/>
+        <inertia ixx="0.001" ixy="0" ixz="0" iyy="0.001" iyz="0" izz="0.001"/>
+      </inertial>
+      <visual name="11_a6">
+        <origin xyz="0.009119672 -0.063280404 -0.094732411" rpy="0 -1.570796251 0"/>
+        <geometry>
+          <mesh filename="../meshes/obj/Sungaya_inexpectata_31mg.024.obj" scale="100.0 100.0 100.0"/>
+        </geometry>
+        <material name="Sungaya_inexpectata_31mg"/>
+      </visual>
+      <collision name="11_a6.000">
+        <origin xyz="0.009119672 -0.063280404 -0.094732419" rpy="0 -1.570796251 0"/>
+        <geometry>
+          <mesh filename="../meshes/obj/Sungaya_inexpectata_31mg.093.obj" scale="100.0 100.0 100.0"/>
+        </geometry>
+      </collision>
+    </link>
+
+    <link name="10_Abdomen7">
+      <inertial>
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <mass value="0.001"/>
+        <inertia ixx="0.001" ixy="0" ixz="0" iyy="0.001" iyz="0" izz="0.001"/>
+      </inertial>
+      <visual name="12_a7">
+        <origin xyz="0.002820844 -0.070102617 -0.100277029" rpy="0 -1.570796251 0"/>
+        <geometry>
+          <mesh filename="../meshes/obj/Sungaya_inexpectata_31mg.025.obj" scale="100.0 100.0 100.0"/>
+        </geometry>
+        <material name="Sungaya_inexpectata_31mg"/>
+      </visual>
+      <collision name="12_a7.000">
+        <origin xyz="0.002820844 -0.070102617 -0.100277029" rpy="0 -1.570796251 0"/>
+        <geometry>
+          <mesh filename="../meshes/obj/Sungaya_inexpectata_31mg.092.obj" scale="100.0 100.0 100.0"/>
+        </geometry>
+      </collision>
+    </link>
+
+    <link name="11_Abdomen8">
+      <inertial>
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <mass value="0.001"/>
+        <inertia ixx="0.001" ixy="0" ixz="0" iyy="0.001" iyz="0" izz="0.001"/>
+      </inertial>
+      <visual name="13_a8">
+        <origin xyz="-0.001014111 -0.056731414 -0.096700475" rpy="0 -1.570796251 0"/>
+        <geometry>
+          <mesh filename="../meshes/obj/Sungaya_inexpectata_31mg.026.obj" scale="100.0 100.0 100.0"/>
+        </geometry>
+        <material name="Sungaya_inexpectata_31mg"/>
+      </visual>
+      <collision name="13_a8.000">
+        <origin xyz="-0.001014111 -0.056731474 -0.096700475" rpy="0 -1.570796251 0"/>
+        <geometry>
+          <mesh filename="../meshes/obj/Sungaya_inexpectata_31mg.091.obj" scale="100.0 100.0 100.0"/>
+        </geometry>
+      </collision>
+    </link>
+
+    <link name="12_Abdomen9">
+      <inertial>
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <mass value="0.001"/>
+        <inertia ixx="0.001" ixy="0" ixz="0" iyy="0.001" iyz="0" izz="0.001"/>
+      </inertial>
+      <visual name="14_a9">
+        <origin xyz="-0.001375524 -0.054469064 -0.109575644" rpy="0 -1.570796251 0"/>
+        <geometry>
+          <mesh filename="../meshes/obj/Sungaya_inexpectata_31mg.027.obj" scale="100.0 100.0 100.0"/>
+        </geometry>
+        <material name="Sungaya_inexpectata_31mg"/>
+      </visual>
+      <collision name="14_a9.000">
+        <origin xyz="-0.001375524 -0.054469064 -0.109575644" rpy="0 -1.570796251 0"/>
+        <geometry>
+          <mesh filename="../meshes/obj/Sungaya_inexpectata_31mg.090.obj" scale="100.0 100.0 100.0"/>
+        </geometry>
+      </collision>
+    </link>
+
+    <link name="13_Abdomen10">
+      <inertial>
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <mass value="0.001"/>
+        <inertia ixx="0.001" ixy="0" ixz="0" iyy="0.001" iyz="0" izz="0.001"/>
+      </inertial>
+      <visual name="15_a10">
+        <origin xyz="-0.016378818 -0.090794034 -0.098942615" rpy="0 -1.570796251 0"/>
+        <geometry>
+          <mesh filename="../meshes/obj/Sungaya_inexpectata_31mg.028.obj" scale="100.0 100.0 100.0"/>
+        </geometry>
+        <material name="Sungaya_inexpectata_31mg"/>
+      </visual>
+      <collision name="15_a10.000">
+        <origin xyz="-0.016378818 -0.090794034 -0.09894263" rpy="0 -1.570796251 0"/>
+        <geometry>
+          <mesh filename="../meshes/obj/Sungaya_inexpectata_31mg.089.obj" scale="100.0 100.0 100.0"/>
+        </geometry>
+      </collision>
+    </link>
+
+    <link name="14_HL_CT_L">
+      <inertial>
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <mass value="0.001"/>
+        <inertia ixx="0.001" ixy="0" ixz="0" iyy="0.001" iyz="0" izz="0.001"/>
+      </inertial>
+      <visual name="26_h_l_coxa">
+        <origin xyz="-0.021009615 -0.00160702 -0.106741734" rpy="0 0 -0.261799425"/>
+        <geometry>
+          <mesh filename="../meshes/obj/Sungaya_inexpectata_31mg.014.obj" scale="99.999992371 100.0 100.0"/>
+        </geometry>
+        <material name="Sungaya_inexpectata_31mg"/>
+      </visual>
+      <collision name="26_h_l_coxa.000">
+        <origin xyz="-0.02100963 -0.001607028 -0.106741734" rpy="0 0 -0.261799455"/>
+        <geometry>
+          <mesh filename="../meshes/obj/Sungaya_inexpectata_31mg.101.obj" scale="99.999992371 100.0 100.0"/>
+        </geometry>
+      </collision>
+    </link>
+
+    <link name="15_HL_Femur_L">
+      <inertial>
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <mass value="0.001"/>
+        <inertia ixx="0.001" ixy="0" ixz="0" iyy="0.001" iyz="0" izz="0.001"/>
+      </inertial>
+      <visual name="27_h_l_femur">
+        <origin xyz="-0.228024483 -0.069476306 -0.100259311" rpy="-1.570796609 -0.261799455 0.608563483"/>
+        <geometry>
+          <mesh filename="../meshes/obj/Sungaya_inexpectata_31mg.013.obj" scale="99.999992371 100.000007629 100.0"/>
+        </geometry>
+        <material name="Sungaya_inexpectata_31mg"/>
+      </visual>
+      <collision name="27_h_l_femur.000">
+        <origin xyz="-0.228024483 -0.069476306 -0.100259341" rpy="-1.570796609 -0.261799455 0.608563542"/>
+        <geometry>
+          <mesh filename="../meshes/obj/Sungaya_inexpectata_31mg.100.obj" scale="99.999992371 100.000007629 100.0"/>
+        </geometry>
+      </collision>
+    </link>
+
+    <link name="16_HL_Tibia_L">
+      <inertial>
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <mass value="0.001"/>
+        <inertia ixx="0.001" ixy="0" ixz="0" iyy="0.001" iyz="0" izz="0.001"/>
+      </inertial>
+      <visual name="28_h_l_tibia">
+        <origin xyz="-0.222540334 -0.072928704 -0.102283351" rpy="-1.570796609 -0.261799783 -0.899731874"/>
+        <geometry>
+          <mesh filename="../meshes/obj/Sungaya_inexpectata_31mg.012.obj" scale="99.999984741 100.000007629 100.000007629"/>
+        </geometry>
+        <material name="Sungaya_inexpectata_31mg"/>
+      </visual>
+      <collision name="28_h_l_tibia.000">
+        <origin xyz="-0.222540334 -0.072928704 -0.102283381" rpy="-1.570796609 -0.261799812 -0.899731874"/>
+        <geometry>
+          <mesh filename="../meshes/obj/Sungaya_inexpectata_31mg.099.obj" scale="99.999984741 100.000007629 100.000007629"/>
+        </geometry>
+      </collision>
+    </link>
+
+    <link name="17_HL_Tarsus_L">
+      <inertial>
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <mass value="0.001"/>
+        <inertia ixx="0.001" ixy="0" ixz="0" iyy="0.001" iyz="0" izz="0.001"/>
+      </inertial>
+      <visual name="29_h_l_pretarsus">
+        <origin xyz="-0.045006312 -0.015618735 -0.102192655" rpy="-1.570796847 -0.261799783 0.291920215"/>
+        <geometry>
+          <mesh filename="../meshes/obj/Sungaya_inexpectata_31mg.011.obj" scale="99.999984741 100.000007629 100.000007629"/>
+        </geometry>
+        <material name="Sungaya_inexpectata_31mg"/>
+      </visual>
+      <collision name="29_h_l_pretarsus.000">
+        <origin xyz="-0.045006372 -0.015618735 -0.102192625" rpy="-1.570796847 -0.261799753 0.291920185"/>
+        <geometry>
+          <mesh filename="../meshes/obj/Sungaya_inexpectata_31mg.098.obj" scale="99.999984741 100.000007629 100.000007629"/>
+        </geometry>
+      </collision>
+    </link>
+
+    <link name="18_HL_Pretarsus_L">
+      <inertial>
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <mass value="0.001"/>
+        <inertia ixx="0.001" ixy="0" ixz="0" iyy="0.001" iyz="0" izz="0.001"/>
+      </inertial>
+      <visual name="30_h_l_tarsus">
+        <origin xyz="-0.091417097 -0.027885644 -0.089987911" rpy="-1.570796728 -0.261799932 0.291920155"/>
+        <geometry>
+          <mesh filename="../meshes/obj/Sungaya_inexpectata_31mg.010.obj" scale="99.999984741 100.000007629 100.000007629"/>
+        </geometry>
+        <material name="Sungaya_inexpectata_31mg"/>
+      </visual>
+      <collision name="30_h_l_tarsus.000">
+        <origin xyz="-0.091417156 -0.027885644 -0.089987986" rpy="-1.570796728 -0.261799961 0.291920125"/>
+        <geometry>
+          <mesh filename="../meshes/obj/Sungaya_inexpectata_31mg.097.obj" scale="99.999984741 100.000007629 100.000007629"/>
+        </geometry>
+      </collision>
+    </link>
+
+    <link name="19_HL_CT_R">
+      <inertial>
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <mass value="0.001"/>
+        <inertia ixx="0.001" ixy="0" ixz="0" iyy="0.001" iyz="0" izz="0.001"/>
+      </inertial>
+      <visual name="41_h_r_coxa">
+        <origin xyz="0.02099864 -0.001401981 -0.10671363" rpy="0 0 0.261799425"/>
+        <geometry>
+          <mesh filename="../meshes/obj/Sungaya_inexpectata_31mg.049.obj" scale="99.999992371 100.0 100.0"/>
+        </geometry>
+        <material name="Sungaya_inexpectata_31mg"/>
+      </visual>
+      <collision name="41_h_r_coxa.000">
+        <origin xyz="0.02099864 -0.001401981 -0.10671363" rpy="0 0 0.261799455"/>
+        <geometry>
+          <mesh filename="../meshes/obj/Sungaya_inexpectata_31mg.106.obj" scale="99.999992371 100.0 100.0"/>
+        </geometry>
+      </collision>
+    </link>
+
+    <link name="20_HL_Femur_R">
+      <inertial>
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <mass value="0.001"/>
+        <inertia ixx="0.001" ixy="0" ixz="0" iyy="0.001" iyz="0" izz="0.001"/>
+      </inertial>
+      <visual name="42_h_r_femur">
+        <origin xyz="0.228385448 -0.069326207 -0.103076696" rpy="-1.57079649 0.261799544 -0.63423121"/>
+        <geometry>
+          <mesh filename="../meshes/obj/Sungaya_inexpectata_31mg.048.obj" scale="99.999992371 100.000007629 100.000007629"/>
+        </geometry>
+        <material name="Sungaya_inexpectata_31mg"/>
+      </visual>
+      <collision name="42_h_r_femur.000">
+        <origin xyz="0.228385389 -0.069326222 -0.103076696" rpy="-1.57079649 0.261799604 -0.634231269"/>
+        <geometry>
+          <mesh filename="../meshes/obj/Sungaya_inexpectata_31mg.105.obj" scale="99.999992371 100.000007629 100.000007629"/>
+        </geometry>
+      </collision>
+    </link>
+
+    <link name="21_HL_Tibia_R">
+      <inertial>
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <mass value="0.001"/>
+        <inertia ixx="0.001" ixy="0" ixz="0" iyy="0.001" iyz="0" izz="0.001"/>
+      </inertial>
+      <visual name="43_h_r_tibia">
+        <origin xyz="0.222753391 -0.072718002 -0.104981355" rpy="-1.570796609 0.261799395 0.924147785"/>
+        <geometry>
+          <mesh filename="../meshes/obj/Sungaya_inexpectata_31mg.047.obj" scale="100.0 100.0 100.000007629"/>
+        </geometry>
+        <material name="Sungaya_inexpectata_31mg"/>
+      </visual>
+      <collision name="43_h_r_tibia.000">
+        <origin xyz="0.22275348 -0.072717942 -0.104981385" rpy="-1.570796609 0.261799395 0.924147844"/>
+        <geometry>
+          <mesh filename="../meshes/obj/Sungaya_inexpectata_31mg.104.obj" scale="100.0 100.0 100.000007629"/>
+        </geometry>
+      </collision>
+    </link>
+
+    <link name="22_HL_Tarsus_R">
+      <inertial>
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <mass value="0.001"/>
+        <inertia ixx="0.001" ixy="0" ixz="0" iyy="0.001" iyz="0" izz="0.001"/>
+      </inertial>
+      <visual name="44_h_r_pretarsus">
+        <origin xyz="0.045024663 -0.015421972 -0.102754556" rpy="-1.57079649 0.261799514 -0.301875204"/>
+        <geometry>
+          <mesh filename="../meshes/obj/Sungaya_inexpectata_31mg.046.obj" scale="99.999984741 99.999984741 100.000007629"/>
+        </geometry>
+        <material name="Sungaya_inexpectata_31mg"/>
+      </visual>
+      <collision name="44_h_r_pretarsus.000">
+        <origin xyz="0.045024723 -0.015421972 -0.102754511" rpy="-1.57079649 0.261799484 -0.301875204"/>
+        <geometry>
+          <mesh filename="../meshes/obj/Sungaya_inexpectata_31mg.103.obj" scale="99.999984741 99.999984741 100.000007629"/>
+        </geometry>
+      </collision>
+    </link>
+
+    <link name="23_HL_Pretarsus_R">
+      <inertial>
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <mass value="0.001"/>
+        <inertia ixx="0.001" ixy="0" ixz="0" iyy="0.001" iyz="0" izz="0.001"/>
+      </inertial>
+      <visual name="45_h_r_tarsus">
+        <origin xyz="0.09170641 -0.027232798 -0.091076627" rpy="-1.570796251 0.261799514 -0.301874906"/>
+        <geometry>
+          <mesh filename="../meshes/obj/Sungaya_inexpectata_31mg.045.obj" scale="99.999984741 99.999984741 100.000007629"/>
+        </geometry>
+        <material name="Sungaya_inexpectata_31mg"/>
+      </visual>
+      <collision name="45_h_r_tarsus.000">
+        <origin xyz="0.091706291 -0.027232798 -0.091076642" rpy="-1.570796251 0.261799514 -0.301874906"/>
+        <geometry>
+          <mesh filename="../meshes/obj/Sungaya_inexpectata_31mg.102.obj" scale="99.999984741 99.999984741 100.000007629"/>
+        </geometry>
+      </collision>
+    </link>
+
+    <link name="24_ML_CT_L">
+      <inertial>
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <mass value="0.001"/>
+        <inertia ixx="0.001" ixy="0" ixz="0" iyy="0.001" iyz="0" izz="0.001"/>
+      </inertial>
+      <visual name="21_m_l_coxa">
+        <origin xyz="-0.024473807 -0.000900729 -0.107780963" rpy="0 0 0"/>
+        <geometry>
+          <mesh filename="../meshes/obj/Sungaya_inexpectata_31mg.009.obj" scale="100.0 100.0 100.0"/>
+        </geometry>
+        <material name="Sungaya_inexpectata_31mg"/>
+      </visual>
+      <collision name="21_m_l_coxa.000">
+        <origin xyz="-0.024473799 -0.000900744 -0.107780963" rpy="0 0 0"/>
+        <geometry>
+          <mesh filename="../meshes/obj/Sungaya_inexpectata_31mg.113.obj" scale="100.0 100.0 100.0"/>
+        </geometry>
+      </collision>
+    </link>
+
+    <link name="25_ML_Femur_L">
+      <inertial>
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <mass value="0.001"/>
+        <inertia ixx="0.001" ixy="0" ixz="0" iyy="0.001" iyz="0" izz="0.001"/>
+      </inertial>
+      <visual name="22_m_l_femur">
+        <origin xyz="-0.187307894 -0.048444901 -0.101659447" rpy="-1.570796371 -2.9e-08 0.365136474"/>
+        <geometry>
+          <mesh filename="../meshes/obj/Sungaya_inexpectata_31mg.008.obj" scale="100.000007629 100.0 100.000007629"/>
+        </geometry>
+        <material name="Sungaya_inexpectata_31mg"/>
+      </visual>
+      <collision name="22_m_l_femur.000">
+        <origin xyz="-0.187307894 -0.048444901 -0.101659462" rpy="-1.570796371 -2.9e-08 0.365136474"/>
+        <geometry>
+          <mesh filename="../meshes/obj/Sungaya_inexpectata_31mg.112.obj" scale="100.000007629 100.0 100.000007629"/>
+        </geometry>
+      </collision>
+    </link>
+
+    <link name="26_ML_Tibia_L">
+      <inertial>
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <mass value="0.001"/>
+        <inertia ixx="0.001" ixy="0" ixz="0" iyy="0.001" iyz="0" izz="0.001"/>
+      </inertial>
+      <visual name="23_m_l_tibia">
+        <origin xyz="-0.17060101 -0.052012466 -0.099999696" rpy="-1.570796251 1.77e-07 -0.833749592"/>
+        <geometry>
+          <mesh filename="../meshes/obj/Sungaya_inexpectata_31mg.007.obj" scale="100.0 100.0 100.000015259"/>
+        </geometry>
+        <material name="Sungaya_inexpectata_31mg"/>
+      </visual>
+      <collision name="23_m_l_tibia.000">
+        <origin xyz="-0.170601115 -0.052012466 -0.099999666" rpy="-1.570796251 1.77e-07 -0.833749592"/>
+        <geometry>
+          <mesh filename="../meshes/obj/Sungaya_inexpectata_31mg.111.obj" scale="100.0 100.0 100.000015259"/>
+        </geometry>
+      </collision>
+    </link>
+
+    <link name="27_ML_Tarsus_L">
+      <inertial>
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <mass value="0.001"/>
+        <inertia ixx="0.001" ixy="0" ixz="0" iyy="0.001" iyz="0" izz="0.001"/>
+      </inertial>
+      <visual name="24_m_l_pretarsus">
+        <origin xyz="-0.041104596 -0.013789847 -0.100000069" rpy="-1.570796013 -1.17e-07 0.223369271"/>
+        <geometry>
+          <mesh filename="../meshes/obj/Sungaya_inexpectata_31mg.006.obj" scale="100.0 100.0 100.000015259"/>
+        </geometry>
+        <material name="Sungaya_inexpectata_31mg"/>
+      </visual>
+      <collision name="24_m_l_pretarsus.000">
+        <origin xyz="-0.041104596 -0.013789839 -0.100000069" rpy="-1.570796013 -1.17e-07 0.223369271"/>
+        <geometry>
+          <mesh filename="../meshes/obj/Sungaya_inexpectata_31mg.110.obj" scale="100.0 100.0 100.000015259"/>
+        </geometry>
+      </collision>
+    </link>
+
+    <link name="28_ML_Pretarsus_L">
+      <inertial>
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <mass value="0.001"/>
+        <inertia ixx="0.001" ixy="0" ixz="0" iyy="0.001" iyz="0" izz="0.001"/>
+      </inertial>
+      <visual name="25_m_l_tarsus">
+        <origin xyz="-0.058871239 -0.023186591 -0.090875648" rpy="-1.570796013 -9.5e-08 0.223369375"/>
+        <geometry>
+          <mesh filename="../meshes/obj/Sungaya_inexpectata_31mg.005.obj" scale="100.0 100.0 100.000022888"/>
+        </geometry>
+        <material name="Sungaya_inexpectata_31mg"/>
+      </visual>
+      <collision name="25_m_l_tarsus.000">
+        <origin xyz="-0.058871239 -0.023186605 -0.090875648" rpy="-1.570796013 -9.5e-08 0.223369405"/>
+        <geometry>
+          <mesh filename="../meshes/obj/Sungaya_inexpectata_31mg.109.obj" scale="100.0 100.0 100.000022888"/>
+        </geometry>
+      </collision>
+    </link>
+
+    <link name="29_ML_CT_R">
+      <inertial>
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <mass value="0.001"/>
+        <inertia ixx="0.001" ixy="0" ixz="0" iyy="0.001" iyz="0" izz="0.001"/>
+      </inertial>
+      <visual name="36_m_r_coxa">
+        <origin xyz="0.024645774 -0.000782041 -0.107718825" rpy="0 0 0"/>
+        <geometry>
+          <mesh filename="../meshes/obj/Sungaya_inexpectata_31mg.044.obj" scale="100.0 100.0 100.0"/>
+        </geometry>
+        <material name="Sungaya_inexpectata_31mg"/>
+      </visual>
+      <collision name="36_m_r_coxa.000">
+        <origin xyz="0.024645781 -0.000782041 -0.107718825" rpy="0 0 0"/>
+        <geometry>
+          <mesh filename="../meshes/obj/Sungaya_inexpectata_31mg.118.obj" scale="100.0 100.0 100.0"/>
+        </geometry>
+      </collision>
+    </link>
+
+    <link name="30_ML_Femur_R">
+      <inertial>
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <mass value="0.001"/>
+        <inertia ixx="0.001" ixy="0" ixz="0" iyy="0.001" iyz="0" izz="0.001"/>
+      </inertial>
+      <visual name="37_m_r_femur">
+        <origin xyz="0.186871111 -0.049436446 -0.103948534" rpy="-1.57079649 -1.7e-08 -0.388030499"/>
+        <geometry>
+          <mesh filename="../meshes/obj/Sungaya_inexpectata_31mg.043.obj" scale="100.0 100.0 100.000007629"/>
+        </geometry>
+        <material name="Sungaya_inexpectata_31mg"/>
+      </visual>
+      <collision name="37_m_r_femur.000">
+        <origin xyz="0.186871111 -0.049436446 -0.103948534" rpy="-1.57079649 -1.7e-08 -0.388030559"/>
+        <geometry>
+          <mesh filename="../meshes/obj/Sungaya_inexpectata_31mg.117.obj" scale="100.0 100.0 100.000007629"/>
+        </geometry>
+      </collision>
+    </link>
+
+    <link name="31_ML_Tibia_R">
+      <inertial>
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <mass value="0.001"/>
+        <inertia ixx="0.001" ixy="0" ixz="0" iyy="0.001" iyz="0" izz="0.001"/>
+      </inertial>
+      <visual name="38_m_r_tibia">
+        <origin xyz="0.170856312 -0.051999711 -0.100033574" rpy="-1.57079649 1.04e-07 0.892820656"/>
+        <geometry>
+          <mesh filename="../meshes/obj/Sungaya_inexpectata_31mg.042.obj" scale="100.0 100.0 100.0"/>
+        </geometry>
+        <material name="Sungaya_inexpectata_31mg"/>
+      </visual>
+      <collision name="38_m_r_tibia.000">
+        <origin xyz="0.170856297 -0.051999711 -0.100033574" rpy="-1.57079649 1.04e-07 0.892820656"/>
+        <geometry>
+          <mesh filename="../meshes/obj/Sungaya_inexpectata_31mg.116.obj" scale="100.0 100.0 100.0"/>
+        </geometry>
+      </collision>
+    </link>
+
+    <link name="32_ML_Tarsus_R">
+      <inertial>
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <mass value="0.001"/>
+        <inertia ixx="0.001" ixy="0" ixz="0" iyy="0.001" iyz="0" izz="0.001"/>
+      </inertial>
+      <visual name="39_m_r_pretarsus">
+        <origin xyz="0.041013815 -0.013692608 -0.100000076" rpy="-1.570796251 5.4e-08 -0.284025282"/>
+        <geometry>
+          <mesh filename="../meshes/obj/Sungaya_inexpectata_31mg.041.obj" scale="100.0 100.0 100.0"/>
+        </geometry>
+        <material name="Sungaya_inexpectata_31mg"/>
+      </visual>
+      <collision name="39_m_r_pretarsus.000">
+        <origin xyz="0.041013815 -0.01369263 -0.100000076" rpy="-1.570796251 5.4e-08 -0.284025311"/>
+        <geometry>
+          <mesh filename="../meshes/obj/Sungaya_inexpectata_31mg.115.obj" scale="100.0 100.0 100.0"/>
+        </geometry>
+      </collision>
+    </link>
+
+    <link name="33_ML_Pretarsus_R">
+      <inertial>
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <mass value="0.001"/>
+        <inertia ixx="0.001" ixy="0" ixz="0" iyy="0.001" iyz="0" izz="0.001"/>
+      </inertial>
+      <visual name="40_m_r_tarsus">
+        <origin xyz="0.060094066 -0.021396682 -0.09230157" rpy="-1.57079649 6.5e-08 -0.284025222"/>
+        <geometry>
+          <mesh filename="../meshes/obj/Sungaya_inexpectata_31mg.040.obj" scale="99.999992371 100.0 99.999992371"/>
+        </geometry>
+        <material name="Sungaya_inexpectata_31mg"/>
+      </visual>
+      <collision name="40_m_r_tarsus.000">
+        <origin xyz="0.060094185 -0.021396741 -0.092301555" rpy="-1.57079649 6.5e-08 -0.284025222"/>
+        <geometry>
+          <mesh filename="../meshes/obj/Sungaya_inexpectata_31mg.114.obj" scale="99.999992371 100.0 99.999992371"/>
+        </geometry>
+      </collision>
+    </link>
+
+    <link name="34_FL_CT_L">
+      <inertial>
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <mass value="0.001"/>
+        <inertia ixx="0.001" ixy="0" ixz="0" iyy="0.001" iyz="0" izz="0.001"/>
+      </inertial>
+      <visual name="16_f_l_coxa">
+        <origin xyz="-0.022407774 -0.003341967 -0.102109835" rpy="0 0 0.261799425"/>
+        <geometry>
+          <mesh filename="../meshes/obj/Sungaya_inexpectata_31mg.004.obj" scale="99.999992371 100.0 100.0"/>
+        </geometry>
+        <material name="Sungaya_inexpectata_31mg"/>
+      </visual>
+      <collision name="16_f_l_coxa.000">
+        <origin xyz="-0.022407759 -0.003341967 -0.102109835" rpy="0 0 0.261799455"/>
+        <geometry>
+          <mesh filename="../meshes/obj/Sungaya_inexpectata_31mg.129.obj" scale="99.999992371 100.0 100.0"/>
+        </geometry>
+      </collision>
+    </link>
+
+    <link name="35_FL_Femur_L">
+      <inertial>
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <mass value="0.001"/>
+        <inertia ixx="0.001" ixy="0" ixz="0" iyy="0.001" iyz="0" izz="0.001"/>
+      </inertial>
+      <visual name="17_f_l_femur">
+        <origin xyz="-0.211889997 -0.038533084 -0.094179936" rpy="-1.570796132 0.261799127 0.292513818"/>
+        <geometry>
+          <mesh filename="../meshes/obj/Sungaya_inexpectata_31mg.003.obj" scale="100.0 100.0 100.0"/>
+        </geometry>
+        <material name="Sungaya_inexpectata_31mg"/>
+      </visual>
+      <collision name="17_f_l_femur.000">
+        <origin xyz="-0.211889938 -0.038533084 -0.094179936" rpy="-1.570796132 0.261799157 0.292513818"/>
+        <geometry>
+          <mesh filename="../meshes/obj/Sungaya_inexpectata_31mg.128.obj" scale="100.0 100.0 100.0"/>
+        </geometry>
+      </collision>
+    </link>
+
+    <link name="36_FL_Tibia_L">
+      <inertial>
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <mass value="0.001"/>
+        <inertia ixx="0.001" ixy="0" ixz="0" iyy="0.001" iyz="0" izz="0.001"/>
+      </inertial>
+      <visual name="18_f_l_tibia">
+        <origin xyz="-0.183828801 -0.042098559 -0.099081144" rpy="-1.57079649 0.261799425 -1.008393884"/>
+        <geometry>
+          <mesh filename="../meshes/obj/Sungaya_inexpectata_31mg.002.obj" scale="100.0 100.000007629 100.000015259"/>
+        </geometry>
+        <material name="Sungaya_inexpectata_31mg"/>
+      </visual>
+      <collision name="18_f_l_tibia.000">
+        <origin xyz="-0.18382889 -0.0420985 -0.099081144" rpy="-1.57079649 0.261799365 -1.008393764"/>
+        <geometry>
+          <mesh filename="../meshes/obj/Sungaya_inexpectata_31mg.127.obj" scale="100.0 100.000007629 100.000015259"/>
+        </geometry>
+      </collision>
+    </link>
+
+    <link name="37_FL_Tarsus_L">
+      <inertial>
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <mass value="0.001"/>
+        <inertia ixx="0.001" ixy="0" ixz="0" iyy="0.001" iyz="0" izz="0.001"/>
+      </inertial>
+      <visual name="19_f_l_pretarsus">
+        <origin xyz="-0.049980305 -0.01284126 -0.098308183" rpy="-1.570796609 0.261799693 0.114232942"/>
+        <geometry>
+          <mesh filename="../meshes/obj/Sungaya_inexpectata_31mg.001.obj" scale="99.999992371 100.000015259 100.000015259"/>
+        </geometry>
+        <material name="Sungaya_inexpectata_31mg"/>
+      </visual>
+      <collision name="19_f_l_pretarsus.000">
+        <origin xyz="-0.049980305 -0.012841245 -0.098308183" rpy="-1.570796609 0.261799693 0.114232942"/>
+        <geometry>
+          <mesh filename="../meshes/obj/Sungaya_inexpectata_31mg.126.obj" scale="99.999992371 100.000015259 100.000015259"/>
+        </geometry>
+      </collision>
+    </link>
+
+    <link name="38_FL_Pretarsus_L">
+      <inertial>
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <mass value="0.001"/>
+        <inertia ixx="0.001" ixy="0" ixz="0" iyy="0.001" iyz="0" izz="0.001"/>
+      </inertial>
+      <visual name="20_f_l_tarsus">
+        <origin xyz="-0.070826158 -0.011223099 -0.107972406" rpy="-1.570796609 0.261799663 0.114232935"/>
+        <geometry>
+          <mesh filename="../meshes/obj/Sungaya_inexpectata_31mg.obj" scale="100.0 100.000015259 100.000022888"/>
+        </geometry>
+        <material name="Sungaya_inexpectata_31mg"/>
+      </visual>
+      <collision name="20_f_l_tarsus.000">
+        <origin xyz="-0.070826158 -0.011223099 -0.107972406" rpy="-1.570796609 0.261799663 0.11423295"/>
+        <geometry>
+          <mesh filename="../meshes/obj/Sungaya_inexpectata_31mg.125.obj" scale="100.0 100.000015259 100.000022888"/>
+        </geometry>
+      </collision>
+    </link>
+
+    <link name="39_FL_CT_R">
+      <inertial>
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <mass value="0.001"/>
+        <inertia ixx="0.001" ixy="0" ixz="0" iyy="0.001" iyz="0" izz="0.001"/>
+      </inertial>
+      <visual name="31_f_r_coxa">
+        <origin xyz="0.022512171 -0.002864713 -0.102051631" rpy="0 0 -0.261799425"/>
+        <geometry>
+          <mesh filename="../meshes/obj/Sungaya_inexpectata_31mg.039.obj" scale="99.999992371 100.0 100.0"/>
+        </geometry>
+        <material name="Sungaya_inexpectata_31mg"/>
+      </visual>
+      <collision name="31_f_r_coxa.000">
+        <origin xyz="0.022512142 -0.002864713 -0.102051631" rpy="0 0 -0.261799455"/>
+        <geometry>
+          <mesh filename="../meshes/obj/Sungaya_inexpectata_31mg.124.obj" scale="99.999992371 100.0 100.0"/>
+        </geometry>
+      </collision>
+    </link>
+
+    <link name="40_FL_Femur_R">
+      <inertial>
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <mass value="0.001"/>
+        <inertia ixx="0.001" ixy="0" ixz="0" iyy="0.001" iyz="0" izz="0.001"/>
+      </inertial>
+      <visual name="32_f_r_femur">
+        <origin xyz="0.211949542 -0.038150005 -0.096822828" rpy="-1.570796251 -0.261799276 -0.279429883"/>
+        <geometry>
+          <mesh filename="../meshes/obj/Sungaya_inexpectata_31mg.038.obj" scale="99.999992371 99.999992371 100.0"/>
+        </geometry>
+        <material name="Sungaya_inexpectata_31mg"/>
+      </visual>
+      <collision name="32_f_r_femur.000">
+        <origin xyz="0.211949542 -0.038150005 -0.096822888" rpy="-1.570796251 -0.261799276 -0.279429883"/>
+        <geometry>
+          <mesh filename="../meshes/obj/Sungaya_inexpectata_31mg.123.obj" scale="99.999992371 99.999992371 100.0"/>
+        </geometry>
+      </collision>
+    </link>
+
+    <link name="41_FL_Tibia_R">
+      <inertial>
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <mass value="0.001"/>
+        <inertia ixx="0.001" ixy="0" ixz="0" iyy="0.001" iyz="0" izz="0.001"/>
+      </inertial>
+      <visual name="33_f_r_tibia">
+        <origin xyz="0.183916628 -0.041837912 -0.101402268" rpy="-1.570796728 -0.261799455 1.023657322"/>
+        <geometry>
+          <mesh filename="../meshes/obj/Sungaya_inexpectata_31mg.037.obj" scale="99.999992371 99.999984741 100.0"/>
+        </geometry>
+        <material name="Sungaya_inexpectata_31mg"/>
+      </visual>
+      <collision name="33_f_r_tibia.000">
+        <origin xyz="0.183916658 -0.041837793 -0.101402208" rpy="-1.570796728 -0.261799455 1.023657322"/>
+        <geometry>
+          <mesh filename="../meshes/obj/Sungaya_inexpectata_31mg.122.obj" scale="99.999992371 99.999984741 100.0"/>
+        </geometry>
+      </collision>
+    </link>
+
+    <link name="42_FL_Tarsus_R">
+      <inertial>
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <mass value="0.001"/>
+        <inertia ixx="0.001" ixy="0" ixz="0" iyy="0.001" iyz="0" izz="0.001"/>
+      </inertial>
+      <visual name="34_f_r_pretarsus">
+        <origin xyz="0.049836285 -0.012741284 -0.098992079" rpy="-1.570796132 -0.261799634 -0.135336339"/>
+        <geometry>
+          <mesh filename="../meshes/obj/Sungaya_inexpectata_31mg.036.obj" scale="99.999992371 99.999984741 100.000015259"/>
+        </geometry>
+        <material name="Sungaya_inexpectata_31mg"/>
+      </visual>
+      <collision name="34_f_r_pretarsus.000">
+        <origin xyz="0.049836345 -0.012741284 -0.098992139" rpy="-1.570796132 -0.261799663 -0.135336325"/>
+        <geometry>
+          <mesh filename="../meshes/obj/Sungaya_inexpectata_31mg.121.obj" scale="99.999992371 99.999984741 100.000015259"/>
+        </geometry>
+      </collision>
+    </link>
+
+    <link name="43_FL_Pretarsus_R">
+      <inertial>
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <mass value="0.001"/>
+        <inertia ixx="0.001" ixy="0" ixz="0" iyy="0.001" iyz="0" izz="0.001"/>
+      </inertial>
+      <visual name="35_f_r_tarsus">
+        <origin xyz="0.070910066 -0.011074155 -0.108766519" rpy="-1.570796251 -0.261799484 -0.13533622"/>
+        <geometry>
+          <mesh filename="../meshes/obj/Sungaya_inexpectata_31mg.035.obj" scale="99.999984741 99.999977112 100.000015259"/>
+        </geometry>
+        <material name="Sungaya_inexpectata_31mg"/>
+      </visual>
+      <collision name="35_f_r_tarsus.000">
+        <origin xyz="0.070910126 -0.01107414 -0.108766519" rpy="-1.570796251 -0.261799455 -0.135336205"/>
+        <geometry>
+          <mesh filename="../meshes/obj/Sungaya_inexpectata_31mg.120.obj" scale="99.999984741 99.999977112 100.000015259"/>
+        </geometry>
+      </collision>
+    </link>
+
+    <joint name="02_Prothorax" type="revolute">
+      <origin xyz="0 -1.78e-07 0.000415809" rpy="0 0 0"/>
+      <parent link="01_Carput"/>
+      <child link="02_Prothorax"/>
+      <axis xyz="0 0 1.0"/>
+      <limit lower="-2.0" upper="2.0" effort="0" velocity="0"/>
+    </joint>
+
+    <joint name="03_Mesothorax" type="revolute">
+      <origin xyz="0.004213027 -0.142994612 -0.024617193" rpy="0 0 0"/>
+      <parent link="02_Prothorax"/>
+      <child link="03_Mesothorax"/>
+      <axis xyz="0 0 1.0"/>
+      <limit lower="-2.0" upper="2.0" effort="0" velocity="0"/>
+    </joint>
+
+    <joint name="04_Metathorax" type="revolute">
+      <origin xyz="-0.000145554 -0.430798262 -0.00355097" rpy="0 0 0"/>
+      <parent link="03_Mesothorax"/>
+      <child link="04_Metathorax"/>
+      <axis xyz="0 0 1.0"/>
+      <limit lower="-2.0" upper="2.0" effort="0" velocity="0"/>
+    </joint>
+
+    <joint name="05_Abdomen2" type="revolute">
+      <origin xyz="-0.001602647 -0.12710239 0.000206448" rpy="0 0 0"/>
+      <parent link="04_Metathorax"/>
+      <child link="05_Abdomen2"/>
+      <axis xyz="0 0 1.0"/>
+      <limit lower="-2.0" upper="2.0" effort="0" velocity="0"/>
+    </joint>
+
+    <joint name="06_Abdomen3" type="revolute">
+      <origin xyz="0.002542103 -0.090925321 0.010091613" rpy="0 0 0"/>
+      <parent link="05_Abdomen2"/>
+      <child link="06_Abdomen3"/>
+      <axis xyz="0 0 1.0"/>
+      <limit lower="-2.0" upper="2.0" effort="0" velocity="0"/>
+    </joint>
+
+    <joint name="07_Abdomen4" type="revolute">
+      <origin xyz="0.000807045 -0.129344046 0.005316687" rpy="0 0 0"/>
+      <parent link="06_Abdomen3"/>
+      <child link="07_Abdomen4"/>
+      <axis xyz="0 0 1.0"/>
+      <limit lower="-2.0" upper="2.0" effort="0" velocity="0"/>
+    </joint>
+
+    <joint name="08_Abdomen5" type="revolute">
+      <origin xyz="0.000811277 -0.134961858 0.004000917" rpy="0 0 0"/>
+      <parent link="07_Abdomen4"/>
+      <child link="08_Abdomen5"/>
+      <axis xyz="0 0 1.0"/>
+      <limit lower="-2.0" upper="2.0" effort="0" velocity="0"/>
+    </joint>
+
+    <joint name="09_Abdomen6" type="revolute">
+      <origin xyz="0.000862776 -0.131172046 -0.002104308" rpy="0 0 0"/>
+      <parent link="08_Abdomen5"/>
+      <child link="09_Abdomen6"/>
+      <axis xyz="0 0 1.0"/>
+      <limit lower="-2.0" upper="2.0" effort="0" velocity="0"/>
+    </joint>
+
+    <joint name="10_Abdomen7" type="revolute">
+      <origin xyz="0.000803767 -0.126426399 0.006421897" rpy="0 0 0"/>
+      <parent link="09_Abdomen6"/>
+      <child link="10_Abdomen7"/>
+      <axis xyz="0 0 1.0"/>
+      <limit lower="-2.0" upper="2.0" effort="0" velocity="0"/>
+    </joint>
+
+    <joint name="11_Abdomen8" type="revolute">
+      <origin xyz="0.002355661 -0.140459865 -0.002744141" rpy="0 0 0"/>
+      <parent link="10_Abdomen7"/>
+      <child link="11_Abdomen8"/>
+      <axis xyz="0 0 1.0"/>
+      <limit lower="-2.0" upper="2.0" effort="0" velocity="0"/>
+    </joint>
+
+    <joint name="12_Abdomen9" type="revolute">
+      <origin xyz="-0.000770597 -0.113177739 0.013272745" rpy="0 0 0"/>
+      <parent link="11_Abdomen8"/>
+      <child link="12_Abdomen9"/>
+      <axis xyz="0 0 1.0"/>
+      <limit lower="-2.0" upper="2.0" effort="0" velocity="0"/>
+    </joint>
+
+    <joint name="13_Abdomen10" type="revolute">
+      <origin xyz="0.000680922 -0.109023243 -0.009047051" rpy="0 0 0"/>
+      <parent link="12_Abdomen9"/>
+      <child link="13_Abdomen10"/>
+      <axis xyz="0 0 1.0"/>
+      <limit lower="-2.0" upper="2.0" effort="0" velocity="0"/>
+    </joint>
+
+    <joint name="14_HL_CT_L" type="revolute">
+      <origin xyz="-0.019413911 -0.032971028 -0.164481416" rpy="-1.570796013 -1.308996916 1.570796013"/>
+      <parent link="05_Abdomen2"/>
+      <child link="14_HL_CT_L"/>
+      <axis xyz="0 0 1.0"/>
+      <limit lower="-2.0" upper="2.0" effort="0" velocity="0"/>
+    </joint>
+
+    <joint name="15_HL_Femur_L" type="revolute">
+      <origin xyz="-0.041737881 -0.100299038 -0.131669655" rpy="1.570796609 0.608563662 2.18e-07"/>
+      <parent link="14_HL_CT_L"/>
+      <child link="15_HL_Femur_L"/>
+      <axis xyz="0 0 1.0"/>
+      <limit lower="-2.0" upper="2.0" effort="0" velocity="0"/>
+    </joint>
+
+    <joint name="16_HL_Tibia_L" type="revolute">
+      <origin xyz="-0.448163658 -0.152728543 0.001138372" rpy="3.23e-07 1.79e-07 1.508295298"/>
+      <parent link="15_HL_Femur_L"/>
+      <child link="16_HL_Tibia_L"/>
+      <axis xyz="0 0 1.0"/>
+      <limit lower="-2.0" upper="2.0" effort="0" velocity="0"/>
+    </joint>
+
+    <joint name="17_HL_Tarsus_L" type="revolute">
+      <origin xyz="-0.449807197 -0.141624764 0.001335663" rpy="1.78e-07 4.7e-08 -1.19165194"/>
+      <parent link="16_HL_Tibia_L"/>
+      <child link="17_HL_Tarsus_L"/>
+      <axis xyz="0 0 1.0"/>
+      <limit lower="-2.0" upper="2.0" effort="0" velocity="0"/>
+    </joint>
+
+    <joint name="18_HL_Pretarsus_L" type="revolute">
+      <origin xyz="-0.091313191 -0.029319784 9.869e-05" rpy="-1.56e-07 1.12e-07 3e-08"/>
+      <parent link="17_HL_Tarsus_L"/>
+      <child link="18_HL_Pretarsus_L"/>
+      <axis xyz="0 0 1.0"/>
+      <limit lower="-2.0" upper="2.0" effort="0" velocity="0"/>
+    </joint>
+
+    <joint name="19_HL_CT_R" type="revolute">
+      <origin xyz="-0.019540392 -0.031810686 0.003102811" rpy="1.570796013 -1.308996916 -1.570796013"/>
+      <parent link="05_Abdomen2"/>
+      <child link="19_HL_CT_R"/>
+      <axis xyz="0 0 1.0"/>
+      <limit lower="-2.0" upper="2.0" effort="0" velocity="0"/>
+    </joint>
+
+    <joint name="20_HL_Femur_R" type="revolute">
+      <origin xyz="0.041697908 -0.09984009 -0.13160409" rpy="1.570796609 -0.634230912 -2.96e-07"/>
+      <parent link="19_HL_CT_R"/>
+      <child link="20_HL_Femur_R"/>
+      <axis xyz="0 0 1.0"/>
+      <limit lower="-2.0" upper="2.0" effort="0" velocity="0"/>
+    </joint>
+
+    <joint name="21_HL_Tibia_R" type="revolute">
+      <origin xyz="0.44849053 -0.152042881 -0.004467748" rpy="3.1e-08 1.22e-07 -1.558378577"/>
+      <parent link="20_HL_Femur_R"/>
+      <child link="21_HL_Tibia_R"/>
+      <axis xyz="0 0 1.0"/>
+      <limit lower="-2.0" upper="2.0" effort="0" velocity="0"/>
+    </joint>
+
+    <joint name="22_HL_Tarsus_R" type="revolute">
+      <origin xyz="0.450028926 -0.140937299 -0.004336946" rpy="-1.84e-07 -1.3e-08 1.226022959"/>
+      <parent link="21_HL_Tibia_R"/>
+      <child link="22_HL_Tarsus_R"/>
+      <axis xyz="0 0 1.0"/>
+      <limit lower="-2.0" upper="2.0" effort="0" velocity="0"/>
+    </joint>
+
+    <joint name="23_HL_Pretarsus_R" type="revolute">
+      <origin xyz="0.091336064 -0.029179383 -0.001052705" rpy="-1.92e-07 5.5e-08 -8.9e-08"/>
+      <parent link="22_HL_Tarsus_R"/>
+      <child link="23_HL_Pretarsus_R"/>
+      <axis xyz="0 0 1.0"/>
+      <limit lower="-2.0" upper="2.0" effort="0" velocity="0"/>
+    </joint>
+
+    <joint name="24_ML_CT_L" type="revolute">
+      <origin xyz="-0.02088513 -0.358530134 -0.15469411" rpy="0 -1.570796251 0"/>
+      <parent link="03_Mesothorax"/>
+      <child link="24_ML_CT_L"/>
+      <axis xyz="0 0 1.0"/>
+      <limit lower="-2.0" upper="2.0" effort="0" velocity="0"/>
+    </joint>
+
+    <joint name="25_ML_Femur_L" type="revolute">
+      <origin xyz="-0.064433865 -0.1009342 -0.130984351" rpy="1.570796371 0.365136325 4.4e-08"/>
+      <parent link="24_ML_CT_L"/>
+      <child link="25_ML_Femur_L"/>
+      <axis xyz="0 0 1.0"/>
+      <limit lower="-2.0" upper="2.0" effort="0" velocity="0"/>
+    </joint>
+
+    <joint name="26_ML_Tibia_L" type="revolute">
+      <origin xyz="-0.372795433 -0.115424424 -0.00439877" rpy="-2.14e-07 -7.1e-08 1.198886037"/>
+      <parent link="25_ML_Femur_L"/>
+      <child link="26_ML_Tibia_L"/>
+      <axis xyz="0 0 1.0"/>
+      <limit lower="-2.0" upper="2.0" effort="0" velocity="0"/>
+    </joint>
+
+    <joint name="27_ML_Tarsus_L" type="revolute">
+      <origin xyz="-0.345735192 -0.102625422 -0.002480305" rpy="-3.14e-07 2.3e-07 -1.057119012"/>
+      <parent link="26_ML_Tibia_L"/>
+      <child link="27_ML_Tarsus_L"/>
+      <axis xyz="0 0 1.0"/>
+      <limit lower="-2.0" upper="2.0" effort="0" velocity="0"/>
+    </joint>
+
+    <joint name="28_ML_Pretarsus_L" type="revolute">
+      <origin xyz="-0.082457982 -0.027328469 -0.002688455" rpy="5e-09 -2.1e-08 -1.19e-07"/>
+      <parent link="27_ML_Tarsus_L"/>
+      <child link="28_ML_Pretarsus_L"/>
+      <axis xyz="0 0 1.0"/>
+      <limit lower="-2.0" upper="2.0" effort="0" velocity="0"/>
+    </joint>
+
+    <joint name="29_ML_CT_R" type="revolute">
+      <origin xyz="-0.020990929 -0.357571304 -0.016328847" rpy="0 -1.570796251 0"/>
+      <parent link="03_Mesothorax"/>
+      <child link="29_ML_CT_R"/>
+      <axis xyz="0 0 1.0"/>
+      <limit lower="-2.0" upper="2.0" effort="0" velocity="0"/>
+    </joint>
+
+    <joint name="30_ML_Femur_R" type="revolute">
+      <origin xyz="0.06452845 -0.100208744 -0.13088493" rpy="1.57079649 -0.388030559 -4.5e-08"/>
+      <parent link="29_ML_CT_R"/>
+      <child link="30_ML_Femur_R"/>
+      <axis xyz="0 0 1.0"/>
+      <limit lower="-2.0" upper="2.0" effort="0" velocity="0"/>
+    </joint>
+
+    <joint name="31_ML_Tibia_R" type="revolute">
+      <origin xyz="0.372751355 -0.114855073 -0.00907665" rpy="1.1e-07 -5.5e-08 -1.280851364"/>
+      <parent link="30_ML_Femur_R"/>
+      <child link="31_ML_Tibia_R"/>
+      <axis xyz="0 0 1.0"/>
+      <limit lower="-2.0" upper="2.0" effort="0" velocity="0"/>
+    </joint>
+
+    <joint name="32_ML_Tarsus_R" type="revolute">
+      <origin xyz="0.346063942 -0.102096371 -0.006840648" rpy="-2.25e-07 1.18e-07 1.176845789"/>
+      <parent link="31_ML_Tibia_R"/>
+      <child link="32_ML_Tarsus_R"/>
+      <axis xyz="0 0 1.0"/>
+      <limit lower="-2.0" upper="2.0" effort="0" velocity="0"/>
+    </joint>
+
+    <joint name="33_ML_Pretarsus_R" type="revolute">
+      <origin xyz="0.082352892 -0.027202461 -0.003742758" rpy="2.17e-07 -7.5e-08 0"/>
+      <parent link="32_ML_Tarsus_R"/>
+      <child link="33_ML_Pretarsus_R"/>
+      <axis xyz="0 0 1.0"/>
+      <limit lower="-2.0" upper="2.0" effort="0" velocity="0"/>
+    </joint>
+
+    <joint name="34_FL_CT_L" type="revolute">
+      <origin xyz="-0.041684669 -0.057771511 -0.168337941" rpy="1.570796013 -1.308996916 -1.570796013"/>
+      <parent link="02_Prothorax"/>
+      <child link="34_FL_CT_L"/>
+      <axis xyz="0 0 1.0"/>
+      <limit lower="-2.0" upper="2.0" effort="0" velocity="0"/>
+    </joint>
+
+    <joint name="35_FL_Femur_L" type="revolute">
+      <origin xyz="-0.061503503 -0.103693411 -0.121669807" rpy="1.570796132 0.292513788 1.71e-07"/>
+      <parent link="34_FL_CT_L"/>
+      <child link="35_FL_Femur_L"/>
+      <axis xyz="0 0 1.0"/>
+      <limit lower="-2.0" upper="2.0" effort="0" velocity="0"/>
+    </joint>
+
+    <joint name="36_FL_Tibia_L" type="revolute">
+      <origin xyz="-0.421480596 -0.099514306 0.008573248" rpy="-9.8e-08 -5.24e-07 1.300907612"/>
+      <parent link="35_FL_Femur_L"/>
+      <child link="36_FL_Tibia_L"/>
+      <axis xyz="0 0 1.0"/>
+      <limit lower="-2.0" upper="2.0" effort="0" velocity="0"/>
+    </joint>
+
+    <joint name="37_FL_Tarsus_L" type="revolute">
+      <origin xyz="-0.368829638 -0.081771508 -0.001843986" rpy="6.1e-08 -1.58e-07 -1.122626781"/>
+      <parent link="36_FL_Tibia_L"/>
+      <child link="37_FL_Tarsus_L"/>
+      <axis xyz="0 0 1.0"/>
+      <limit lower="-2.0" upper="2.0" effort="0" velocity="0"/>
+    </joint>
+
+    <joint name="38_FL_Pretarsus_L" type="revolute">
+      <origin xyz="-0.100268409 -0.027177051 -0.000609993" rpy="-1e-09 3.2e-08 0"/>
+      <parent link="37_FL_Tarsus_L"/>
+      <child link="38_FL_Pretarsus_L"/>
+      <axis xyz="0 0 1.0"/>
+      <limit lower="-2.0" upper="2.0" effort="0" velocity="0"/>
+    </joint>
+
+    <joint name="39_FL_CT_R" type="revolute">
+      <origin xyz="-0.041769486 -0.05716313 -0.057542291" rpy="-1.570796013 -1.308996916 1.570796013"/>
+      <parent link="02_Prothorax"/>
+      <child link="39_FL_CT_R"/>
+      <axis xyz="0 0 1.0"/>
+      <limit lower="-2.0" upper="2.0" effort="0" velocity="0"/>
+    </joint>
+
+    <joint name="40_FL_Femur_R" type="revolute">
+      <origin xyz="0.061603609 -0.102827176 -0.121575452" rpy="1.570796251 -0.279429793 -9.3e-08"/>
+      <parent link="39_FL_CT_R"/>
+      <child link="40_FL_Femur_R"/>
+      <axis xyz="0 0 1.0"/>
+      <limit lower="-2.0" upper="2.0" effort="0" velocity="0"/>
+    </joint>
+
+    <joint name="41_FL_Tibia_R" type="revolute">
+      <origin xyz="0.421720564 -0.09886986 0.003246838" rpy="1.07e-07 4.11e-07 -1.303087234"/>
+      <parent link="40_FL_Femur_R"/>
+      <child link="41_FL_Tibia_R"/>
+      <axis xyz="0 0 1.0"/>
+      <limit lower="-2.0" upper="2.0" effort="0" velocity="0"/>
+    </joint>
+
+    <joint name="42_FL_Tarsus_R" type="revolute">
+      <origin xyz="0.368941516 -0.081208073 -0.006476092" rpy="-5.25e-07 3.01e-07 1.158993483"/>
+      <parent link="41_FL_Tibia_R"/>
+      <child link="42_FL_Tarsus_R"/>
+      <axis xyz="0 0 1.0"/>
+      <limit lower="-2.0" upper="2.0" effort="0" velocity="0"/>
+    </joint>
+
+    <joint name="43_FL_Pretarsus_R" type="revolute">
+      <origin xyz="0.100329891 -0.027023749 -0.001864786" rpy="1.04e-07 -1.48e-07 -4.5e-08"/>
+      <parent link="42_FL_Tarsus_R"/>
+      <child link="43_FL_Pretarsus_R"/>
+      <axis xyz="0 0 1.0"/>
+      <limit lower="-2.0" upper="2.0" effort="0" velocity="0"/>
+    </joint>
+
+    <material name="Sungaya_inexpectata_31mg">
+      <color rgba="0 0 0 1.0"/>
+    </material>
+
+  </robot>

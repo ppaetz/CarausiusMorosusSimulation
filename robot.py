@@ -13,8 +13,8 @@ class ROBOT:
     def __init__(self):
         '''Constructor of ROBOT class'''
 
-        self.robot = p.loadURDF("urdf/Carausius_Morosus.urdf", 0, 0, 2, -180, 0, 180, 0)
-        pyrosim.Prepare_To_Simulate("urdf/Carausius_Morosus.urdf")
+        self.robot = p.loadURDF("urdf/SungayaInexpecta.urdf", 0, 0, 2, -180, 0, 180, 0)
+        pyrosim.Prepare_To_Simulate("urdf/SungayaInexpecta.urdf")
 
         self.Prepare_To_Sense()
         self.Prepare_To_Act()
